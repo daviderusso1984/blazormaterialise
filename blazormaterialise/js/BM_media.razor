@@ -1,0 +1,22 @@
+@namespace blazormaterialize
+@inject IJSRuntime JSRuntime;
+
+<img class="materialboxed responsive-img" src="@src" width="650">
+
+
+
+
+
+@code{
+    [Parameter]
+    public string src {get;set;} = "";
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender){
+        await base.OnAfterRenderAsync(firstRender);
+        await JSRuntime.InvokeVoidAsync("media_init");
+    }
+
+  
+
+}

@@ -1,0 +1,13 @@
+@namespace blazormaterialize
+
+
+<a class="carousel-item" href="@href"><img src="@src"></a>
+
+@code{
+   
+    [Parameter]
+    public string src {get;set;} = "";
+
+     [Parameter]
+    public string href {get;set;} = "";
+}
