@@ -1,14 +1,26 @@
 @namespace blazormaterialise
-@inherits component_base
+@inherits js_base
 
 
-<a class="carousel-item" href="@href"><img src="@src"></a>
+<a class="carousel-item @Class @Theme.Background @show" href="@href">
+    @children
+</a>
 
-@code{
-   
+@code{  
+   [Parameter]
+   public RenderFragment children{get;set;}
+
     [Parameter]
-    public string src {get;set;} = "";
-
-     [Parameter]
     public string href {get;set;} = "";
+
+    private string show="";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender){
+       
+        var sh = new show();
+        show = sh.get_show(Visibility);
+    }
+    
+
+
 }

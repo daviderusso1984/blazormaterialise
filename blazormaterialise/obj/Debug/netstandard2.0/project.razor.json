@@ -58,205 +58,14 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_carousel_item",
+        "Name": "blazormaterialise.BM_row",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BM_carousel_item",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "src",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "src"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "href",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "href"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Class",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Class"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Backcolor",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Backcolor"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Textcolor",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Textcolor"
-            },
-            "BoundAttributeParameters": []
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_carousel_item"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_carousel_item",
-        "AssemblyName": "blazormaterialise",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazormaterialise.BM_carousel_item",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "src",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "src"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "href",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "href"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Class",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Class"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Backcolor",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Backcolor"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Textcolor",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Textcolor"
-            },
-            "BoundAttributeParameters": []
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_carousel_item",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_carousel",
-        "AssemblyName": "blazormaterialise",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BM_carousel",
+            "TagName": "BM_row",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -320,25 +129,39 @@
               "Common.PropertyName": "Textcolor"
             },
             "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_carousel"
+          "Common.TypeName": "blazormaterialise.BM_row"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_carousel",
+        "Name": "blazormaterialise.BM_row",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazormaterialise.BM_carousel",
+            "TagName": "blazormaterialise.BM_row",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -402,19 +225,33 @@
               "Common.PropertyName": "Textcolor"
             },
             "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_carousel",
+          "Common.TypeName": "blazormaterialise.BM_row",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.ChildContent",
-        "Name": "blazormaterialise.BM_carousel.ChildContent",
+        "Name": "blazormaterialise.BM_row.ChildContent",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
@@ -422,7 +259,7 @@
         "TagMatchingRules": [
           {
             "TagName": "ChildContent",
-            "ParentTag": "BM_carousel",
+            "ParentTag": "BM_row",
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
@@ -433,13 +270,13 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "blazormaterialise.BM_carousel.ChildContent",
+          "Common.TypeName": "blazormaterialise.BM_row.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
         "Kind": "Components.ChildContent",
-        "Name": "blazormaterialise.BM_carousel.ChildContent",
+        "Name": "blazormaterialise.BM_row.ChildContent",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
@@ -447,7 +284,7 @@
         "TagMatchingRules": [
           {
             "TagName": "ChildContent",
-            "ParentTag": "blazormaterialise.BM_carousel",
+            "ParentTag": "blazormaterialise.BM_row",
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
@@ -458,21 +295,21 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "blazormaterialise.BM_carousel.ChildContent",
+          "Common.TypeName": "blazormaterialise.BM_row.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_media",
+        "Name": "blazormaterialise.BM_col",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BM_media",
+            "TagName": "BM_col",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -482,15 +319,30 @@
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "src",
-            "TypeName": "System.String",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
             "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
-              "Common.PropertyName": "src"
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Dimension",
+            "TypeName": "blazormaterialise.enum_col",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Dimension"
             },
             "BoundAttributeParameters": []
           },
@@ -535,25 +387,39 @@
               "Common.PropertyName": "Textcolor"
             },
             "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_media"
+          "Common.TypeName": "blazormaterialise.BM_col"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_media",
+        "Name": "blazormaterialise.BM_col",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazormaterialise.BM_media",
+            "TagName": "blazormaterialise.BM_col",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -563,15 +429,30 @@
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "src",
-            "TypeName": "System.String",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
             "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
-              "Common.PropertyName": "src"
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Dimension",
+            "TypeName": "blazormaterialise.enum_col",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Dimension"
             },
             "BoundAttributeParameters": []
           },
@@ -616,13 +497,78 @@
               "Common.PropertyName": "Textcolor"
             },
             "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_media",
+          "Common.TypeName": "blazormaterialise.BM_col",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "blazormaterialise.BM_col.ChildContent",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "BM_col",
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazormaterialise.BM_col.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "blazormaterialise.BM_col.ChildContent",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "blazormaterialise.BM_col",
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazormaterialise.BM_col.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -720,6 +666,48 @@
               "Common.PropertyName": "Class"
             },
             "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
@@ -772,6 +760,48 @@
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
             },
             "BoundAttributeParameters": []
           }
@@ -837,14 +867,14 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_col",
+        "Name": "blazormaterialise.BM_media",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BM_col",
+            "TagName": "BM_media",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -854,30 +884,29 @@
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "ChildContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Name": "src",
+            "TypeName": "System.String",
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
             "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
-              "Common.PropertyName": "ChildContent",
-              "Components.ChildContent": "True"
+              "Common.PropertyName": "src"
             },
             "BoundAttributeParameters": []
           },
           {
             "Kind": "Components.Component",
-            "Name": "Dimension",
-            "TypeName": "blazormaterialise.enum_col",
-            "IsEnum": true,
+            "Name": "Width",
+            "TypeName": "System.String",
+            "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
             "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
-              "Common.PropertyName": "Dimension"
+              "Common.PropertyName": "Width"
             },
             "BoundAttributeParameters": []
           },
@@ -894,25 +923,177 @@
               "Common.PropertyName": "Class"
             },
             "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_col"
+          "Common.TypeName": "blazormaterialise.BM_media"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_col",
+        "Name": "blazormaterialise.BM_media",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazormaterialise.BM_col",
+            "TagName": "blazormaterialise.BM_media",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "src",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "src"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Width",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Width"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM_media",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM_carousel",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BM_carousel",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -937,15 +1118,97 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "Dimension",
-            "TypeName": "blazormaterialise.enum_col",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
             "IsEnum": true,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
             "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
-              "Common.PropertyName": "Dimension"
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM_carousel"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM_carousel",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazormaterialise.BM_carousel",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
             },
             "BoundAttributeParameters": []
           },
@@ -962,19 +1225,61 @@
               "Common.PropertyName": "Class"
             },
             "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_col",
+          "Common.TypeName": "blazormaterialise.BM_carousel",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.ChildContent",
-        "Name": "blazormaterialise.BM_col.ChildContent",
+        "Name": "blazormaterialise.BM_carousel.ChildContent",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
@@ -982,7 +1287,7 @@
         "TagMatchingRules": [
           {
             "TagName": "ChildContent",
-            "ParentTag": "BM_col",
+            "ParentTag": "BM_carousel",
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
@@ -993,13 +1298,13 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "blazormaterialise.BM_col.ChildContent",
+          "Common.TypeName": "blazormaterialise.BM_carousel.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
         "Kind": "Components.ChildContent",
-        "Name": "blazormaterialise.BM_col.ChildContent",
+        "Name": "blazormaterialise.BM_carousel.ChildContent",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
@@ -1007,7 +1312,7 @@
         "TagMatchingRules": [
           {
             "TagName": "ChildContent",
-            "ParentTag": "blazormaterialise.BM_col",
+            "ParentTag": "blazormaterialise.BM_carousel",
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
@@ -1018,21 +1323,21 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "blazormaterialise.BM_col.ChildContent",
+          "Common.TypeName": "blazormaterialise.BM_carousel.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_row",
+        "Name": "blazormaterialise.BM_carousel_item",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BM_row",
+            "TagName": "BM_carousel_item",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -1042,7 +1347,7 @@
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "ChildContent",
+            "Name": "children",
             "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
             "IsEnum": false,
             "IndexerNamePrefix": null,
@@ -1050,8 +1355,22 @@
             "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
-              "Common.PropertyName": "ChildContent",
+              "Common.PropertyName": "children",
               "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "href",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "href"
             },
             "BoundAttributeParameters": []
           },
@@ -1068,25 +1387,67 @@
               "Common.PropertyName": "Class"
             },
             "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_row"
+          "Common.TypeName": "blazormaterialise.BM_carousel_item"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "blazormaterialise.BM_row",
+        "Name": "blazormaterialise.BM_carousel_item",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazormaterialise.BM_row",
+            "TagName": "blazormaterialise.BM_carousel_item",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -1096,7 +1457,7 @@
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "ChildContent",
+            "Name": "children",
             "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
             "IsEnum": false,
             "IndexerNamePrefix": null,
@@ -1104,8 +1465,22 @@
             "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
-              "Common.PropertyName": "ChildContent",
+              "Common.PropertyName": "children",
               "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "href",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "href"
             },
             "BoundAttributeParameters": []
           },
@@ -1122,27 +1497,69 @@
               "Common.PropertyName": "Class"
             },
             "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazormaterialise.BM_row",
+          "Common.TypeName": "blazormaterialise.BM_carousel_item",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.ChildContent",
-        "Name": "blazormaterialise.BM_row.ChildContent",
+        "Name": "blazormaterialise.BM_carousel_item.children",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ChildContent",
-            "ParentTag": "BM_row",
+            "TagName": "children",
+            "ParentTag": "BM_carousel_item",
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
@@ -1153,21 +1570,21 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "blazormaterialise.BM_row.ChildContent",
+          "Common.TypeName": "blazormaterialise.BM_carousel_item.children",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
         "Kind": "Components.ChildContent",
-        "Name": "blazormaterialise.BM_row.ChildContent",
+        "Name": "blazormaterialise.BM_carousel_item.children",
         "AssemblyName": "blazormaterialise",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ChildContent",
-            "ParentTag": "blazormaterialise.BM_row",
+            "TagName": "children",
+            "ParentTag": "blazormaterialise.BM_carousel_item",
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
@@ -1178,7 +1595,1345 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "blazormaterialise.BM_row.ChildContent",
+          "Common.TypeName": "blazormaterialise.BM_carousel_item.children",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM_breadcrumb",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BM_breadcrumb",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "items",
+            "TypeName": "blazormaterialise.structure_breadcrumbs[]",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "items"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM_breadcrumb"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM_breadcrumb",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazormaterialise.BM_breadcrumb",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "items",
+            "TypeName": "blazormaterialise.structure_breadcrumbs[]",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "items"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM_breadcrumb",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM__Button",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BM__Button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "children",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "children",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Waves_effect",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Waves_effect"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Disabled",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Disabled"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Type_button",
+            "TypeName": "blazormaterialise.enum_button",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Type_button"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM__Button"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM__Button",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazormaterialise.BM__Button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "children",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "children",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Waves_effect",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Waves_effect"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Disabled",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Disabled"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Type_button",
+            "TypeName": "blazormaterialise.enum_button",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Type_button"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM__Button",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "blazormaterialise.BM__Button.children",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "children",
+            "ParentTag": "BM__Button",
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazormaterialise.BM__Button.children",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "blazormaterialise.BM__Button.children",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "children",
+            "ParentTag": "blazormaterialise.BM__Button",
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazormaterialise.BM__Button.children",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM__collection",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BM__collection",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "children",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "children",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Header",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Header"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Font_Header",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Font_Header"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM__collection"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM__collection",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazormaterialise.BM__collection",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "children",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "children",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Header",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Header"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Font_Header",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Font_Header"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM__collection",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "blazormaterialise.BM__collection.children",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "children",
+            "ParentTag": "BM__collection",
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazormaterialise.BM__collection.children",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "blazormaterialise.BM__collection.children",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "children",
+            "ParentTag": "blazormaterialise.BM__collection",
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazormaterialise.BM__collection.children",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM_badge",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BM_badge",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "New",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "New"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Text"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM_badge"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM_badge",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazormaterialise.BM_badge",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "New",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "New"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Text"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM_badge",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM__collection_item",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BM__collection_item",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "children",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "children",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Type_item",
+            "TypeName": "blazormaterialise.enum_collection",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Type_item"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Active",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Active"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM__collection_item"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "blazormaterialise.BM__collection_item",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazormaterialise.BM__collection_item",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "children",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "children",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Type_item",
+            "TypeName": "blazormaterialise.enum_collection",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Type_item"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Active",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Active"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Backcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Backcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Textcolor",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Textcolor"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visibility",
+            "TypeName": "enum_show",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Visibility"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazormaterialise.BM__collection_item",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "blazormaterialise.BM__collection_item.children",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "children",
+            "ParentTag": "BM__collection_item",
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazormaterialise.BM__collection_item.children",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "blazormaterialise.BM__collection_item.children",
+        "AssemblyName": "blazormaterialise",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "children",
+            "ParentTag": "blazormaterialise.BM__collection_item",
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazormaterialise.BM__collection_item.children",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
@@ -17244,6 +18999,21 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/components/BM_breadcrumb.razor",
+      "TargetPath": "components\\BM_breadcrumb.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/components/BM_ Button.razor",
+      "TargetPath": "components\\BM_ Button.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/components/BM_badge.razor",
+      "TargetPath": "components\\BM_badge.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/css/BM_row.razor",
       "TargetPath": "css\\BM_row.razor",
       "FileKind": "component"
@@ -17274,8 +19044,18 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/components/BM_ collection.razor",
+      "TargetPath": "components\\BM_ collection.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/js/BM_carousel.razor",
       "TargetPath": "js\\BM_carousel.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/components/BM_ collection_item.razor",
+      "TargetPath": "components\\BM_ collection_item.razor",
       "FileKind": "component"
     },
     {

@@ -1,0 +1,32 @@
+@namespace blazormaterialise
+@inject IJSRuntime JSRuntime;
+@inherits css_base
+
+
+
+  <nav class="@Class @Theme.Background @show">
+    <div class="nav-wrapper">
+      <div class="col s12">
+          if(@items != null){
+              @foreach (var item in items)
+              {
+                  <a href="@item.href" class="breadcrumb @item.Class">@item.name</a>
+              }
+          }      
+      </div>
+    </div>
+  </nav>
+
+@code{
+
+    [Parameter]
+    public structure_breadcrumbs[] items {get;set;} 
+
+    private string show="";
+
+    protected override void OnInitialized(){
+        var sh = new show();
+        show = sh.get_show(Visibility);
+        
+    }
+}

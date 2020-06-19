@@ -1,8 +1,8 @@
 @namespace blazormaterialise
 @inject IJSRuntime JSRuntime;
-@inherits component_base
+@inherits js_base
 
-<img class="materialboxed responsive-img" src="@src" width="650">
+<img class="materialboxed responsive-img @Class @Theme.Background @show" src="@src" width="@Width">
 
 
 
@@ -11,11 +11,18 @@
 @code{
     [Parameter]
     public string src {get;set;} = "";
+    [Parameter]
+    public string Width{get;set;}= "";
+
+    private string show="";
+
 
 
     protected override async Task OnAfterRenderAsync(bool firstRender){
         await base.OnAfterRenderAsync(firstRender);
         await JSRuntime.InvokeVoidAsync("media_init");
+         var sh = new show();
+        show = sh.get_show(Visibility);
     }
 
   

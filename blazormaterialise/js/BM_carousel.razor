@@ -1,9 +1,9 @@
 @namespace blazormaterialise
 @inject IJSRuntime JSRuntime;
-@inherits component_base
+@inherits js_base
 
 
-<div class="carousel ">
+<div class="carousel @Class @Theme.Background @show">
     @ChildContent
 </div>    
 
@@ -11,11 +11,15 @@
 @code{
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+
+    private string show="";
     
 
     protected override async Task OnAfterRenderAsync(bool firstRender){
         await base.OnAfterRenderAsync(firstRender);
         await JSRuntime.InvokeVoidAsync("carousel_init");
+        var sh = new show();
+        show = sh.get_show(Visibility);
     }
 
 }

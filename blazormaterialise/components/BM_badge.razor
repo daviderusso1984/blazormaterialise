@@ -1,0 +1,30 @@
+@namespace blazormaterialise
+@inject IJSRuntime JSRuntime;
+@inherits css_base
+
+
+<span class="@valor badge @Class @Theme.Background @show">
+@Text
+</span>
+
+@code{
+
+    [Parameter]
+    public bool New{get;set;} = false;
+    [Parameter]
+    public string Text{get;set;}
+
+    private string valor = "";
+
+    private string show="";
+
+    protected override void OnInitialized(){
+        var sh = new show();
+        show = sh.get_show(Visibility);
+        if(New){
+            valor += "new ";
+        }
+    }
+}
+
+
