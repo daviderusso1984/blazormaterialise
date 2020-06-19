@@ -1,0 +1,27 @@
+
+@namespace blazormaterialise
+@inherits grid_base
+
+
+
+
+<div class="col @Class @dim">
+    @ChildContent
+</div>
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public enum_col Dimension {get;set;} 
+
+    private string dim = "";
+
+    protected override void OnInitialized(){
+        var gr = new grid();
+        dim = gr.get_enun_col(Dimension);
+    }
+
+}
