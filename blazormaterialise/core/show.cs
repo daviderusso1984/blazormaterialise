@@ -6,6 +6,8 @@ namespace blazormaterialise
         public string get_show(enum_show sh){
             switch (sh)
             {
+                case enum_show.show:
+                return "";
                 case enum_show.hide:
                 return "hide";
                 case enum_show.hide_on_large_only:
@@ -37,6 +39,7 @@ namespace blazormaterialise
 
 public enum enum_show
 {
+    show, //show all
     hide,	//Hidden for all Devices
     hide_on_small_only, //	Hidden for Mobile Only
     hide_on_med_only,   //Hidden for Tablet Only

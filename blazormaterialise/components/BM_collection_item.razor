@@ -1,0 +1,38 @@
+@namespace blazormaterialise
+@inject IJSRuntime JSRuntime;
+@inherits css_base
+
+
+@switch (Type_item)
+{
+    case enum_collection.Basic:
+    <li class="collection-item">@ChildContent</li>
+    break;
+    case enum_collection.Links:
+    <a href="#!" class="collection-item @valor">@ChildContent</a>
+    break;
+    default:
+    break;
+}
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent{get;set;}
+
+    [Parameter]
+    public enum_collection Type_item {get;set;}
+    [Parameter]
+    public bool Active{get;set;} = false;
+
+    private string valor = "";
+
+    private string show="";
+
+    protected override void OnInitialized(){
+        var sh = new show();
+        show = sh.get_show(Visibility);
+        if(Active){
+            valor += "active ";
+        }
+    }
+}
