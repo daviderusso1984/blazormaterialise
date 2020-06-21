@@ -1,5 +1,7 @@
 namespace blazormaterialise{
-    public class opz{
-        
-    }
+   
+
+   public enum enum_position{
+       left,right,center
+   }
 }

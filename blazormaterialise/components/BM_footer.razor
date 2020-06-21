@@ -1,0 +1,23 @@
+@namespace blazormaterialise
+@inherits css_base
+
+
+<footer class="page-footer @Class @show @Backcolor @Textcolor">
+    @ChildContent
+</footer>
+
+
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent{get;set;}
+
+    private string show;
+
+     protected override void OnInitialized(){
+        var sh = new show();
+        show = sh.get_show(Visibility);
+        
+    }
+}

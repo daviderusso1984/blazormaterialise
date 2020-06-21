@@ -161,7 +161,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/q5-oXtz-zkO4cn6ZVjU_ZQmCiRZ5rF36iOG1B9WO8pM=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/b6DY7sNvXnPLGccjPcBjHu1b1fTFVJd-FGhWvPt9eCY=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/blazormaterialise.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/blazormaterialise.dll.gz"
     },
@@ -271,7 +271,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/test.pdb.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/apANCLh7-x_6ie-qzXz2hLgSoYoNzqsyPCkWjROfhQM=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/fM4GjtzlXyZf2GOzdL3ZQzYOotn-iEq6eYhgt0qA6rY=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/blazormaterialise.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/blazormaterialise.pdb.gz"
     },
@@ -296,7 +296,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/aBT1r8E36mQFEVWZ0DkHxkyOhGn9L0f5BL5jY0lkQ_s=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/o3BgLzewBl6snU_Iao1tDWC9gmKFKtSzUZ9Bv5FSff8=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/blazor.boot.json",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.gz"
     }

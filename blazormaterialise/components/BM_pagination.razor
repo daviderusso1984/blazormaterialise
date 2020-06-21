@@ -1,0 +1,60 @@
+@namespace blazormaterialise
+@inherits css_base
+
+
+    <ul class="pagination">
+    @if(Items_active == 1){
+        <li class="disabled"><a @onclick="@(() => left_click(Items_active))"><i class="material-icons">chevron_left</i></a></li>
+    }else{
+        <li class="waves-effect"><a @onclick="@(() => left_click(Items_active))"><i class="material-icons">chevron_left</i></a></li>
+    }    
+    if(Items != null){
+        @for (int i = 0; i < Items; i++)
+        {
+            if(i + 1 == Items_active){
+                <li class="active"><a @onclick="@(() => click(i))">@(i + 1)</a></li>
+            }else{
+                <li class="waves-effect"><a @onclick="@(() => click(i))">@(i + 1)</a></li>
+            }
+        }
+    }
+    @if(Items_active == Items){
+         <li class="disabled"><a @onclick="@(() => right_click(Items_active))"><i class="material-icons">chevron_right</i></a></li>
+    }else{
+        <li class="waves-effect"><a @onclick="@(() => right_click(Items_active))"><i class="material-icons">chevron_right</i></a></li>
+    }  
+  </ul>
+
+  @code{
+      [Parameter]
+      public int Items{get;set;} = 0;
+
+      [Parameter]
+      public int Items_active {get;set;} = 0;
+
+      [Parameter] 
+      public EventCallback<int> Items_click { get; set; }
+
+      private void click(int x){
+          Items_click.InvokeAsync(x);
+      }    
+
+      private void left_click(int x){          
+          if(x == 1){
+            return;
+          }
+          Items_click.InvokeAsync(x - 1);          
+      }
+
+      private void right_click(int x){
+          if(x == Items){
+              return;
+          }
+          Items_click.InvokeAsync(x + 1);
+      }
+
+
+
+
+
+  }
