@@ -366,6 +366,6 @@
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/compressed/_framework/_bin/blazormaterialise.pdb.br
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/P4uCYU8346cxGXxf16QPp6P56HoRsSJsplGuBHNSr9k=.hash
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/J_rlNfXWtSZrMff1xeTr3lc5uyKjJrBJePb9U5xNFvg=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/b6DY7sNvXnPLGccjPcBjHu1b1fTFVJd-FGhWvPt9eCY=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/fM4GjtzlXyZf2GOzdL3ZQzYOotn-iEq6eYhgt0qA6rY=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/o3BgLzewBl6snU_Iao1tDWC9gmKFKtSzUZ9Bv5FSff8=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/7BXo6ZEwOwr6J7ggnXX4OjsjM2JhU8MhBi3ewaFgOvo=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/B5IdUQXrAdvZYapiV-r808hzPwDmz_9eudpL-6hEq2g=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/G3cHQBb1CvwE-_La6-SeolXzbFLsfX-Yey5FFXw0ako=.hash

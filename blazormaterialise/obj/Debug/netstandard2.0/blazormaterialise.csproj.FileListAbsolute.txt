@@ -51,3 +51,5 @@
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/BM_footer_copyright.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/BM_icon.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/BM_navbar.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/components/BM_pagination.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/BM_pagination.razor.g.cs

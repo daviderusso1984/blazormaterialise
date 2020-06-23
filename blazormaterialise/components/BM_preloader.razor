@@ -1,0 +1,113 @@
+@namespace blazormaterialise
+@inherits css_base
+
+
+@switch (Type_Preloader)
+{
+    case enum_type_preloader.Linear:
+      <div class="progress">
+         @if(Indeterminate){
+             <div class="indeterminate @Class"></div>
+         }else{
+             <div class="determinate @Class" style="width: @_value%"></div>
+         }
+        
+      </div>
+      break;
+      case enum_type_preloader.Circular:
+        <div class="preloader-wrapper @_size active">
+            <div class="spinner-layer @_color">
+                <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+            <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+            <div class="circle"></div>
+            </div>
+            </div>
+        </div>
+      break;
+      case enum_type_preloader.Circular_Flashing_Colors:
+        <div class="preloader-wrapper @_size active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preloader-wrapper small active">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+      break;
+
+    
+    default:
+    break;
+}
+
+
+
+
+
+@code{
+    [Parameter]
+    public enum_type_preloader Type_Preloader { get; set; } = enum_type_preloader.Linear;
+    [Parameter]
+    public bool Indeterminate { get; set; } = false;
+    [Parameter]
+    public int Max_value { get; set; } = 0;
+    [Parameter]
+    public int Value { get; set; } = 0;
+    [Parameter]
+    public enum_color_circle_preloader Color_Circle{get;set;} = enum_color_circle_preloader.blue;
+    [Parameter]
+    public enum_size_circle_preloader Size_Circle{get;set;} = enum_size_circle_preloader.normal;
+
+    private string show = "";
+
+    private float _value = 0;
+
+    private string _size = "";
+    private string _color = "";
+
+    protected override async Task OnAfterRenderAsync (bool firstRender) {
+        await base.OnAfterRenderAsync (firstRender);
+        var sh = new show ();
+        show = sh.get_show (Visibility);
+        if (Max_value != 0 && Value != 0 && Max_value >= Value) {
+            _value = (Max_value / 100) * Value;
+        }
+        var pre = new preloader();
+        _color = pre.get_enum_color_circle(Color_Circle);
+        _size = pre.get_enum_size_circle(Size_Circle);
+    }
+
+    
+}

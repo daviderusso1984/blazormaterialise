@@ -25,5 +25,11 @@
     var instances = M.Sidenav.init(elems, options);
   }
 
+  function collapsible_init(){
+    var elems = document.querySelectorAll('.collapsible');
+    var options={};
+    var instances = M.Collapsible.init(elems, options);
+  }
+
   
   
