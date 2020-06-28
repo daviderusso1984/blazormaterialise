@@ -1,0 +1,25 @@
+@namespace blazormaterialise
+@inherits js_base
+
+
+<li><a id="@Id" class="@Class @show" href="@Href">@ChildContent</a></li>
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+
+    [Parameter]
+    public string Href{get;set;} = "";
+   
+
+
+     private string show="";
+     protected override async Task OnAfterRenderAsync(bool firstRender){
+        await base.OnAfterRenderAsync(firstRender);
+        
+        var sh = new show();
+        show = sh.get_show(Visibility);
+    }
+}

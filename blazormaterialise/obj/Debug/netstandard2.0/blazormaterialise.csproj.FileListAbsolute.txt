@@ -6,7 +6,6 @@
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/Component1.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/components/BM_badge.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/components/BM_breadcrumb.razor.g.cs
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/css/BM_ container.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/css/BM_col.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/css/BM_row.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/BM_carousel.razor.g.cs
@@ -23,7 +22,6 @@
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/Component1.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/BM_badge.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/BM_breadcrumb.razor.g.cs
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/css/BM_ container.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/css/BM_col.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/css/BM_row.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/BM_carousel.razor.g.cs
@@ -53,3 +51,35 @@
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/BM_navbar.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/components/BM_pagination.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/BM_pagination.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/components/BM_preloader.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/components/Table/BM_table.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/components/Table/BM_table_row.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/css/BM_container.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/BM_collapsible.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/BM_item_collapsible.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/Dropdown/BM_divider_dropdown.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/Dropdown/BM_dropdown.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/Dropdown/BM_item_dropdown.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/Modal/BM_modal.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/Modal/BM_modal_footer.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/Tabs/BM_tab.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/js/Tabs/BM_tab_item.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/BM_preloader.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/Table/BM_table.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/components/Table/BM_table_row.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/css/BM_container.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/BM_collapsible.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/BM_item_collapsible.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/Dropdown/BM_divider_dropdown.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/Dropdown/BM_dropdown.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/Dropdown/BM_item_dropdown.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/Modal/BM_modal.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/Modal/BM_modal_footer.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/Tabs/BM_tab.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/js/Tabs/BM_tab_item.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/forms/BM_checkbox.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/forms/Chips/BM_Chip.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/forms/BM_checkbox.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/forms/Chips/BM_Chip.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/RazorDeclaration/forms/Picker/BM_date_picker.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/Razor/forms/Picker/BM_date_picker.razor.g.cs

@@ -1,5 +1,66 @@
 ﻿@page "/"
+@inject IJSRuntime JSRuntime;
 
+<BM_date_picker Date_in="@date" Date_out="mii"></BM_date_picker>
+<p>@date</p>
 
-<BM_button Type_button="enum_button.Large" Backcolor="red" Textcolor="white" Visibility="enum_show.hide_on_small_only">MIO</BM_button>
+@code{
 
+    string date = "16 June 2020";
+    private void mii(string cc){
+        date = cc;
+    }
+
+    private void che(bool ok){
+        Console.WriteLine(ok);
+    }
+
+    private void click(){
+        var t = new blazormaterialise.BM_toast(JSRuntime,"<span>I am toast content</span><button class=\"btn-flat toast-action\">Undo</button>" ,"fi", false);
+        t.show();    
+    }
+
+    private void cc(int x){
+        Console.WriteLine(x);
+        
+    }
+    
+    public string[] he = new string[]{"ciao","mio","dio"};
+    public IEnumerable<Car> cars;
+
+        private string mio = "mio" + Guid.NewGuid();
+        private string mio1 = "mio1" + Guid.NewGuid();
+
+   protected override async Task OnInitializedAsync()
+    {
+         cars = new[]
+            {
+                new Car("Volkswagen Golf", 10000, 220),
+                new Car("Volkswagen Passat", 11000, 240),
+                new Car("Volkswagen Polo", 12000, 110),
+                new Car("Ford Focus", 13000, 200),
+                new Car("Ford Fiesta", 14000, 160),
+                new Car("Ford Fusion", 15000, 260),
+                new Car("Ford Mondeo", 16000, 120),
+            };
+    }
+    protected override void OnAfterRender(bool firstRender){
+        
+    }
+
+    public class Car
+            {
+                public string Name { get; set; }
+                public double Price { get; set; }
+                public int Horsepower { get; set; }
+ 
+                public Car(string name, double price, int horsepower)
+                {
+                    Name = name;
+                    Price = price;
+                    Horsepower = horsepower;
+                }
+            }
+
+     
+}

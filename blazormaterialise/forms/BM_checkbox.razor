@@ -1,0 +1,67 @@
+@namespace blazormaterialise
+
+
+    <label>
+        @if(Indeterminate){
+            <input id="indeterminate-checkbox" class="@_class" type="checkbox" @onchange="Change"  />
+        }else{
+             @if(Value){
+            <!-- value -->
+            @if(Disable){
+                <input id="" class="@_class" type="checkbox" @onchange="Change" checked="checked" disabled="disabled" />
+            }else{
+                <input id="" class="@_class" type="checkbox" @onchange="Change" checked="checked"  />
+            }
+        }else{
+           @if(Disable){
+                <input id="" class="@_class" type="checkbox" @onchange="Change"  disabled="disabled" />
+            }else{
+                <input id="" class="@_class" type="checkbox" @onchange="Change"  />
+            }
+        }
+        }
+       
+        
+        <span>@Title</span>
+    </label>
+
+    @code{
+
+        [Parameter]
+        public string Title{get;set;} = "";
+
+        [Parameter]
+        public EventCallback<bool> Onchange{get;set;}
+        [Parameter]
+        public bool Value{get;set;} = false;
+        [Parameter]
+        public bool Filled_in{get;set;} = false;
+        [Parameter]
+        public bool Indeterminate{get;set;} = false;
+        [Parameter]
+        public bool Disable{get;set;}= false;
+
+       
+
+        private string _class = "";
+
+      
+
+       
+
+        protected override async Task OnAfterRenderAsync(bool firstRender){
+            await base.OnAfterRenderAsync(firstRender);            
+            if(Filled_in && _class==""){
+                _class = "filled-in ";
+                this.StateHasChanged();
+            }
+           
+
+        }
+
+
+        protected void Change(ChangeEventArgs e){
+            Onchange.InvokeAsync((bool)e.Value);
+        }    
+
+    }

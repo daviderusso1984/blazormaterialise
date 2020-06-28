@@ -31,5 +31,34 @@
     var instances = M.Collapsible.init(elems, options);
   }
 
+  function dropdown_init(){
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var options={};
+    var instances = M.Dropdown.init(elems, options);
+  } 
+
+  function scrollspy(){
+    var elems = document.querySelectorAll('.scrollspy');
+    var options={};
+    var instances = M.ScrollSpy.init(elems, options);
+  }
+
+  function toast(text,_class,rounded){
+    if(rounded){
+      M.toast({html: text , classes: 'rounded ' + _class})
+    }else{
+      M.toast({html: text , classes: _class})
+    }       
+  }
+
+  function datepicker_init(forma,date){
+    var elems = document.querySelectorAll('.datepicker');
+    var options={format: forma , defaultDate:date , yearRange: 50};
+    var instances = M.Datepicker.init(elems, options);
+    
+  }
+
+  
+
   
   

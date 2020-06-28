@@ -13,10 +13,11 @@ namespace blazormaterialise
 
 
 
+
     }
 
      public enum enum_col
     {
-        s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12
+        c0 , c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12
     }
 }

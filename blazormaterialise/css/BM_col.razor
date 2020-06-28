@@ -15,13 +15,38 @@
     public RenderFragment ChildContent { get; set; }
 
     [Parameter]
-    public enum_col Dimension {get;set;} 
+    public enum_col S {get;set;} = enum_col.c0;
+
+    [Parameter]
+    public enum_col M {get;set;}  = enum_col.c0;
+
+    [Parameter]
+    public enum_col L {get;set;}  = enum_col.c0;
+
+    [Parameter]
+    public enum_col XL {get;set;}  = enum_col.c0;
 
     private string dim = "";
 
     protected override void OnInitialized(){
-        var gr = new grid();
-        dim = gr.get_enun_col(Dimension);
+        var gr = new grid();        
+        var s = gr.get_enun_col(S);
+        if(!string.IsNullOrEmpty(s)){
+            dim += "s" + s + " ";
+        }
+        s = gr.get_enun_col(M);
+        if(!string.IsNullOrEmpty(s)){
+            dim += "m" + s + " ";
+        }
+        s = gr.get_enun_col(L);
+        if(!string.IsNullOrEmpty(s)){
+            dim += "l" + s + " ";
+        }
+        s = gr.get_enun_col(XL);
+        if(!string.IsNullOrEmpty(s)){
+            dim += "xl" + s ;
+        }
+
     }
 
 }

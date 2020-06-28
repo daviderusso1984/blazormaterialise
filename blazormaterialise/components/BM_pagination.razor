@@ -8,16 +8,16 @@
     }else{
         <li class="waves-effect"><a @onclick="@(() => left_click(Items_active))"><i class="material-icons">chevron_left</i></a></li>
     }    
-    if(Items != null){
         @for (int i = 0; i < Items; i++)
         {
+            var a = i;
             if(i + 1 == Items_active){
-                <li class="active"><a @onclick="@(() => click(i))">@(i + 1)</a></li>
+                <li class="active"><a @onclick="@(() => click(a))">@(i + 1)</a></li>
             }else{
-                <li class="waves-effect"><a @onclick="@(() => click(i))">@(i + 1)</a></li>
+                <li class="waves-effect"><a @onclick="@(() => click(a))">@(i + 1)</a></li>
             }
         }
-    }
+   
     @if(Items_active == Items){
          <li class="disabled"><a @onclick="@(() => right_click(Items_active))"><i class="material-icons">chevron_right</i></a></li>
     }else{
@@ -36,7 +36,8 @@
       public EventCallback<int> Items_click { get; set; }
 
       private void click(int x){
-          Items_click.InvokeAsync(x);
+          
+          Items_click.InvokeAsync(x + 1);
       }    
 
       private void left_click(int x){          
