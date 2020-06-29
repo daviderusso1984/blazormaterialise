@@ -3,7 +3,7 @@
 @inherits css_base
 
 
-<span class="@valor badge @Class @Backcolor @Textcolor @show">
+<span class="@valor badge @Class @dim">
 @Text
 </span>
 
@@ -12,18 +12,19 @@
     [Parameter]
     public bool New{get;set;} = false;
     [Parameter]
-    public string Text{get;set;}
+    public string Text{get;set;} = "";
 
     private string valor = "";
 
-    private string show="";
+    private string dim="";
 
-    protected override void OnInitialized(){
-        var sh = new show();
-        show = sh.get_show(Visibility);
+    protected override void OnInitialized(){       
         if(New){
             valor += "new ";
         }
+         dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(Backcolor) + " "; 
+        dim += color.get_Textcolor(Textcolor) + " ";
     }
 }
 

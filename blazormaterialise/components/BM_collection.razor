@@ -27,8 +27,7 @@
     private string show="";
 
     protected override void OnInitialized(){
-        var sh = new show();
-        show = sh.get_show(Visibility);
+       
         if(!string.IsNullOrEmpty(Header)){
             valor += "with-header ";
             ok_header = true;

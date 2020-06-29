@@ -4,7 +4,7 @@ namespace blazormaterialise
 {
     public class color{
 
-        public string get_color(enum_color color){
+        internal static string get_color(enum_color color){
             switch (color)
             {
                 //red
@@ -547,6 +547,26 @@ namespace blazormaterialise
             }
         }
 
+        internal static string get_Textcolor(string text){
+            if(!string.IsNullOrWhiteSpace(text)){
+                string[] spl = text.Split(null);
+                spl[0] = spl[0] + "-text";
+                if(spl.Length == 2){
+                    spl[1] = "text-" + spl[1];
+                    return spl[0] + " " + spl[1];
+                }else{
+                    return spl[0];
+                }
+            }
+            return "";
+        }
+
+        internal static string get_backcolor(string text){
+             if(!string.IsNullOrWhiteSpace(text)){
+                return text;
+            }
+            return "";
+        }
 
     }
 

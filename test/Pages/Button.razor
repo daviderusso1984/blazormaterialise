@@ -1,0 +1,78 @@
+@page "/Button"
+
+
+
+<h3>Button</h3>
+
+<BM_table Head_items="@Head_table" Items="list">
+    <td>@context.Propriety</td>
+    <td>@context.Value</td>
+    <td>@context.Description</td>
+</BM_table>
+
+<h5>Raised Button</h5>
+<BM_button Type_button="enum_button.Raised">Reised</BM_button>
+<p>Code</p>
+<code class="">
+    @Text_raised
+</code>
+<h5>Raised Button</h5>
+<BM_button Type_button="enum_button.Flat">Flat</BM_button>
+<p>Code</p>
+<code class="">
+    @Text_flat
+</code>
+<h5>Raised Button</h5>
+<BM_button Type_button="enum_button.Large">Large</BM_button>
+<p>Code</p>
+<code class="">
+    @Text_large
+</code>
+<h5>Raised Button</h5>
+<BM_button Type_button="enum_button.Small">Small</BM_button>
+<p>Code</p>
+<code class="">
+    @Text_small
+</code>
+<h5>Raised Button</h5>
+<BM_button Type_button="enum_button.Floating"><BM_icon icon="add"></BM_icon>></BM_button>
+<p>Code</p>
+<code class="">
+    @Text_floating
+</code>
+
+
+
+
+
+@code{
+    private string[] Head_table = new string[]{"Propriety" , "Value" , "Description"};
+    private struct_table[] list = new struct_table[10];
+
+    private string Text_raised = "<BM_button Type_button=\"enum_button.Raised\">Reised</BM_button>";
+    private string Text_floating ="<BM_button Type_button=\"enum_button.Floating\">Floating</BM_button>";
+    private string Text_small = "<BM_button Type_button=\"enum_button.Small\">Small</BM_button>";
+    private string Text_flat ="<BM_button Type_button=\"enum_button.Flat\">Flat</BM_button>";
+    private string Text_large = "<BM_button Type_button=\"enum_button.Large\">Large</BM_button>";
+
+
+
+   protected override void OnInitialized(){
+       list[0] = new struct_table{Propriety="Waves_effect", Value="bool" , Description="Active effect Waves"};
+       list[1] = new struct_table{Propriety="Disabled", Value="bool" , Description="Disabled control"};
+       list[2] = new struct_table{Propriety="Type_button", Value="enum_button" , Description="Select type button: Raised , Floating, Flat , Large , Small"};
+       list[3] = new struct_table{Propriety="Onclick", Value="MouseEventArgs" , Description="Event click button"};
+       list[4] = new struct_table{Propriety="Class", Value="string" , Description="Include class name"};
+       list[5] = new struct_table{Propriety="Backcolor", Value="string" , Description="go to color"};
+       list[6] = new struct_table{Propriety="Textcolor", Value="string" , Description="go to color"};
+       list[7] = new struct_table{Propriety="Visibility", Value="enum_show" , Description="show or hide control "};
+       list[8] = new struct_table{Propriety="Id", Value="string" , Description="Id generate auto"};
+       list[9] = new struct_table{Propriety="Ref", Value="strig" , Description="reference control "};
+
+   }
+
+
+
+
+   
+}

@@ -9,7 +9,7 @@
     <li class="collection-item">@ChildContent</li>
     break;
     case enum_collection.Links:
-    <a href="#!" class="collection-item @valor">@ChildContent</a>
+    <a href="@Href" class="collection-item @valor">@ChildContent</a>
     break;
     default:
     break;
@@ -20,7 +20,9 @@
     public RenderFragment ChildContent{get;set;}
 
     [Parameter]
-    public enum_collection Type_item {get;set;}
+    public enum_collection Type_item {get;set;} = enum_collection.Links;
+    [Parameter]
+    public string Href {get;set;} = "";
     [Parameter]
     public bool Active{get;set;} = false;
 
@@ -29,8 +31,7 @@
     private string show="";
 
     protected override void OnInitialized(){
-        var sh = new show();
-        show = sh.get_show(Visibility);
+      
         if(Active){
             valor += "active ";
         }

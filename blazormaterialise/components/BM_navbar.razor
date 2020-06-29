@@ -31,11 +31,16 @@
 
     private string show = "";
 
+    protected override void OnInitialized(){
+        show = blazormaterialise.show.get_show(Visibility);
+        Backcolor = color.get_backcolor(Backcolor);
+        Textcolor = color.get_Textcolor(Textcolor);
+    }
+
     protected override async Task OnAfterRenderAsync (bool firstRender) {
         await base.OnAfterRenderAsync (firstRender);
         await JSRuntime.InvokeVoidAsync ("navbar_init");
-        var sh = new show ();
-        show = sh.get_show (Visibility);
+        
     }
 
 }

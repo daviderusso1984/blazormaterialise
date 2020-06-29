@@ -29,8 +29,7 @@
     protected override async Task OnAfterRenderAsync(bool firstRender){
         await base.OnAfterRenderAsync(firstRender);
         await JSRuntime.InvokeVoidAsync("floating_init");
-        var sh = new show();
-        show = sh.get_show(Visibility);
+       
     }
 
     

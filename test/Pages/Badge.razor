@@ -1,0 +1,63 @@
+@page "/Badge"
+
+<h3>Badge</h3>
+
+<BM_table Head_items="@Head_table" Items="list">
+    <td>@context.Propriety</td>
+    <td>@context.Value</td>
+    <td>@context.Description</td>
+</BM_table>
+
+<h5>Badget Color</h5>
+<BM_collection Header="Component">
+    <BM_collection_item Type_item="enum_collection.Links" Href="Button" ><BM_badge Text="Classic"></BM_badge>
+        Classic 
+    </BM_collection_item>
+    <BM_collection_item Type_item="enum_collection.Links" Href="Badge" ><BM_badge Backcolor="red" Textcolor="white" Text="1"></BM_badge>
+        Color
+    </BM_collection_item>
+    <BM_collection_item Type_item="enum_collection.Links" Href="Badge" ><BM_badge New="true" Text="13"></BM_badge>
+        New
+    </BM_collection_item>
+</BM_collection>
+
+<p>Code</p>
+<p>Classic</p>
+<code class="">
+    @classic
+</code>
+<p>Color</p>
+<code class="">
+    @color
+</code>
+<p>New</p>
+<code class="">
+    @news
+</code>
+
+
+
+@code{
+     private string[] Head_table = new string[]{"Propriety" , "Value" , "Description"};
+    private struct_table[] list = new struct_table[8];
+
+    private string classic = "<BM_badge Text=\"Good\"></BM_badge>";
+    private string color="<BM_badge Backcolor=\"red\" Textcolor=\"white\" Text=\"1\"></BM_badge>";
+    private string news = "<BM_badge New=\"true\" Text=\"13\"></BM_badge>";
+
+
+   protected override void OnInitialized(){
+       list[0] = new struct_table{Propriety="New", Value="bool" , Description="Insert new in the badge"};
+       list[1] = new struct_table{Propriety="Text", Value="string" , Description="Text in the badge"};       
+       list[2] = new struct_table{Propriety="Class", Value="string" , Description="Include class name"};
+       list[3] = new struct_table{Propriety="Backcolor", Value="string" , Description="go to color"};
+       list[4] = new struct_table{Propriety="Textcolor", Value="string" , Description="go to color"};
+       list[5] = new struct_table{Propriety="Visibility", Value="enum_show" , Description="show or hide control "};
+       list[6] = new struct_table{Propriety="Id", Value="string" , Description="Id generate auto"};
+       list[7] = new struct_table{Propriety="Ref", Value="strig" , Description="reference control "};
+
+   }
+}
+
+
+

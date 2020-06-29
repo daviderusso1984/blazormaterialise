@@ -3,7 +3,7 @@
 @inherits css_base
 
 
-<a class="@valor @Class @_backcolor @_textcolor @show" @onclick="click">
+<a class="@valor @Class @dim" id="@Id" ref="@Ref" @onclick="click">
     @ChildContent
 </a>
 
@@ -27,11 +27,12 @@
 
     private string valor = "";
 
-    private string show="";
+   
+
+    private string dim = "";
 
     protected override void OnInitialized(){
-        var sh = new show();
-        show = sh.get_show(Visibility);
+        
          if(Type_button == enum_button.Flat){
             if(Waves_effect){
             valor += "waves-effect waves-teal ";
@@ -43,10 +44,12 @@
         }
         if(Disabled){
             valor += "disabled ";
-        }
-        
+        }        
         var btn = new button();
         valor += btn.get_button(Type_button);
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(Backcolor) + " "; 
+        dim += color.get_Textcolor(Textcolor) + " ";
         
     }
 }

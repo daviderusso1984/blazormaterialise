@@ -7,8 +7,8 @@
   <nav class="@Class @Backcolor @Textcolor @show">
     <div class="nav-wrapper">
       <div class="col s12">
-          if(@items != null){
-              @foreach (var item in items)
+          if(@Items != null){
+              @foreach (var item in Items)
               {
                   <a href="@item.href" class="breadcrumb @item.Class">@item.name</a>
               }
@@ -20,13 +20,12 @@
 @code{
 
     [Parameter]
-    public structure_breadcrumbs[] items {get;set;} 
+    public structure_breadcrumbs[] Items {get;set;} 
 
     private string show="";
 
     protected override void OnInitialized(){
-        var sh = new show();
-        show = sh.get_show(Visibility);
+      
         
     }
 }

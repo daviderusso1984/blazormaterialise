@@ -99,8 +99,7 @@
 
     protected override async Task OnAfterRenderAsync (bool firstRender) {
         await base.OnAfterRenderAsync (firstRender);
-        var sh = new show ();
-        show = sh.get_show (Visibility);
+       
         if (Max_value != 0 && Value != 0 && Max_value >= Value) {
             _value = (Max_value / 100) * Value;
         }

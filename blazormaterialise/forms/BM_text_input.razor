@@ -8,15 +8,15 @@
             }
             @if(Disabled){
                 @if(Active_text_limit){
-                    <input disabled value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate" data-length="@Text_limit">
+                    <input disabled value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate @Backcolor @Textcolor" data-length="@Text_limit">
                 }else{
-                    <input disabled value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate" >
+                    <input disabled value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate @Backcolor @Textcolor" >
                 }                
             }else{
                 @if(Active_text_limit){
-                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate" data-length="@Text_limit">
+                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate @Backcolor @Textcolor" data-length="@Text_limit">
                 }else{
-                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate">
+                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate @Backcolor @Textcolor">
                 }                
             }          
           <label for="@Id">@Label</label>
@@ -46,6 +46,18 @@
     public string Helper_text { get; set; } = "";
     [Parameter]
     public EventCallback<string> Onchange { get; set; }
+
+    protected override void OnInitialized(){
+        Backcolor = color.get_backcolor(Backcolor);
+        Textcolor = color.get_Textcolor(Textcolor);
+    }    
+
+     protected override async Task OnAfterRenderAsync (bool firstRender) {
+        await base.OnAfterRenderAsync (firstRender);
+        Backcolor = color.get_backcolor(Backcolor);
+        Textcolor = color.get_Textcolor(Textcolor);
+        
+    }   
 
     protected void Change (ChangeEventArgs e) {
         Onchange.InvokeAsync ((string) e.Value);

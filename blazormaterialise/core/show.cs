@@ -3,7 +3,7 @@ namespace blazormaterialise
 
     public class show
     {
-        public string get_show(enum_show sh){
+        public static string get_show(enum_show sh){
             switch (sh)
             {
                 case enum_show.show:

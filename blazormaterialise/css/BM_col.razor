@@ -15,38 +15,39 @@
     public RenderFragment ChildContent { get; set; }
 
     [Parameter]
-    public enum_col S {get;set;} = enum_col.c0;
+    public int S {get;set;} = 0;
 
     [Parameter]
-    public enum_col M {get;set;}  = enum_col.c0;
+    public int M {get;set;}  = 0;
 
     [Parameter]
-    public enum_col L {get;set;}  = enum_col.c0;
+    public int L {get;set;}  = 0;
 
     [Parameter]
-    public enum_col XL {get;set;}  = enum_col.c0;
+    public int XL {get;set;}  =0;
 
     private string dim = "";
 
     protected override void OnInitialized(){
-        var gr = new grid();        
-        var s = gr.get_enun_col(S);
-        if(!string.IsNullOrEmpty(s)){
-            dim += "s" + s + " ";
+        var gr = new grid();   
+        if(S != 0 && S > 0 && S <= 12){
+            dim += "s" + S.ToString() + " ";
         }
-        s = gr.get_enun_col(M);
-        if(!string.IsNullOrEmpty(s)){
-            dim += "m" + s + " ";
-        }
-        s = gr.get_enun_col(L);
-        if(!string.IsNullOrEmpty(s)){
-            dim += "l" + s + " ";
-        }
-        s = gr.get_enun_col(XL);
-        if(!string.IsNullOrEmpty(s)){
-            dim += "xl" + s ;
-        }
+        if(M != 0 && M > 0 && M <= 12){
+            dim += "m" + M.ToString() + " ";
+        }  
+        if(L != 0 && L > 0 && L <= 12){
+            dim += "l" + L.ToString() + " ";
+        }    
+        if(XL != 0 && XL > 0 && XL <= 12){
+            dim += "xl" + XL.ToString() + " ";
+        }  
+        dim += color.get_backcolor(Backcolor) + " "; 
+        dim += color.get_Textcolor(Textcolor) + " ";
+
 
     }
+
+  
 
 }

@@ -3,7 +3,7 @@
 @inherits grid_base
 
 
-<div class="container @Class">
+<div class="container @Class @dim">
     @ChildContent
 </div>
 
@@ -11,4 +11,15 @@
 @code{
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+
+     private string dim = "";
+
+     protected override void OnInitialized(){
+         dim += color.get_backcolor(Backcolor) + " "; 
+        dim += color.get_Textcolor(Textcolor) + " ";
+
+
+    }
+
+
 }

@@ -27,16 +27,14 @@
 
     protected override async Task OnAfterRenderAsync (bool firstRender) {
         await base.OnAfterRenderAsync (firstRender);       
-        var sh = new show ();
-        show = sh.get_show (Visibility);
+        
         if(Active){
             _active = "active";
         }
     }
 
     protected override void OnInitialized(){
-        var sh = new show ();
-        show = sh.get_show (Visibility);
+        
         
     }
 }
