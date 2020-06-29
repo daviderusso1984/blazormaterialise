@@ -24,6 +24,7 @@
     ".NETStandard,Version=v2.0": {
       "blazormaterialise/1.0.0": {
         "dependencies": {
+          "BlazorInputFile": "0.2.0",
           "Microsoft.AspNetCore.Components": "3.1.5",
           "Microsoft.AspNetCore.Components.Web": "3.1.5",
           "NETStandard.Library": "2.0.3",
@@ -710,6 +711,15 @@
           "System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "BlazorInputFile/0.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.5",
+          "Microsoft.AspNetCore.Components.Web": "3.1.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorInputFile.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/3.1.5": {
         "dependencies": {
           "Microsoft.AspNetCore.Metadata": "3.1.5",
@@ -881,6 +891,7 @@
     ".NETStandard,Version=v2.0/": {
       "blazormaterialise/1.0.0": {
         "dependencies": {
+          "BlazorInputFile": "0.2.0",
           "Microsoft.AspNetCore.Components": "3.1.5",
           "Microsoft.AspNetCore.Components.Web": "3.1.5",
           "NETStandard.Library": "2.0.3",
@@ -1000,6 +1011,18 @@
         },
         "runtime": {
           "blazormaterialise.dll": {}
+        }
+      },
+      "BlazorInputFile/0.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.5",
+          "Microsoft.AspNetCore.Components.Web": "3.1.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorInputFile.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Authorization/3.1.5": {
@@ -1236,6 +1259,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BlazorInputFile/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wsPTwoA9fkHOxjEh0W0brNeTaVBaMCFwfBLehbRhfW+RzlIrYtlJ5qFpT5f377Ej6ELk+xeoUrkDBx9c8JF7DQ==",
+      "path": "blazorinputfile/0.2.0",
+      "hashPath": "blazorinputfile.0.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/3.1.5": {
       "type": "package",

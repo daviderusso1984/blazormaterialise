@@ -1,0 +1,13 @@
+@namespace blazormaterialise
+<p class="range-field">
+<input type="range" id="test5" min="@Min" max="@Max" value="@Value" />
+</p>
+
+@code{
+    [Parameter]
+    public float Min {get;set;}= 0;
+    [Parameter]
+    public float Max{get;set;}=0;
+    [Parameter]
+    public float Value{get;set;}=0;
+}

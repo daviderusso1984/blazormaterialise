@@ -1,12 +1,19 @@
 ﻿@page "/"
 @inject IJSRuntime JSRuntime;
-
-<BM_date_picker Date_in="@date" Date_out="mii"></BM_date_picker>
+<BM_file Text="Ciao"></BM_file>
+<BM_textarea ></BM_textarea>
+<BM_select Items="sel" Label="Mondo Cane" Value="ciao2" Onchange="mii"></BM_select> 
 <p>@date</p>
 
 @code{
 
-    string date = "16 June 2020";
+    private blazormaterialise.structure_select[] sel = new blazormaterialise.structure_select[]{
+        new structure_select {Value="ciao", Text="Ciao"},
+        new structure_select {Value="ciao1", Text="Ciao1"},
+        new structure_select {Value="ciao2", Text="Ciao2"}
+    };
+
+    string date = "";
     private void mii(string cc){
         date = cc;
     }

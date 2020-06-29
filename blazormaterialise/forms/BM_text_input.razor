@@ -1,0 +1,53 @@
+@namespace blazormaterialise
+@inherits forms_base
+
+
+        <div class="input-field col s12">
+            @if(!string.IsNullOrEmpty(Icon)){
+                <i class="material-icons prefix">@Icon</i>
+            }
+            @if(Disabled){
+                @if(Active_text_limit){
+                    <input disabled value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate" data-length="@Text_limit">
+                }else{
+                    <input disabled value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate" >
+                }                
+            }else{
+                @if(Active_text_limit){
+                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate" data-length="@Text_limit">
+                }else{
+                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate">
+                }                
+            }          
+          <label for="@Id">@Label</label>
+          <span class="helper-text" data-error="wrong" data-success="right">@Helper_text</span>
+        </div>
+
+
+
+
+
+@code{
+    [Parameter]
+    public string Value { get; set; } = "";
+    [Parameter]
+    public bool Active_text_limit{get;set;}= false;
+    [Parameter]
+    public int Text_limit{get;set;}=0;
+    [Parameter]
+    public string Icon { get; set; } = "";
+    [Parameter]
+    public string Type { get; set; } = "text";
+    [Parameter]
+    public bool Disabled { get; set; } = false;
+    [Parameter]
+    public string Label { get; set; } = "";
+    [Parameter]
+    public string Helper_text { get; set; } = "";
+    [Parameter]
+    public EventCallback<string> Onchange { get; set; }
+
+    protected void Change (ChangeEventArgs e) {
+        Onchange.InvokeAsync ((string) e.Value);
+    }
+}

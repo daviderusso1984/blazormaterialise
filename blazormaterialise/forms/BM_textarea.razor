@@ -1,0 +1,27 @@
+@namespace blazormaterialise
+@inherits forms_base
+@inject IJSRuntime JSRuntime;
+
+
+        <div class="input-field col s12">
+          <textarea id="@Id" value="@Value" @onchange="Change" class="materialize-textarea"></textarea>
+          <label for="textarea1">@Label</label>
+        </div>
+
+@code{
+    [Parameter]
+    public string Label { get; set; } = "";
+    [Parameter]
+    public string Value { get; set; } = "";
+
+    [Parameter]
+    public EventCallback<string> Onchange { get; set; }
+
+    
+
+     
+    protected void Change (ChangeEventArgs e) {
+        Onchange.InvokeAsync ((string) e.Value);
+    }
+
+}

@@ -1,0 +1,39 @@
+@namespace blazormaterialise
+@inherits forms_base
+@inject IJSRuntime JSRuntime;
+
+
+
+<div class="file-field input-field">
+      <div class="btn">
+        <span>@Text</span>
+        <InputFile OnChange="HandleSelection" />        
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="@Placeholder">
+      </div>
+    </div>
+
+
+@code{
+    [Parameter]
+    public string Text { get; set; } = "";
+    [Parameter]
+    public string Placeholder { get; set; } = "";
+    [Parameter]
+    public EventCallback<System.IO.MemoryStream> Files{get;set;}
+
+    async Task HandleSelection (IFileListEntry[] files) {
+        var file = files.FirstOrDefault ();
+        if (file != null) {
+            // Just load into .NET memory to show it can be done
+            // Alternatively it could be saved to disk, or parsed in memory, or similar
+            var ms = new System.IO.MemoryStream ();
+            await file.Data.CopyToAsync (ms);
+            await Files.InvokeAsync(ms);
+            //status = $"Finished loading {file.Size} bytes from {file.Name}";
+        }
+    }
+
+    
+}

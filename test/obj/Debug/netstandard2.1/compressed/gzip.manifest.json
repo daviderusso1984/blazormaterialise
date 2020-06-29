@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Knrsvk9aW8jTOuGb3MHTdn7Q7RVLWH0r6CxJ83pkURA=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/8cIO2_dVAZMjMTNRNRey5AV5CUhYst5__okWXxzCKiw=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/test.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/test.dll.gz"
     },
@@ -191,14 +191,19 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/aq9Q2MBzNUlaSd4h_Z-RYgMP0APaEF--Gnu-xOACtZ8=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/aONyrXIJFo1fP17yadquiqnzFg30SZIkwRPg0K5nCwo=.hash",
+      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/BzACTA2ZfARhP6w08MizxWuE5A2NxQPg2mfKHiJcJUg=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/blazormaterialise.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/blazormaterialise.dll.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/aONyrXIJFo1fP17yadquiqnzFg30SZIkwRPg0K5nCwo=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.dll",
-      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.dll.gz"
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/C0KrMmLQQE68cd1_FNwIOW89nNGbOH48hRxQAoSBaaA=.hash",
+      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/BlazorInputFile.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/BlazorInputFile.dll.gz"
     },
     {
       "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/sifIvl02zqfSiv67ZRAsSa_NCvhMgTGrIUNuK8LmCNM=.hash",
@@ -266,12 +271,12 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/xxkURixuF51icoBlDyxjwwJMLeWshloe7sUdyRp09JI=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/iNQCwralEWUGQQ8cU-XbMXWkPevpgnS2mHkgMjZvKYQ=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/test.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/test.pdb.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/fCn4o_Thc7buQtLNExlJqriqjmc_jIRYk6tzLu7eyow=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/JYDjZokLRZmOcFjRoYLTjPdpwoUmI4wKFhC5aVMlzPs=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/blazormaterialise.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/blazormaterialise.pdb.gz"
     },
@@ -296,7 +301,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/qotASLRGkVjbvFrcqnN2wUnmFCHjyDXSdNxZJJh0UXs=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/uQxj7vNLZo3NLpB8meyAN7XC5nAXCjiz7Nc0Earm71o=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/blazor.boot.json",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.gz"
     }

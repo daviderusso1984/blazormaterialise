@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2R2977rbfhZrsBSVkTVTF7tyWYvCOEnUETr/ajTJCIAGVpHfXrTFwBemdWsCiKWixJZ4J40aBBkXrel9OOBicA==",
+  "dgSpecHash": "u/pwMOT4BCR2jE2o6F0azGeDi/x2CUdzwUSBCucJDvt6gW9WB5MuUp+U0NZu+r5jazuvBcbG5ARG6xUEM9jCmQ==",
   "success": true,
   "projectFilePath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/blazormaterialise.csproj",
   "expectedPackageFiles": [
+    "/Users/daviderusso1984/.nuget/packages/blazorinputfile/0.2.0/blazorinputfile.0.2.0.nupkg.sha512",
     "/Users/daviderusso1984/.nuget/packages/microsoft.aspnetcore.authorization/3.1.5/microsoft.aspnetcore.authorization.3.1.5.nupkg.sha512",
     "/Users/daviderusso1984/.nuget/packages/microsoft.aspnetcore.components/3.1.5/microsoft.aspnetcore.components.3.1.5.nupkg.sha512",
     "/Users/daviderusso1984/.nuget/packages/microsoft.aspnetcore.components.analyzers/3.1.5/microsoft.aspnetcore.components.analyzers.3.1.5.nupkg.sha512",

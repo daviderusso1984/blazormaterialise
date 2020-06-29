@@ -1,0 +1,26 @@
+@namespace blazormaterialise
+
+
+<div class="switch">
+    <label>
+      @Text_off
+      <input type="checkbox" @onchange="Change">
+      <span class="lever"></span>
+      @Text_on
+    </label>
+  </div>
+
+
+@code{
+    [Parameter]
+    public string Text_off { get; set; } = "";
+    [Parameter]
+    public string Text_on { get; set; } = "";
+    [Parameter]
+    public EventCallback<bool> Onchange { get; set; }
+
+    protected void Change (ChangeEventArgs e) {
+        Onchange.InvokeAsync ((bool) e.Value);
+    }
+
+}

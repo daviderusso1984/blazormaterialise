@@ -23,6 +23,11 @@ using Microsoft.JSInterop;
 
 #line default
 #line hidden
+#line 3 "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
     public partial class BM_collection_item : css_base
     {
         #pragma warning disable 1998

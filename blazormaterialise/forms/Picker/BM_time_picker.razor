@@ -1,0 +1,26 @@
+@namespace blazormaterialise
+@inject IJSRuntime JSRuntime;
+
+
+
+<input type="text" class="timepicker" @onchange="@((ChangeEventArgs __e) => onch(__e.Value.ToString()))">
+
+
+
+@code{
+
+    [Parameter]
+    public EventCallback<string> Value{get;set;}
+
+     protected override async Task OnAfterRenderAsync (bool firstRender) {
+        await base.OnAfterRenderAsync (firstRender);
+        
+        await JSRuntime.InvokeVoidAsync("timepicker_init");
+        
+    }   
+     private void onch(string value){
+        Value.InvokeAsync(value);
+    }
+}
+
+

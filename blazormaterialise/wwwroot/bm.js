@@ -51,12 +51,30 @@
     }       
   }
 
-  function datepicker_init(forma,date){
+  function datepicker_init(forma,Y){
+    
+    
     var elems = document.querySelectorAll('.datepicker');
-    var options={format: forma , defaultDate:date , yearRange: 50};
+    var options={format: forma  ,  yearRange: Y };
     var instances = M.Datepicker.init(elems, options);
+   
+   
     
   }
+
+  function timepicker_init(){
+    var elems = document.querySelectorAll('.timepicker');
+    var options={};
+    var instances = M.Timepicker.init(elems, options);
+  }
+
+  function select_init(){
+    var elems = document.querySelectorAll('select');
+    var options={};
+    var instances = M.FormSelect.init(elems, options);
+  }
+
+
 
   
 
