@@ -2,20 +2,20 @@
 @inherits css_base
 
 
-@switch (Type_Preloader)
+@switch (Type_preloader)
 {
     case enum_type_preloader.Linear:
       <div class="progress">
          @if(Indeterminate){
-             <div class="indeterminate @Class"></div>
+             <div class="indeterminate @Class" id="@Id" ref="@Ref"></div>
          }else{
-             <div class="determinate @Class" style="width: @_value%"></div>
+             <div class="determinate @Class" style="width: @(_value + "%")" id="@Id" ref="@Ref"></div>
          }
         
       </div>
       break;
       case enum_type_preloader.Circular:
-        <div class="preloader-wrapper @_size active">
+        <div class="preloader-wrapper @_size active @Class" id="@Id" ref="@Ref">
             <div class="spinner-layer @_color">
                 <div class="circle-clipper left">
                 <div class="circle"></div>
@@ -30,41 +30,47 @@
         </div>
       break;
       case enum_type_preloader.Circular_Flashing_Colors:
-        <div class="preloader-wrapper @_size active">
-    <div class="spinner-layer spinner-blue-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
+<div class="preloader-wrapper @_size active @Class" id="@Id" ref="@Ref">
+    <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
     </div>
-  </div>
 
-  <div class="preloader-wrapper active">
-    <div class="spinner-layer spinner-red-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
+    <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
     </div>
-  </div>
 
-  <div class="preloader-wrapper small active">
-    <div class="spinner-layer spinner-green-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
+    <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
     </div>
-  </div>
+
+    <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+    </div>
+</div>
       break;
 
     
@@ -78,7 +84,7 @@
 
 @code{
     [Parameter]
-    public enum_type_preloader Type_Preloader { get; set; } = enum_type_preloader.Linear;
+    public enum_type_preloader Type_preloader { get; set; } = enum_type_preloader.Linear;
     [Parameter]
     public bool Indeterminate { get; set; } = false;
     [Parameter]
@@ -96,11 +102,11 @@
 
     private string _size = "";
     private string _color = "";
-
-    protected override async Task OnAfterRenderAsync (bool firstRender) {
-        await base.OnAfterRenderAsync (firstRender);
-       
-        if (Max_value != 0 && Value != 0 && Max_value >= Value) {
+    protected override void OnInitialized()
+    {
+        //base.OnInitialized();
+        if (Max_value != 0 && Value != 0 && Max_value >= Value)
+        {
             _value = (Max_value / 100) * Value;
         }
         var pre = new preloader();
@@ -108,5 +114,7 @@
         _size = pre.get_enum_size_circle(Size_Circle);
     }
 
-    
+   
+
+
 }

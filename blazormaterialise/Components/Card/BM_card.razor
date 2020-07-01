@@ -1,0 +1,63 @@
+﻿@namespace blazormaterialise
+@inherits css_base
+
+
+@if (Pannel)
+{
+    <div class="card-panel @dim @Class " id="@Id" ref="@Ref">
+        @ChildContent
+    </div>
+}
+else
+{
+    <div class="card @dim @Class " id="@Id" ref="@Ref">
+        @ChildContent
+    </div>
+}
+
+
+
+
+@code {
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    public bool Horizontal { get; set; } = false;
+    [Parameter]
+    public enum_card_size Card_size { get; set; } = enum_card_size.not;
+    [Parameter]
+    public bool Pannel { get; set; } = false;
+
+    private string dim = "";
+
+    protected override void OnInitialized()
+    {
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+        if (Horizontal)
+        {
+            dim += "horizontal ";
+        }
+        dim += get_size(Card_size);
+    }
+
+    private string get_size(enum_card_size si)
+    {
+        switch (si)
+        {
+            case enum_card_size.not:
+                return "";
+            case enum_card_size.medium:
+                return "medium";
+            case enum_card_size.large:
+                return "large";
+            case enum_card_size.small:
+                return "small";
+            default:
+                return "";
+        }
+    }
+
+}

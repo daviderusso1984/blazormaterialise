@@ -4,10 +4,17 @@
 
 <h3>Button</h3>
 
-<BM_table Head_items="@Head_table" Items="list">
-    <td>@context.Propriety</td>
-    <td>@context.Value</td>
-    <td>@context.Description</td>
+<BM_table  Items="list">
+    <TableHeader>
+        <th>Propriety</th>
+        <th>Value</th>
+        <th>Description</th>
+    </TableHeader>
+    <RowTemplate>
+        <td>@context.Propriety</td>
+        <td>@context.Value</td>
+        <td>@context.Description</td>
+    </RowTemplate>    
 </BM_table>
 
 <h5>Raised Button</h5>
@@ -16,26 +23,26 @@
 <code class="">
     @Text_raised
 </code>
-<h5>Raised Button</h5>
+<h5>Flat Button</h5>
 <BM_button Type_button="enum_button.Flat">Flat</BM_button>
 <p>Code</p>
 <code class="">
     @Text_flat
 </code>
-<h5>Raised Button</h5>
-<BM_button Type_button="enum_button.Large">Large</BM_button>
+<h5>Large Button</h5>
+<BM_button Type_button="enum_button.Large" Backcolor="enum_color.blue_grey">Large</BM_button>
 <p>Code</p>
 <code class="">
     @Text_large
 </code>
-<h5>Raised Button</h5>
+<h5>Small Button</h5>
 <BM_button Type_button="enum_button.Small">Small</BM_button>
 <p>Code</p>
 <code class="">
     @Text_small
 </code>
-<h5>Raised Button</h5>
-<BM_button Type_button="enum_button.Floating"><BM_icon icon="add"></BM_icon>></BM_button>
+<h5>Floating Button</h5>
+<BM_button Type_button="enum_button.Floating"><BM_icon Icon="add"></BM_icon>></BM_button>
 <p>Code</p>
 <code class="">
     @Text_floating

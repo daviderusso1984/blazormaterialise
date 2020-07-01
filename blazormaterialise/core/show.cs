@@ -1,9 +1,9 @@
 namespace blazormaterialise
 {
 
-    public class show
+    internal class show
     {
-        public static string get_show(enum_show sh){
+        internal static string get_show(enum_show sh){
             switch (sh)
             {
                 case enum_show.show:
@@ -35,20 +35,4 @@ namespace blazormaterialise
             }
         }
     }
-}
-
-public enum enum_show
-{
-    show, //show all
-    hide,	//Hidden for all Devices
-    hide_on_small_only, //	Hidden for Mobile Only
-    hide_on_med_only,   //Hidden for Tablet Only
-    hide_on_med_and_down,   //Hidden for Tablet and Below
-    hide_on_med_and_up, //Hidden for Tablet and Above
-    hide_on_large_only, //Hidden for Desktop Only
-    show_on_small,  //Show for Mobile Only
-    show_on_medium, //Show for Tablet Only
-    show_on_large,  //Show for Desktop Only
-    show_on_medium_and_up,  //Show for Tablet and Above
-    show_on_medium_and_down	//Show for Tablet and Below
 }

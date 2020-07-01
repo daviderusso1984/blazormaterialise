@@ -1,0 +1,25 @@
+﻿@page "/FloatingActionButton"
+
+    <h5 class="@blazormaterialise.Helpers.text_align_horizontal_center">Floating Action Button</h5>
+
+<p>Code</p>
+
+<code>@("<BM_floating_action_button Items_floating=\"stru\" Icon=\"add\"></BM_floating_action_button>")</code><br>
+<code>@("@code{\" private structure_floating[] stru = new structure_floating[]")</code><br>
+<code>@("{")</code><br>
+<code>@("new structure_floating{ color=\"red\" , href=\"\" , icon=\"add\" },")</code><br>
+<code>@("new structure_floating{ color=\"red\" , href=\"\" , icon=\"menu\" }")</code><br>
+<code>@("};")</code><br>
+<code>@("}")</code>
+
+<BM_floating_action_button Items_floating="stru" Icon="add">
+</BM_floating_action_button>
+
+
+@code{
+    private structure_floating[] stru = new structure_floating[]
+    {
+        new structure_floating{ color=enum_color.amber , href="" , icon="add" },
+        new structure_floating{ color=enum_color.blue_grey_darken_2 , href="" , icon="menu" }
+    };
+}

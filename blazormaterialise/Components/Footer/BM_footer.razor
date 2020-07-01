@@ -1,0 +1,24 @@
+@namespace blazormaterialise
+@inherits css_base
+
+
+<footer class="page-footer @dim @Class" id="@Id" ref="@Ref">
+    @ChildContent
+</footer>
+
+
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent{get;set;}
+
+    private string dim = "";
+
+    protected override void OnInitialized()
+    {
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+    }
+}

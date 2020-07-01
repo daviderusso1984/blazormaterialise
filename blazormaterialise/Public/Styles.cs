@@ -12,12 +12,20 @@ namespace  blazormaterialise{
         //scale
         public static readonly string scale_in = "scale-transition";
 
-        public static readonly string scale_out = "scale-out";
+        public static readonly string scale_out = "scale-transition scale-out";
 
         //Table
         public static readonly string table_striped = "striped"; 
         public static readonly string table_highlight = "highlight"; 
         public static readonly string table_centered = "centered"; 
         public static readonly string table_responsive = "responsive-table";
+
+        //card
+        public static readonly string card_activator = "activator";
+        public static readonly string card_content = "card-content";
+        public static readonly string card_image = "card-image";
+        public static readonly string card_title = "card-title";
+        public static readonly string card_action = "card-action";
+        public static readonly string card_stacked = "card-stacked";
     }
 }

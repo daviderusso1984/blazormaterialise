@@ -1,7 +1,7 @@
 namespace blazormaterialise{
-    public class button{
+    internal class button{
 
-        public string get_button(enum_button but){
+        internal string get_button(enum_button but){
             switch (but)
             {
                 case enum_button.Raised:
@@ -20,7 +20,5 @@ namespace blazormaterialise{
         }
     }
 
-    public enum enum_button{
-        Raised , Floating, Flat , Large , Small
-    }
+   
 }

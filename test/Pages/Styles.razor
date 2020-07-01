@@ -1,0 +1,89 @@
+﻿@page "/Styles"
+
+<style>
+    .box {
+        width: 100%;
+        height: 100px;
+        border: 1px solid #eee;
+        margin: 7px 0;
+        text-align: center;
+        line-height: 50px;
+        font-size: 28px;
+        background-color: tomato;
+        color: white;
+        padding: 2px;
+        margin: 5px;
+    }
+</style>
+
+<h3>Styles</h3>
+
+<h5>Pulse</h5>
+
+<BM_button Type_button="enum_button.Floating" Class="@blazormaterialise.Styles.pulse">Pulse</BM_button>
+<BM_button Type_button="enum_button.Floating" Backcolor="enum_color.red" Class="@blazormaterialise.Styles.pulse">Pulse</BM_button>
+<BM_button Type_button="enum_button.Floating" Backcolor="enum_color.red" Class="@blazormaterialise.Styles.pulse"><BM_icon Icon="menu"></BM_icon></BM_button>
+
+<p>Code</p>
+<code>@("<BM_button Type_button=\"enum_button.Floating\" Class=\"@blazormaterialise.Styles.pulse\">Pulse</BM_button>")</code>
+<p></p>
+<code>@("<BM_button Type_button=\"enum_button.Floating\" Backcolor=\"red\" Class=\"@blazormaterialise.Styles.pulse\">Pulse</BM_button>")</code>
+<p></p>
+<code>@("<BM_button Type_button=\"enum_button.Floating\" Backcolor=\"red\" Class=\"@blazormaterialise.Styles.pulse\"><BM_icon Icon=\"menu\"></BM_icon></BM_button>")</code>
+
+<h5>Shadow</h5>
+
+<BM_row>
+    <BM_col Class="@("box " + blazormaterialise.Styles.shadow_1)" S="12" M="2"></BM_col>
+    <BM_col Class="@("box " + blazormaterialise.Styles.shadow_2)" S="12" M="2"></BM_col>
+    <BM_col Class="@("box " + blazormaterialise.Styles.shadow_3)" S="12" M="2"></BM_col>
+    <BM_col Class="@("box " + blazormaterialise.Styles.shadow_4)" S="12" M="2"></BM_col>
+    <BM_col Class="@("box " + blazormaterialise.Styles.shadow_5)" S="12" M="2"></BM_col>    
+</BM_row>
+
+<p>Code</p>
+
+<code>@("blazormaterialise.Styles.shadow_1")</code>
+<p></p>
+<code>@("blazormaterialise.Styles.shadow_2")</code>
+<p></p>
+<code>@("blazormaterialise.Styles.shadow_3")</code>
+<p></p>
+<code>@("blazormaterialise.Styles.shadow_4")</code>
+<p></p>
+<code>@("blazormaterialise.Styles.shadow_5")</code>
+
+<h5>Scale</h5>
+<BM_button Type_button="enum_button.Large" Onclick="oncl">Click</BM_button>
+<BM_button Class="@text" Type_button="enum_button.Floating"><BM_icon Icon="add"></BM_icon></BM_button>
+
+<p>Code</p>
+<p>In</p>
+<code>@("blazormaterialise.Styles.scale_in")</code>
+<p>Out</p>
+<code>@("blazormaterialise.Styles.scale_out")</code>
+
+@code {
+
+    private string text = blazormaterialise.Styles.scale_in;
+    
+
+    private void oncl()
+    {
+        if(text == blazormaterialise.Styles.scale_in)
+        {
+            Console.WriteLine("cc");
+            text = blazormaterialise.Styles.scale_out;
+            
+            //StateHasChanged();
+        }
+        else
+        {
+            text = blazormaterialise.Styles.scale_in;
+            //StateHasChanged();
+        }
+    }
+
+
+
+}

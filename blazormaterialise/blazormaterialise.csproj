@@ -12,4 +12,13 @@
     <PackageReference Include="BlazorInputFile" Version="0.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Components\Card\" />
+    <Folder Include="Components\Footer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Components\Card\Bm_card_content.razor" />
+    <Content Remove="Components\Card\BM_card_head.razor" />
+    <Content Remove="Components\Card\BM_card_stacked.razor" />
+  </ItemGroup>
 </Project>

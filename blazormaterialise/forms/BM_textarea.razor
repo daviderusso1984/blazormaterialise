@@ -4,7 +4,7 @@
 
 
         <div class="input-field col s12">
-          <textarea id="@Id" value="@Value" @onchange="Change" class="materialize-textarea @Backcolor @Textcolor"></textarea>
+          <textarea id="@Id" value="@Value" @onchange="Change" class="materialize-textarea "></textarea>
           <label for="textarea1">@Label</label>
         </div>
 
@@ -18,8 +18,7 @@
     public EventCallback<string> Onchange { get; set; }
 
        protected override void OnInitialized(){
-        Backcolor = color.get_backcolor(Backcolor);
-        Textcolor = color.get_Textcolor(Textcolor);
+       
     }    
 
     

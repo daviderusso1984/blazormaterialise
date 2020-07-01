@@ -3,7 +3,7 @@
 @inherits css_base
 
 
-<span class="@valor badge @Class @dim">
+<span class="@valor badge @dim @Class" id="@Id" ref="@Ref">
 @Text
 </span>
 
@@ -23,8 +23,8 @@
             valor += "new ";
         }
          dim += blazormaterialise.show.get_show(Visibility) + " ";
-        dim += color.get_backcolor(Backcolor) + " "; 
-        dim += color.get_Textcolor(Textcolor) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " "; 
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
     }
 }
 

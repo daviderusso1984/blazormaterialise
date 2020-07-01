@@ -1,0 +1,45 @@
+  @namespace blazormaterialise
+  @inherits css_base
+  @inject IJSRuntime JSRuntime;
+
+    @if(Fixed){
+        <div class="navbar-fixed @Class @show ">
+            <nav>
+                <div class="nav-wrapper">
+                @ChildContent
+                </div>
+            </nav>
+        </div>
+    }else{
+        <nav class="@Class @show @Backcolor @Textcolor">
+            <div class="nav-wrapper">
+            @ChildContent
+            </div>
+        </nav>
+    }
+
+
+ 
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public bool Fixed { get; set; } = false;
+
+    private string show = "";
+
+    protected override void OnInitialized(){
+        show = blazormaterialise.show.get_show(Visibility);
+       
+    }
+
+    protected override async Task OnAfterRenderAsync (bool firstRender) {
+        await base.OnAfterRenderAsync (firstRender);
+        await JSRuntime.InvokeVoidAsync ("navbar_init");
+        
+    }
+
+}

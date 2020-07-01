@@ -34,12 +34,20 @@
     [Parameter]
     public RenderFragment TableHeader{get;set;}    
     [Parameter]
-    public IEnumerable<TableItem> Items { get; set; }    
+    public IReadOnlyList<TableItem> Items { get; set; }    
     public IEnumerable<TableItem> ItemList { get; set; }
-
-
     [Parameter]
     public RenderFragment<TableItem> RowTemplate { get; set; }
+    //style
+    [Parameter]
+    public bool Striped{get;set;}=false;
+    [Parameter]
+    public bool Highlight{get;set;}=false;
+    [Parameter]
+    public bool Centered{get;set;}=false;
+    [Parameter]
+    public bool Responsive_table{get;set;}=false;
+
     [Parameter]
     public bool Pagination_show{get;set;} = false; 
     [Parameter]
@@ -49,12 +57,26 @@
 
     public int currentPage = 0;
 
+    private string dim = "";
+
     protected override void OnParametersSet(){
 
     }
 
     protected override void OnInitialized(){
-        
+        dim = "";
+        if(Striped){
+            dim += "striped ";
+        }
+        if(Highlight){
+            dim += "highlight ";
+        }
+        if(Centered){
+            dim += "centered ";
+        }
+        if(Responsive_table){
+            dim += "responsive-table ";
+        }
         if(Pagination_show){
             total_page  = Items.Count() / Pagination_divider;
             var div = Items.Count() % Pagination_divider;

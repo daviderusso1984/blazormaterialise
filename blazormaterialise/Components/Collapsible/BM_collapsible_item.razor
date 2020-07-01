@@ -1,0 +1,70 @@
+@namespace blazormaterialise
+@inherits js_base
+
+
+
+<li class="@dim @_active @Class" id="@Id" ref="@Ref">
+    <div class="collapsible-header " >
+        @if(!string.IsNullOrEmpty(Icon)){
+            <i class="material-icons">@Icon</i>
+        }
+    @Title</div>
+    <div class="collapsible-body">@ChildContent</div>
+</li>
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    public string Icon {get;set;}="";
+    [Parameter]
+    public string Title{get;set;}="";
+    [Parameter]
+    public Boolean Active{get;set;}= false;
+
+    private string dim="";
+    private string _active = "";
+
+    private string get_active(bool ok)
+    {
+        if (ok)
+        {
+            
+            return "active";
+        }
+        else
+        {
+            
+            return "a";
+        }
+    }
+
+    protected override void OnParametersSet(){
+        _active = "";
+        if(Active){
+            _active ="active";
+        }else{
+            this.InvokeStateHasChanged();
+        }       
+        dim = "";
+        if(Visibility != enum_show.show){
+            dim += blazormaterialise.show.get_show(Visibility) + " ";
+        }
+        if(Backcolor != enum_color.not){
+            dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        }
+        if(Textcolor != enum_color.not){
+            dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+        }       
+        //StateHasChanged();
+    }
+
+    protected override void OnInitialized(){
+
+        
+    }
+
+
+
+
+}

@@ -7,23 +7,49 @@ using Microsoft.JSInterop;
 
 namespace blazormaterialise{
 
-    public abstract class component_base: ComponentBase{
+    public abstract class component_base: ComponentBase, IDisposable
+    {
 
        
        
         [Parameter]
         public string Class{get;set;}="";
+       
         [Parameter]
-        public string Backcolor{get;set;}="";
+        public enum_color Backcolor { get; set; } = enum_color.not;
         [Parameter]
-        public string Textcolor{get;set;}="";
+        public enum_color Textcolor { get; set; } = enum_color.not;
         [Parameter]
         public enum_show Visibility{get;set;} = enum_show.show;
         [Parameter]
         public string Id{get;set;} = IdGenerator.Generate("Blazormaterialise_id_");
         [Parameter]
-        public string Ref{get;set;} = "";   
+        public ForwardRef Ref {get;set;}
 
+        public void Dispose()
+        {
+            Disposed = true;
+        }
+
+        protected bool Disposed { get; private set; }
+
+        protected void InvokeStateHasChanged()
+        {
+            InvokeAsync(() =>
+            {
+                try
+                {
+                    if (!Disposed)
+                    {
+                        StateHasChanged();
+                    }
+                }
+                catch (Exception e)
+                {
+                    //
+                }
+            });
+        }
     }
 
      public static class IdGenerator

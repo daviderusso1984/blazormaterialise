@@ -1,10 +1,75 @@
-﻿
-<BM_collection Header="Component">
+﻿<BM_button Onclick="cl">Mio</BM_button>
+<p>@ok</p>
+<BM_collapsible>
+    <BM_collapsible_item Active="@ok" Backcolor="@bac" Title="Base">
+        <BM_collection Header="">
+            <BM_collection_item Type_item="enum_collection.Links" Href="Grid">
+                Grid
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="Helpers">
+                Helpers
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="Media">
+                Media
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="Styles">
+                Styles
+            </BM_collection_item>
+        </BM_collection>
+    </BM_collapsible_item>
+    <BM_collapsible_item Title="Components">
+        <BM_collection Header="">
+            <BM_collection_item Type_item="enum_collection.Links" Href="Button">
+                Button
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="Badge">
+                Badge
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="Breadcrumbs">
+                Breadcrumbs
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="Card">
+                Card
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="Collections">
+                Collections
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="FloatingActionButton">
+                Floating Action Button
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="Footer">
+                Footer
+            </BM_collection_item>
+            <BM_collection_item Type_item="enum_collection.Links" Href="Preloader">
+                Preloader
+            </BM_collection_item>
 
-    <BM_collection_item Type_item="enum_collection.Links" Href="Button" >
-        Button
-    </BM_collection_item>
-    <BM_collection_item Type_item="enum_collection.Links" Href="Badge" >
-        Badge
-    </BM_collection_item>
-</BM_collection>
+        </BM_collection>
+    </BM_collapsible_item>
+    
+</BM_collapsible>
+
+@code{
+
+    public bool ok = false;
+
+    public enum_color bac= enum_color.amber_accent_1;
+
+   
+
+    private void cl()
+    {        
+        if (ok)
+        {
+            ok = false;
+            bac= enum_color.amber_accent_1;
+        }
+        else
+        {
+            ok = true;
+            bac = enum_color.blue_accent_2;
+        }
+        
+    }
+}
+

@@ -1,5 +1,36 @@
-﻿<h3>Component1</h3>
+﻿@page "/Preloader"
 
-@code {
+<h3 class="@blazormaterialise.Helpers.text_align_horizontal_center">Preloader</h3>
 
-}
+<p>Linear</p>
+<BM_preloader Type_preloader="enum_type_preloader.Linear">
+
+</BM_preloader>
+<p>Linear Indeterminate</p>
+<BM_preloader Type_preloader="enum_type_preloader.Linear" Indeterminate="true"></BM_preloader>
+
+<p>Circular</p>
+    <BM_row>
+        <BM_col S="12" M="4">
+            <p class="@blazormaterialise.Helpers.text_align_horizontal_center">small</p>
+            <div class="@blazormaterialise.Helpers.text_align_horizontal_center">
+                <BM_preloader Type_preloader="enum_type_preloader.Circular" Indeterminate="true" Size_Circle="enum_size_circle_preloader.small"></BM_preloader>
+            </div>
+        </BM_col>
+        <BM_col S="12" M="4">
+
+            <p class="@blazormaterialise.Helpers.text_align_horizontal_center">normal</p>
+            <BM_preloader Class="@blazormaterialise.Helpers.text_align_horizontal_center" Type_preloader="enum_type_preloader.Circular" Indeterminate="true" Size_Circle="enum_size_circle_preloader.normal"></BM_preloader>
+        </BM_col>
+        <BM_col S="12" M="4">
+            <p class="@blazormaterialise.Helpers.text_align_horizontal_center">big</p>
+
+            <BM_preloader Type_preloader="enum_type_preloader.Circular" Indeterminate="true" Size_Circle="enum_size_circle_preloader.big"></BM_preloader>
+        </BM_col>
+    </BM_row>
+    <p>Circular Flashing Colors</p>
+<BM_preloader Type_preloader="enum_type_preloader.Circular_Flashing_Colors">
+
+</BM_preloader>
+
+

@@ -5,7 +5,7 @@
 
 
 
-<div class="col @Class @dim">
+<div class="col @dim @Class">
     @ChildContent
 </div>
 
@@ -29,7 +29,7 @@
     private string dim = "";
 
     protected override void OnInitialized(){
-        var gr = new grid();   
+        
         if(S != 0 && S > 0 && S <= 12){
             dim += "s" + S.ToString() + " ";
         }
@@ -42,8 +42,8 @@
         if(XL != 0 && XL > 0 && XL <= 12){
             dim += "xl" + XL.ToString() + " ";
         }  
-        dim += color.get_backcolor(Backcolor) + " "; 
-        dim += color.get_Textcolor(Textcolor) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " "; 
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
 
 
     }

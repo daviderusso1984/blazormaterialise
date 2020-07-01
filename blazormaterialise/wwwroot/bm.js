@@ -74,6 +74,18 @@
     var instances = M.FormSelect.init(elems, options);
   }
 
+  function panzoom_init(){
+    var element = document.querySelector('#scene');
+    // and forward it it to panzoom.
+    const panz = panzoom(element, {
+      maxScale: 5,
+      
+    })
+   
+     //panzoom(element)
+    
+  }
+
 
 
   

@@ -4,10 +4,10 @@
 
 
 
-  <nav class="@Class @Backcolor @Textcolor @show">
+  <nav class="@Class @dim" id="@Id" ref="@Ref">
     <div class="nav-wrapper">
       <div class="col s12">
-          if(@Items != null){
+          @if(Items != null){
               @foreach (var item in Items)
               {
                   <a href="@item.href" class="breadcrumb @item.Class">@item.name</a>
@@ -20,12 +20,14 @@
 @code{
 
     [Parameter]
-    public structure_breadcrumbs[] Items {get;set;} 
+    public structure_breadcrumbs[] Items {get;set;}
 
-    private string show="";
+    private string dim="";
 
     protected override void OnInitialized(){
-      
-        
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+
     }
 }

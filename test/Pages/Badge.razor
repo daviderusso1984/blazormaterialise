@@ -2,10 +2,18 @@
 
 <h3>Badge</h3>
 
-<BM_table Head_items="@Head_table" Items="list">
-    <td>@context.Propriety</td>
+<BM_table  Items="list">
+     <TableHeader>
+        <th>Propriety</th>
+        <th>Value</th>
+        <th>Description</th>             
+    </TableHeader>
+    <RowTemplate>
+     <td>@context.Propriety</td>
     <td>@context.Value</td>
     <td>@context.Description</td>
+    </RowTemplate>    
+    
 </BM_table>
 
 <h5>Badget Color</h5>
@@ -13,7 +21,7 @@
     <BM_collection_item Type_item="enum_collection.Links" Href="Button" ><BM_badge Text="Classic"></BM_badge>
         Classic 
     </BM_collection_item>
-    <BM_collection_item Type_item="enum_collection.Links" Href="Badge" ><BM_badge Backcolor="red" Textcolor="white" Text="1"></BM_badge>
+    <BM_collection_item Type_item="enum_collection.Links" Href="Badge" ><BM_badge Backcolor="enum_color.blue" Textcolor="enum_color.white" Text="1"></BM_badge>
         Color
     </BM_collection_item>
     <BM_collection_item Type_item="enum_collection.Links" Href="Badge" ><BM_badge New="true" Text="13"></BM_badge>
@@ -38,8 +46,7 @@
 
 
 @code{
-     private string[] Head_table = new string[]{"Propriety" , "Value" , "Description"};
-    private struct_table[] list = new struct_table[8];
+      private struct_table[] list = new struct_table[8];
 
     private string classic = "<BM_badge Text=\"Good\"></BM_badge>";
     private string color="<BM_badge Backcolor=\"red\" Textcolor=\"white\" Text=\"1\"></BM_badge>";

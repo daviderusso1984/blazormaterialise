@@ -1,11 +1,44 @@
 ﻿<Properties StartupConfiguration="{1E230A53-CE76-496B-BEEA-5D47B27D8F9A}|Default">
-  <MonoDevelop.Ide.ItemProperties.test PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.test PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="blazormaterialise/Components/Collapsible/BM_collapsible_item.razor">
+    <Files>
+      <File FileName="test/Pages/Button.razor" Line="26" Column="75" />
+      <File FileName="blazormaterialise/Components/BM_button.razor" />
+      <File FileName="blazormaterialise/Components/BM_badge.razor" />
+      <File FileName="blazormaterialise/base/component_base.cs" />
+      <File FileName="test/Pages/Preloader.razor" />
+      <File FileName="blazormaterialise/Components/BM_preloader.razor" />
+      <File FileName="blazormaterialise/core/preloader.cs" />
+      <File FileName="blazormaterialise/Components/BM_icon.razor" />
+      <File FileName="test/Pages/Styles.razor" />
+      <File FileName="blazormaterialise/Components/Collapsible/BM_collapsible.razor" />
+      <File FileName="blazormaterialise/Components/Collapsible/BM_collapsible_item.razor" Line="33" Column="31" />
+      <File FileName="blazormaterialise/base/ForwardRef.cs" />
+      <File FileName="test/Shared/NavMenu.razor" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="blazormaterialise" expanded="True">
-            <Node name="test" expanded="True" selected="True" />
+            <Node name="blazormaterialise" expanded="True">
+              <Node name="base" expanded="True" />
+              <Node name="compo" expanded="True">
+                <Node name="Table" expanded="True" />
+              </Node>
+              <Node name="Components" expanded="True">
+                <Node name="Card" expanded="True" />
+                <Node name="Collapsible" expanded="True">
+                  <Node name="BM_collapsible_item.razor" selected="True" />
+                </Node>
+                <Node name="Footer" expanded="True" />
+              </Node>
+              <Node name="core" expanded="True" />
+              <Node name="Public" expanded="True" />
+            </Node>
+            <Node name="test" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="Shared" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -14,7 +47,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/Components/Collapsible/BM_collapsible_item.razor" relfile="blazormaterialise/Components/Collapsible/BM_collapsible_item.razor" line="30" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

@@ -1,0 +1,109 @@
+﻿@page "/Helpers"
+
+<style>
+    .box {
+        width: 100%;
+        height: 300px;
+        background-color: black;
+    }
+
+    .box1 {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    .text {
+        color: white;
+    }
+</style>
+
+<h3>Helpers</h3>
+
+<h5>Alignment</h5>
+
+<p>Vertical Align</p>
+
+<div class="box @blazormaterialise.Helpers.align_vertical text">
+    Vertical Align
+</div>
+
+<p>Code</p>
+
+<code>
+    class="blazormaterialise.Helpers.align_vertical"
+</code>
+
+<p>Text Align</p>
+<div>
+    <h5 class="box1 @blazormaterialise.Helpers.text_align_horizontal_left">This should be left aligned</h5>
+</div>
+<div>
+    <h5 class="box1 @blazormaterialise.Helpers.text_align_horizontal_right">This should be right aligned</h5>
+</div>
+<div>
+    <h5 class="box1 @blazormaterialise.Helpers.text_align_horizontal_center">This should be center aligned</h5>
+</div>
+
+<p>Code</p>
+<p>Left</p>
+<code>@("@blazormaterialise.Helpers.text_align_horizontal_left")</code>
+<p>Right</p>
+<code>@("@blazormaterialise.Helpers.text_align_horizontal_right")</code>
+<p>Center</p>
+<code>@("@blazormaterialise.Helpers.text_align_horizontal_center")</code>
+
+<p>Quick Floats</p>
+<p>Quickly float things by adding the class left or right to the element. !important is used to avoid specificity issues.</p>
+<p>Code</p>
+<code>@("@blazormaterialise.Helpers.left")</code>
+<p></p>
+<code>@("@blazormaterialise.Helpers.right")</code>
+
+<h6>Hiding/Showing Content</h6>
+
+<p>Hidden for all Devices</p>
+<code>@("blazormaterialise.Helpers.hide")</code>
+<p>Hidden for Mobile Only</p>
+<code>@("blazormaterialise.Helpers.hide_mobile")</code>
+<p>Hidden for Tablet Only</p>
+<code>@("blazormaterialise.Helpers.hide_tablet")</code>
+<p>Hidden for Tablet and Below</p>
+<code>@("blazormaterialise.Helpers.hide_tablet_mobile")</code>
+<p>Hidden for Tablet and Above</p>
+<code>@("blazormaterialise.Helpers.hide_tablet_desktop")</code>
+<p>Hidden for Desktop Only</p>
+<code>@("blazormaterialise.Helpers.hide_desktop")</code>
+<p>Show for Mobile Only</p>
+<code>@("blazormaterialise.Helpers.show_mobile")</code>
+<p>Show for Tablet Only</p>
+<code>@("blazormaterialise.Helpers.show_tablet")</code>
+<p>Show for Desktop Only</p>
+<code>@("blazormaterialise.Helpers.show_desktop")</code>
+<p>Show for Tablet and Above</p>
+<code>@("blazormaterialise.Helpers.show_tablet_desktop")</code>
+<p>Show for Tablet and Below</p>
+<code>@("blazormaterialise.Helpers.show_tablet_mobile")</code>
+
+
+<h6>Formatting</h6>
+
+<code>@("blazormaterialise.Helpers.truncation")</code>
+
+<h6>Hover</h6>
+
+<code>@("blazormaterialise.Helpers.hover")</code>
+
+
+
+@code {
+
+
+    protected override void OnInitialized()
+    {
+
+    }
+
+}

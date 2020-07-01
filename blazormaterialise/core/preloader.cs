@@ -1,6 +1,6 @@
 namespace blazormaterialise{
 
-    public class preloader{
+    internal class preloader{
 
         internal string get_enum_color_circle(enum_color_circle_preloader en){
             switch (en)
@@ -31,16 +31,5 @@ namespace blazormaterialise{
                 return "";
             }
         }
-    }
-
-    public enum enum_size_circle_preloader{
-        big , normal , small
-    }
-
-    public enum enum_color_circle_preloader{
-        red , yellow,blue , green
-    }
-    public enum enum_type_preloader{
-        Linear,Circular,Circular_Flashing_Colors
     }
 }

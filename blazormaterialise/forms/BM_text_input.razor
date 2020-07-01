@@ -8,15 +8,15 @@
             }
             @if(Disabled){
                 @if(Active_text_limit){
-                    <input disabled value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate @Backcolor @Textcolor" data-length="@Text_limit">
+                    <input disabled value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate " data-length="@Text_limit">
                 }else{
-                    <input disabled value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate @Backcolor @Textcolor" >
+                    <input disabled value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate " >
                 }                
             }else{
                 @if(Active_text_limit){
-                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate @Backcolor @Textcolor" data-length="@Text_limit">
+                    <input value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate " data-length="@Text_limit">
                 }else{
-                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate @Backcolor @Textcolor">
+                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate ">
                 }                
             }          
           <label for="@Id">@Label</label>
@@ -45,21 +45,20 @@
     [Parameter]
     public string Helper_text { get; set; } = "";
     [Parameter]
-    public EventCallback<string> Onchange { get; set; }
+    public EventCallback<string> ValueChanged { get; set; }
 
     protected override void OnInitialized(){
-        Backcolor = color.get_backcolor(Backcolor);
-        Textcolor = color.get_Textcolor(Textcolor);
+        
     }    
 
      protected override async Task OnAfterRenderAsync (bool firstRender) {
         await base.OnAfterRenderAsync (firstRender);
-        Backcolor = color.get_backcolor(Backcolor);
-        Textcolor = color.get_Textcolor(Textcolor);
+        
         
     }   
 
-    protected void Change (ChangeEventArgs e) {
-        Onchange.InvokeAsync ((string) e.Value);
+    protected Task Change (ChangeEventArgs e) {
+        Value = (string)e.Value;
+        return  ValueChanged.InvokeAsync ((string) e.Value);
     }
 }

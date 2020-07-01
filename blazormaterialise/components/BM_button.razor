@@ -3,7 +3,7 @@
 @inherits css_base
 
 
-<a class="@valor @Class @dim" id="@Id" ref="@Ref" @onclick="click">
+<a class="@valor @dim @Class" id="@Id" ref="@Ref" @onclick="click">
     @ChildContent
 </a>
 
@@ -22,34 +22,34 @@
 
 
     protected async void click(MouseEventArgs ev){
-       await Onclick.InvokeAsync(ev);
+        await Onclick.InvokeAsync(ev);
     }
 
     private string valor = "";
 
-   
+
 
     private string dim = "";
 
     protected override void OnInitialized(){
-        
-         if(Type_button == enum_button.Flat){
+
+        if(Type_button == enum_button.Flat){
             if(Waves_effect){
-            valor += "waves-effect waves-teal ";
-        }
+                valor += "waves-effect waves-teal ";
+            }
         }else{
             if(Waves_effect){
-            valor += "waves-effect waves-light ";
-        }
+                valor += "waves-effect waves-light ";
+            }
         }
         if(Disabled){
             valor += "disabled ";
-        }        
+        }
         var btn = new button();
         valor += btn.get_button(Type_button);
         dim += blazormaterialise.show.get_show(Visibility) + " ";
-        dim += color.get_backcolor(Backcolor) + " "; 
-        dim += color.get_Textcolor(Textcolor) + " ";
-        
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+
     }
 }
