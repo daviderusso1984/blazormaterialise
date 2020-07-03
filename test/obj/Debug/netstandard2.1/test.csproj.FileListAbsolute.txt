@@ -384,8 +384,10 @@
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/Razor/Pages/Footer.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Preloader.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/Razor/Pages/Preloader.razor.g.cs
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/F4i7pD-Ak9cIHnLZAiPcsyNphd9ylG_KKq3YiVagZQE=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/raubq9IjOYfTA74SC6MIgcrOyKBpwOpZu8_rnpBukuc=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/sfHeeSjDA65Rl-vFIcBRoYJ7jT4wKNeyolp2YdMoN14=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/RkEvU5TpZbkkRy4DtAqNYGiulDtl6LQyzjfPaItJlFc=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/IYgJFmNepxdK3ytqFi0FwMEopQ87r6jaVN2clFF89SA=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Carousel.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/Razor/Pages/Carousel.razor.g.cs
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/k1Atnx5FY_TgsHdBjK368GNd7UsAI_8t4b8kn0miBkI=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/oCIt8R3pTEwRZK50mGDPdM1LVQxk7HsrUEG344yc2jY=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/SQOYdxyZu8BNXBF_8MnKB0pnXtludQMa5gl1d_SjlWc=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/sinMLw7y16KT3v_dUbkOAjJ9pVdZCFN_sjhkFkY-Mek=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/ucWXDtzAdx5N3WdgUIQd66jacJoJd40uEnj5gfJ4uTI=.hash

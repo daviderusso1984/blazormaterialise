@@ -1,14 +1,21 @@
 ﻿@inherits LayoutComponentBase
 
 <BM_navbar Fixed=true >
-    <a href="#" class="brand-logo">BlazorMaterialize</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <Wrapper>
+      <a href="#" class="brand-logo">BlazorMaterialize</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>      
+      <ul  class="right hide-on-med-and-down">
         <li><a href="">Sass</a></li>
         <li><a href="">Components</a></li>
         <li><a href="">JavaScript</a></li>
       </ul>
+    </Wrapper>    
 </BM_navbar>
-    
+ <ul class="sidenav" id="mobile-demo">
+    <li><a href="">Sass</a></li>
+    <li><a href="">Components</a></li>
+    <li><a href="">JavaScript</a></li>
+  </ul>
         <BM_row>
             <BM_col S="12" M="3" >
                 <NavMenu></NavMenu>

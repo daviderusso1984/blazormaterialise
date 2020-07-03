@@ -1,8 +1,11 @@
-﻿<BM_button Onclick="cl">Mio</BM_button>
-<p>@ok</p>
+﻿
 <BM_collapsible>
-    <BM_collapsible_item Active="@ok" Backcolor="@bac" Title="Base">
-        <BM_collection Header="">
+    <BM_collapsible_item >
+        <Header>
+            Base
+        </Header>
+        <Body>
+            <BM_collection Header="">
             <BM_collection_item Type_item="enum_collection.Links" Href="Grid">
                 Grid
             </BM_collection_item>
@@ -15,9 +18,14 @@
             <BM_collection_item Type_item="enum_collection.Links" Href="Styles">
                 Styles
             </BM_collection_item>
-        </BM_collection>
+            </BM_collection>
+        </Body>        
     </BM_collapsible_item>
-    <BM_collapsible_item Title="Components">
+    <BM_collapsible_item >
+         <Header>
+            Components
+        </Header>
+        <Body>
         <BM_collection Header="">
             <BM_collection_item Type_item="enum_collection.Links" Href="Button">
                 Button
@@ -45,8 +53,21 @@
             </BM_collection_item>
 
         </BM_collection>
+        </Body>
     </BM_collapsible_item>
-    
+    <BM_collapsible_item >
+        <Header>
+            Javascript
+        </Header>
+        <Body>
+        <BM_collection Header="">
+            <BM_collection_item Type_item="enum_collection.Links" Href="Carousel">
+                Carousel
+            </BM_collection_item>
+            
+        </BM_collection>
+        </Body>
+    </BM_collapsible_item>
 </BM_collapsible>
 
 @code{
