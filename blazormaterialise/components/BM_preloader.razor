@@ -7,15 +7,15 @@
     case enum_type_preloader.Linear:
       <div class="progress">
          @if(Indeterminate){
-             <div class="indeterminate @Class" id="@Id" ref="@Ref"></div>
+             <div class="indeterminate @Class" id="@Id" ></div>
          }else{
-             <div class="determinate @Class" style="width: @(_value + "%")" id="@Id" ref="@Ref"></div>
+             <div class="determinate @Class" style="width: @(_value + "%")" id="@Id" ></div>
          }
         
       </div>
       break;
       case enum_type_preloader.Circular:
-        <div class="preloader-wrapper @_size active @Class" id="@Id" ref="@Ref">
+        <div class="preloader-wrapper @_size active @Class" id="@Id" >
             <div class="spinner-layer @_color">
                 <div class="circle-clipper left">
                 <div class="circle"></div>
@@ -30,7 +30,7 @@
         </div>
       break;
       case enum_type_preloader.Circular_Flashing_Colors:
-<div class="preloader-wrapper @_size active @Class" id="@Id" ref="@Ref">
+<div class="preloader-wrapper @_size active @Class" id="@Id" >
     <div class="spinner-layer spinner-blue">
         <div class="circle-clipper left">
             <div class="circle"></div>

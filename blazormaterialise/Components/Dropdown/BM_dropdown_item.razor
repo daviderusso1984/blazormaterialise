@@ -1,0 +1,39 @@
+@namespace blazormaterialise
+@inherits js_base
+
+@if (Type == enum_type_dropdown_item.link)
+{
+    <li><a id="@Id" class="@dim @Class " href="@Href" >@ChildContent</a></li>
+}
+@if (Type == enum_type_dropdown_item.divider)
+{
+    <li class="divider" tabindex="-1"></li>
+}
+
+
+
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+
+    [Parameter]
+    public string Href { get; set; } = "";
+
+    [Parameter]
+    public enum_type_dropdown_item Type { get; set; } = enum_type_dropdown_item.link;
+
+
+
+    private string dim = "";
+    protected override void OnInitialized()
+    {
+        dim = "";
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+
+    }
+}

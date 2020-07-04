@@ -1,0 +1,21 @@
+@namespace blazormaterialise
+@inject IJSRuntime JSRuntime
+@inherits js_base
+
+
+  <ul id="slide-out" class="sidenav">
+      @ChildContent
+  </ul>
+
+
+  @code{
+      [Parameter]
+      public RenderFragment ChildContent{get;set;}
+
+      protected override async Task  OnAfterRenderAsync(bool firstRender){
+          await base.OnAfterRenderAsync(firstRender);
+          if(firstRender){
+             await JSRuntime.InvokeVoidAsync("bm_sidebar",Id);
+          }
+      }
+  }

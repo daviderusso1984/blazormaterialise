@@ -1,0 +1,43 @@
+﻿@page "/Js_media"
+
+
+<h3>Media</h3>
+
+<h5>Material Box</h5>
+
+<BM_media Src="https://lorempixel.com/800/400/nature/4"  ></BM_media>
+
+<Code rows="rows_1"></Code>
+
+<h5>Material Box responsive</h5>
+
+<BM_media Src="https://lorempixel.com/800/400/nature/4" Responsive="true"></BM_media>
+
+<Code rows="rows_2"></Code>
+
+<h5>Material Box data caption</h5>
+
+<BM_media Src="https://lorempixel.com/800/400/nature/4" Caption="true" Data_caption="Picture nature 4"></BM_media>
+
+<Code rows="rows_3"></Code>
+
+
+
+
+@code{
+
+    private string[] rows_1 = new string[]
+    {
+        "<BM_media Src=\"https://lorempixel.com/800/400/nature/4\"  ></BM_media>"
+    };
+
+    private string[] rows_2 = new string[]
+    {
+        "<BM_media Src=\"https://lorempixel.com/800/400/nature/4\" Responsive=\"true\"></BM_media>"
+    };
+
+    private string[] rows_3 = new string[]
+    {
+        "<BM_media Src=\"https://lorempixel.com/800/400/nature/4\" Caption=\"true\" Data_caption=\"Picture nature 4\"></BM_media>"
+    };
+}

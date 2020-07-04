@@ -1,0 +1,57 @@
+﻿@page "/Slider"
+
+
+<h3>Slider</h3>
+
+<BM_slider>
+    <BM_slider_item Src="https://lorempixel.com/800/400/nature/3">
+        <h3>Title One</h3>
+        <p>Content nature image 1</p>
+    </BM_slider_item>
+    <BM_slider_item Src="https://lorempixel.com/800/400/nature/4">
+        <h3>Title Two</h3>
+        <p>Content nature image 2</p>
+    </BM_slider_item>
+    <BM_slider_item Src="https://lorempixel.com/800/400/nature/3">
+        <h3>Title Three</h3>
+        <p>Content nature image 3</p>
+    </BM_slider_item>
+    <BM_slider_item Src="https://lorempixel.com/800/400/nature/4">
+        <h3>Title Four</h3>
+        <p>Content nature image 4</p>
+    </BM_slider_item>
+</BM_slider>
+
+<Code rows="rows_1" ></Code>
+
+
+
+@code{
+
+ 
+
+    private string[] rows_1 = new string[]
+    {
+        "<BM_slider>",
+        "\r\n<BM_slider_item Src=\"https://lorempixel.com/800/400/nature/3\">",
+        "\r\n\r\n<h3>Title One</h3>",
+        "\r\n\r\n<p>Content nature image 1</p>",
+        "\r\n</BM_slider_item>",
+
+        "\r\n<BM_slider_item Src=\"https://lorempixel.com/800/400/nature/4\">",
+        "\r\n\r\n<h3>Title Two</h3>",
+        "\r\n\r\n<p>Content nature image 2</p>",
+        "\r\n</BM_slider_item>",
+
+        "\r\n<BM_slider_item Src=\"https://lorempixel.com/800/400/nature/3\">",
+        "\r\n\r\n<h3>Title Three</h3>",
+        "\r\n\r\n<p>Content nature image 3</p>",
+        "\r\n</BM_slider_item>",
+
+        "\r\n<BM_slider_item Src=\"https://lorempixel.com/800/400/nature/4\">",
+        "\r\n\r\n<h3>Title Four</h3>",
+        "\r\n\r\n<p>Content nature image 4</p>",
+        "\r\n</BM_slider_item>"
+
+};
+}

@@ -1,0 +1,45 @@
+﻿@namespace blazormaterialise
+@inherits js_base
+@inject IJSRuntime JSRuntime;
+
+
+<div class="tap-target @Class" data-target="@Data_target" id="@Id" >
+    <div class="tap-target-content @dim">
+        @ChildContent
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    private string dim = "";
+
+    protected override void OnInitialized()
+    {
+        dim = "";
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("featurediscovery_init");
+        }
+
+    }
+
+    public async void close()
+    {        
+        await JSRuntime.InvokeVoidAsync("featurediscovery_close", Id);
+    }
+
+    public async void show()
+    {
+        await JSRuntime.InvokeVoidAsync("featurediscovery_show",Id);
+    }
+}

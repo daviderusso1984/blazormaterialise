@@ -1,0 +1,30 @@
+﻿@page "/Featurediscovery"
+
+<style>
+    .bt{
+        bottom: 45px;
+        right: 24px;
+        position: fixed;
+    }
+</style>
+
+
+<BM_button Class="bt" Type_button="enum_button.Floating" Id="menu" Onclick="click" ><BM_icon Icon="menu"></BM_icon></BM_button>
+
+
+<BM_featurediscovery Data_target="menu" @ref="@rf"  >
+    <h5>Title</h5>
+    <p>Content</p>
+</BM_featurediscovery>
+
+@code{
+
+    blazormaterialise.BM_featurediscovery rf;
+
+    private void click()
+    {
+        
+        rf.show();
+    }
+
+}

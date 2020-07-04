@@ -10,25 +10,25 @@ namespace blazormaterialise
                 return "";
                 case enum_show.hide:
                 return "hide";
-                case enum_show.hide_on_large_only:
+                case enum_show.hide_desktop:
                 return "hide-on-large-only";
-                case enum_show.hide_on_med_and_down:
+                case enum_show.hide_tablet_mobile:
                 return "hide-on-med-and-down";
-                case enum_show.hide_on_med_and_up:
+                case enum_show.hide_tablet_desktop:
                 return "hide-on-med-and-up";
-                case enum_show.hide_on_med_only:
+                case enum_show.hide_tablet:
                 return "hide-on-med-only";
-                case enum_show.hide_on_small_only:
+                case enum_show.hide_mobile:
                 return "hide-on-small-only";
-                case enum_show.show_on_large:
+                case enum_show.show_desktop:
                 return "show-on-large";
-                case enum_show.show_on_medium:
+                case enum_show.show_tablet:
                 return "show-on-medium";
-                case enum_show.show_on_medium_and_down:
+                case enum_show.show_tablet_mobile:
                 return "show-on-medium-and-down";
-                case enum_show.show_on_medium_and_up:
+                case enum_show.show_tablet_desktop:
                 return "show-on-medium-and-up";
-                case enum_show.show_on_small:
+                case enum_show.show_mobile:
                 return "show-on-small";               
                 default:
                 return "";

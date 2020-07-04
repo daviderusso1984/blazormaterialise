@@ -3,7 +3,7 @@
 @inherits js_base
 
 
-  <ul class="collapsible @dim @Class" id="@Id" ref="@Ref">
+  <ul class="collapsible @dim @Class" id="@Id" >
     @ChildContent
   </ul>
 
@@ -13,16 +13,31 @@
 
     private string dim = "";
 
-    protected override void OnInitialized(){       
+    protected override void OnInitialized(){
         dim += blazormaterialise.show.get_show(Visibility) + " ";
-        dim += color.get_backcolor(color.get_color(Backcolor)) + " "; 
-        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";        
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
     }
 
     protected override async Task OnAfterRenderAsync (bool firstRender) {
         await base.OnAfterRenderAsync (firstRender);
-        await JSRuntime.InvokeVoidAsync ("collapsible_init");
-       
+        if(firstRender){
+            await JSRuntime.InvokeVoidAsync ("bm_collapsible",Id);
+        }
+
+
     }
+
+    public async void open(int number)
+    {
+        await JSRuntime.InvokeVoidAsync("bm_collapsible_open", Id,number);
+    }
+
+    public async void close(int number)
+    {
+        await JSRuntime.InvokeVoidAsync("bm_collapsible_close", Id, number);
+    }
+
+
 
 }

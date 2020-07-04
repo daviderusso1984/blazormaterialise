@@ -1,7 +1,7 @@
 namespace blazormaterialise
 {
 
-    public class Helpers
+    public static class Helpers
     {
 
         public static readonly string align_vertical = "valign-wrapper";
@@ -25,6 +25,10 @@ namespace blazormaterialise
         public static readonly string show_desktop = "show-on-large";   //Show for Desktop Only
         public static readonly string show_tablet_desktop = "show-on-medium-and-up";    //Show for Tablet and Above
         public static readonly string show_tablet_mobile = "show-on-medium-and-down"; 	//Show for Tablet and Below
+
+         public static string Get_visibility(enum_show en){
+           return show.get_show(en);
+        }
 
         //Formatting
 

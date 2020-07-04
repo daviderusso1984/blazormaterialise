@@ -1,20 +1,26 @@
 ﻿<Properties StartupConfiguration="{1E230A53-CE76-496B-BEEA-5D47B27D8F9A}|BlazorApp1.Server">
   <MonoDevelop.Ide.ItemProperties.test PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="test/Shared/NavMenu.razor">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="test/Pages/Button.razor" Line="33" Column="75" />
-      <File FileName="blazormaterialise/Components/BM_button.razor" />
-      <File FileName="blazormaterialise/Components/BM_badge.razor" />
-      <File FileName="blazormaterialise/base/component_base.cs" />
-      <File FileName="test/Pages/Preloader.razor" />
-      <File FileName="blazormaterialise/Components/BM_preloader.razor" />
-      <File FileName="blazormaterialise/core/preloader.cs" />
-      <File FileName="blazormaterialise/Components/BM_icon.razor" />
-      <File FileName="test/Pages/Styles.razor" />
-      <File FileName="blazormaterialise/Components/Collapsible/BM_collapsible.razor" />
-      <File FileName="blazormaterialise/Components/Collapsible/BM_collapsible_item.razor" Line="32" Column="13" />
-      <File FileName="blazormaterialise/base/ForwardRef.cs" />
-      <File FileName="test/Shared/NavMenu.razor" Line="76" Column="1" />
+      <File FileName="test/Pages/Featurediscovery.razor" Line="26" Column="9" />
+      <File FileName="blazormaterialise/wwwroot/bm.js" Line="132" Column="20" />
+      <File FileName="blazormaterialise/Components/BM_featurediscovery.razor" Line="32" Column="10" />
+      <File FileName="blazormaterialise/Components/Collapsible/BM_collapsible.razor" Line="26" Column="10" />
+      <File FileName="blazormaterialise/Components/Collapsible/BM_collapsible_item.razor" Line="1" Column="1" />
+      <File FileName="blazormaterialise/Components/BM_media.razor" Line="11" Column="48" />
+      <File FileName="test/Pages/Index.razor" Line="4" Column="15" />
+      <File FileName="blazormaterialise/Components/BM_slider.razor" Line="15" Column="1" />
+      <File FileName="blazormaterialise/Components/Slider/BM_slider_item.razor" Line="26" Column="6" />
+      <File FileName="blazormaterialise/Components/BM_button.razor" Line="6" Column="51" />
+      <File FileName="test/Pages/Media.razor" Line="19" Column="1" />
+      <File FileName="test/Pages/Js_media.razor" Line="24" Column="1" />
+      <File FileName="test/Pages/Code.razor" Line="21" Column="9" />
+      <File FileName="test/wwwroot/css/app.css" Line="21" Column="44" />
+      <File FileName="test/Pages/Slider.razor" Line="31" Column="2" />
+      <File FileName="test/Pages/Modals.razor" Line="15" Column="12" />
+      <File FileName="blazormaterialise/js/Modal/BM_modal.razor" Line="6" Column="31" />
+      <File FileName="test/Shared/NavMenu.razor" Line="82" Column="82" />
+      <File FileName="blazormaterialise/Public/Opz.cs" Line="14" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,19 +28,29 @@
           <Node name="blazormaterialise" expanded="True">
             <Node name="blazormaterialise" expanded="True">
               <Node name="base" expanded="True" />
-              <Node name="compo" expanded="True" />
               <Node name="Components" expanded="True">
                 <Node name="Card" expanded="True" />
+                <Node name="Carousel" expanded="True" />
                 <Node name="Collapsible" expanded="True" />
+                <Node name="Collection" expanded="True" />
+                <Node name="Dropdown" expanded="True" />
                 <Node name="Footer" expanded="True" />
+                <Node name="Navbar" expanded="True" />
+                <Node name="Slider" expanded="True" />
               </Node>
-              <Node name="core" expanded="True" />
+              <Node name="js" expanded="True">
+                <Node name="Modal" expanded="True" />
+              </Node>
               <Node name="Public" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
             </Node>
             <Node name="test" expanded="True">
-              <Node name="Pages" expanded="True" />
-              <Node name="Shared" expanded="True">
-                <Node name="NavMenu.razor" selected="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Modals.razor" selected="True" />
+              </Node>
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
           </Node>

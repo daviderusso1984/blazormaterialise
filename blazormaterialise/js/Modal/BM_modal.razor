@@ -2,9 +2,12 @@
 @inject IJSRuntime JSRuntime;
 @inherits js_base
 
-    <div id="@Id" class="modal">
-    <div class="modal-content @Class">
-       @ChildContent
+    <div id="@Id" class="modal @dim @Class ">
+    <div class="modal-content ">
+       @Content
+    </div>
+    <div class="modal-footer">
+       @Footer
     </div>    
   </div>
 
@@ -12,13 +15,31 @@
 
 @code{
     [Parameter]
-    public RenderFragment ChildContent { get; set; }
-    
+    public RenderFragment Content { get; set; }
+    [Parameter]
+    public RenderFragment Footer { get; set; }
+
+
+    private string dim = "";
+
+    protected override void OnInitialized()
+    {
+
+        dim = "";
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+
+    }
 
     protected override async Task OnAfterRenderAsync (bool firstRender) {
         await base.OnAfterRenderAsync (firstRender);
-        await JSRuntime.InvokeVoidAsync ("dropdown_init");
-       
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("modal_init");
+        }
+
+
     }
 
 }

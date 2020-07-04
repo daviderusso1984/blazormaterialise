@@ -1,0 +1,37 @@
+﻿
+
+<style>
+    .bg{
+        background-color: gray;
+        color: white;
+        width: 100%;
+        height:auto;
+        margin:10px;
+    }
+    code{
+        width:100%;
+        height:auto;
+    }
+</style>
+
+@if(rows != null)
+{
+    <div class="bg">
+       @foreach(var item in rows)
+       {
+           <code>@item</code><br>
+       }
+    </div>
+}
+
+
+@code{
+    [Parameter]
+    public string[] rows { get; set; }
+    [Parameter]
+    public int[] space { get; set; }
+
+
+
+
+}

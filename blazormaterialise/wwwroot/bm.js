@@ -1,94 +1,143 @@
 
+//media
 
-
-  function media_init(){
-    var elems = document.querySelectorAll('.materialboxed');
-    var options={};
+function bm_media(id) {
+    var elems = document.getElementById(id);
+    var options = {};
     var instances = M.Materialbox.init(elems, options);
-  }
+}
 
-  function carousel_init(){
-    var elems = document.querySelectorAll('.carousel');
-    var options={};
+//slider
+
+function bm_slider() {
+    var elems = document.querySelectorAll('.slider');
+    var options = {};
+    var instances = M.Slider.init(elems, options);
+}
+
+
+function bm_carousel(id) {
+    var elems = document.getElementById(id);
+    var options = {};
     var instances = M.Carousel.init(elems, options);
-  }
+}
 
-  function floating_init(){
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var options={};
+function bm_floating(id) {
+    var elems = document.getElementById(id);
+    var options = {};
     var instances = M.FloatingActionButton.init(elems, options);
-  }
+}
 
-  function navbar_init(){
-    var elems = document.querySelectorAll('.sidenav');
-    var options={};
+function bm_navbar(id) {
+    var elems = document.getElementById(id);
+    var options = {};
     var instances = M.Sidenav.init(elems, options);
-  }
+}
 
-  function collapsible_init(){
-    var elems = document.querySelectorAll('.collapsible');
-    var options={};
+//collapsible
+
+function bm_collapsible(id) {
+    var elems = document.getElementById(id);
+    var options = {};
     var instances = M.Collapsible.init(elems, options);
-  }
+}
 
-  function dropdown_init(){
+function bm_collapsible_open(id, number_item) {
+    var elems = document.getElementById(id);
+    var instance = M.Collapsible.getInstance(elems);
+    instance.open(number_item);
+}
+
+function bm_collapsible_close(id, number_item) {
+    var elems = document.getElementById(id);
+    var instance = M.Collapsible.getInstance(elems);
+    instance.close(number_item);
+}
+
+
+
+function bm_dropdown() {
     var elems = document.querySelectorAll('.dropdown-trigger');
-    var options={};
+    var options = {};
     var instances = M.Dropdown.init(elems, options);
-  } 
+}
 
-  function scrollspy(){
+function scrollspy() {
     var elems = document.querySelectorAll('.scrollspy');
-    var options={};
+    var options = {};
     var instances = M.ScrollSpy.init(elems, options);
-  }
+}
 
-  function toast(text,_class,rounded){
-    if(rounded){
-      M.toast({html: text , classes: 'rounded ' + _class})
-    }else{
-      M.toast({html: text , classes: _class})
-    }       
-  }
+function toast(text, _class, rounded) {
+    if (rounded) {
+        M.toast({ html: text, classes: 'rounded ' + _class })
+    } else {
+        M.toast({ html: text, classes: _class })
+    }
+}
 
-  function datepicker_init(forma,Y){
-    
-    
+function datepicker_init(forma, Y) {
+
+
     var elems = document.querySelectorAll('.datepicker');
-    var options={format: forma  ,  yearRange: Y };
+    var options = { format: forma, yearRange: Y };
     var instances = M.Datepicker.init(elems, options);
-   
-   
-    
-  }
 
-  function timepicker_init(){
+
+
+}
+
+function timepicker_init() {
     var elems = document.querySelectorAll('.timepicker');
-    var options={};
+    var options = {};
     var instances = M.Timepicker.init(elems, options);
-  }
+}
 
-  function select_init(){
+function select_init() {
     var elems = document.querySelectorAll('select');
-    var options={};
+    var options = {};
     var instances = M.FormSelect.init(elems, options);
-  }
+}
 
-  function panzoom_init(){
-    var element = document.querySelector('#scene');
-    // and forward it it to panzoom.
-    const panz = panzoom(element, {
-      maxScale: 5,
-      
-    })
-   
-     //panzoom(element)
-    
-  }
+function bm_sidebar(id) {
+    var elems = document.getElementById(id);
+    var options = {};
+    var instances = M.Sidenav.init(elems, options);
+}
+
+//featurediscovery
+
+function featurediscovery_init() {
+    var elems = document.querySelectorAll('.tap-target');
+    var options = {};
+    var instances = M.TapTarget.init(elems, options);
+}
+
+function featurediscovery_show(id) {
+    var elems = document.getElementById(id);
+    var instance = M.TapTarget.getInstance(elems);
+    instance.open();
+}
+
+function featurediscovery_close(id) {
+    var elems = document.getElementById(id);
+    var instance = M.TapTarget.getInstance(elems);
+    instance.destroy();
+}
+
+
+//modal
+
+
+function modal_init() {
+    var elems = document.querySelectorAll('.modal');
+    var options = {};
+    var instances = M.Modal.init(elems, options);
+} 
 
 
 
-  
 
-  
-  
+
+
+

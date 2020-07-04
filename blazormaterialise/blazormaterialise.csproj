@@ -15,6 +15,7 @@
   <ItemGroup>
     <Folder Include="Components\Card\" />
     <Folder Include="Components\Footer\" />
+    <Folder Include="Components\Slider\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Components\Card\Bm_card_content.razor" />

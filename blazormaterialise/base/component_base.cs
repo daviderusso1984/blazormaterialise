@@ -23,8 +23,10 @@ namespace blazormaterialise{
         public enum_show Visibility{get;set;} = enum_show.show;
         [Parameter]
         public string Id{get;set;} = IdGenerator.Generate("Blazormaterialise_id_");
+       
+
         [Parameter]
-        public ForwardRef Ref {get;set;}
+        public string Data_target { get; set; }
 
         public void Dispose()
         {

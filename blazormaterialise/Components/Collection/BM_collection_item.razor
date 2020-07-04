@@ -6,10 +6,10 @@
 @switch (Type_item)
 {
     case enum_collection.Basic:
-    <li class="collection-item @dim @Class" id="@Id" ref="@Ref">@ChildContent</li>
+    <li class="collection-item @dim @Class" id="@Id" >@ChildContent</li>
     break;
     case enum_collection.Links:
-    <a href="@Href" class="collection-item @valor @dim @Class" id="@Id" ref="@Ref">@ChildContent</a>
+    <a href="@Href" class="collection-item @valor @dim @Class" id="@Id" >@ChildContent</a>
     break;
     default:
     break;

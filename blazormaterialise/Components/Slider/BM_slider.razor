@@ -1,0 +1,36 @@
+﻿@namespace blazormaterialise
+@inject IJSRuntime JSRuntime
+@inherits js_base
+
+
+<div class="slider @dim @Class" id="@Id">
+    <ul class="slides">
+        @ChildContent
+    </ul>
+</div>
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    private string dim = "";
+
+    protected override void OnInitialized()
+    {        
+        dim = "";
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("bm_slider");
+        }
+    }
+
+}

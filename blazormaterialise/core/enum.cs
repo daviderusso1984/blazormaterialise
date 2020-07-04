@@ -11,20 +11,25 @@ namespace blazormaterialise
         tiny , small , medium , large
     }
 
+    public enum enum_type_dropdown_item{
+        link , divider 
+    }
+
+    
     public enum enum_show
     {
         show, //show all
         hide,   //Hidden for all Devices
-        hide_on_small_only, //	Hidden for Mobile Only
-        hide_on_med_only,   //Hidden for Tablet Only
-        hide_on_med_and_down,   //Hidden for Tablet and Below
-        hide_on_med_and_up, //Hidden for Tablet and Above
-        hide_on_large_only, //Hidden for Desktop Only
-        show_on_small,  //Show for Mobile Only
-        show_on_medium, //Show for Tablet Only
-        show_on_large,  //Show for Desktop Only
-        show_on_medium_and_up,  //Show for Tablet and Above
-        show_on_medium_and_down //Show for Tablet and Below
+        hide_mobile, //	Hidden for Mobile Only
+        hide_tablet,   //Hidden for Tablet Only
+        hide_tablet_mobile,   //Hidden for Tablet and Below
+        hide_tablet_desktop, //Hidden for Tablet and Above
+        hide_desktop, //Hidden for Desktop Only
+        show_mobile,  //Show for Mobile Only
+        show_tablet, //Show for Tablet Only
+        show_desktop,  //Show for Desktop Only
+        show_tablet_desktop,  //Show for Tablet and Above
+        show_tablet_mobile //Show for Tablet and Below
     }
 
 

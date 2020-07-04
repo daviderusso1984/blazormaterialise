@@ -1,11 +1,7 @@
 ﻿@page "/"
 @inject IJSRuntime JSRuntime;
 
-<BM_text_input @bind-Value="@valore" Icon="add" Helper_text="Mio"></BM_text_input> 
-<p>@valore</p>
-<BM_button Onclick="@(e => test(10))">Test</BM_button>
-<p>@num</p>
-
+   <BM_Slider></BM_Slider>
 @code{
 
    int num = 0; 
@@ -13,6 +9,7 @@
 
   private void test(int mio){
       num = mio;
+      
   }
 
      

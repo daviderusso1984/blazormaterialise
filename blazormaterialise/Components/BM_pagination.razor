@@ -2,7 +2,7 @@
 @inherits css_base
 
 
-    <ul class="pagination @dim @Class" id="@Id" ref="@Ref">
+    <ul class="pagination @dim @Class" id="@Id" >
     @if(Items_active == 1){
         <li class="disabled"><a @onclick="@(() => left_click(Items_active))"><i class="material-icons">chevron_left</i></a></li>
     }else{

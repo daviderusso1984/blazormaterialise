@@ -1,0 +1,60 @@
+@namespace blazormaterialise
+@inject IJSRuntime JSRuntime;
+@inherits js_base
+
+@if (Caption)
+{
+    <img class="materialboxed @dim @Class " id="@Id" data-caption="@Data_caption" src="@Src" width="@Width">
+}
+else
+{
+    <img class="materialboxed @dim @Class " id="@Id" src="@Src" width="@Width">
+}
+
+
+
+
+
+
+@code{
+    [Parameter]
+    public string Src { get; set; } = "";
+    [Parameter]
+    public string Width { get; set; } = "";
+    [Parameter]
+    public bool Caption { get; set; } = false;
+    [Parameter]
+    public bool Responsive { get; set; } = false;
+    [Parameter]
+    public string Data_caption { get; set; } = "";
+
+    private string dim = "";
+
+
+    protected override void OnInitialized()
+    {
+        dim = "";
+        if (Responsive)
+        {
+            dim += "responsive-img";
+        }
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+    }
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("bm_media", Id);
+        }
+
+
+    }
+
+
+
+}
