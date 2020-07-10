@@ -25,6 +25,7 @@ namespace blazormaterialise{
         public string Id{get;set;} = IdGenerator.Generate("Blazormaterialise_id_");
        
 
+
         [Parameter]
         public string Data_target { get; set; }
 

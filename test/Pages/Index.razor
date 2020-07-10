@@ -1,16 +1,15 @@
 ﻿@page "/"
 @inject IJSRuntime JSRuntime;
 
-   <BM_Slider></BM_Slider>
+
+<BM_text_input @bind-Value="@text"></BM_text_input>
+<p>@text</p>
+<BM_checkbox @bind-Value="@mio" Title="Mio"></BM_checkbox>
+<p>@mio</p>
+
+
 @code{
+    private string text="";
 
-   int num = 0; 
-   private string valore = "";
-
-  private void test(int mio){
-      num = mio;
-      
-  }
-
-     
+    private bool mio = false;
 }

@@ -1,5 +1,43 @@
-﻿<h3>Component1</h3>
+﻿@page "/Parallax"
+@inject IJSRuntime js
 
-@code {
 
+
+<BM_parallax_container Src="img/parallax1.jpg"></BM_parallax_container>
+<BM_parallax_section Class="" Backcolor="enum_color.white">
+    <h2 class="header">Parallax</h2>
+    <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+
+</BM_parallax_section>
+
+<BM_parallax_container Src="img/parallax2.jpg"></BM_parallax_container>
+
+
+<p>Code</p>
+
+<Code rows="text1"></Code>
+
+
+
+@code{
+
+    private string[] text1 = new string[]
+    {
+"<BM_parallax_container Src=\"img/parallax1.jpg\"></BM_parallax_container>",
+"<BM_parallax_section Backcolor=\"enum_color.white\">",
+    "<h2 class=\"header\">Parallax</h2>",
+    "<p class=\"grey-text text-darken-3 lighten-3\">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>",
+"</BM_parallax_section>",
+"<BM_parallax_container Src=\"img/parallax2.jpg\"></BM_parallax_container>"
+    };
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await blazormaterialise.BM_parallax.inizialize(js);
+        }
+    }
 }

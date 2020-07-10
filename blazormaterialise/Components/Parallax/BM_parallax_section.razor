@@ -1,0 +1,25 @@
+﻿@namespace blazormaterialise
+@inherits js_base
+
+<div class="section @dim @Class">
+    <div class="row container">
+        @ChildContent
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    private string dim = "";
+
+    protected override void OnInitialized()
+    {
+        dim = "";
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+
+    }
+}
+

@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/pUrdvBisW8MqePZD2H6QqCCXPB78a9GXZTVyVZ9VWQU=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/4eChw_XI6l79tVoA1tCT5hVIGxLmgSjKgE4G4D0KUf0=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/test.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/test.dll.gz"
     },
@@ -191,7 +191,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Numerics.Vectors.dll.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Gx3gjLIUpoDzGVv3VuoPisQPM3FaKOe_06Aaw-NfDvI=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/oABFKuidArN-l9ub4qJpcYiEWAFFXRpHGowhuLpk96o=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/blazormaterialise.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/blazormaterialise.dll.gz"
     },
@@ -266,12 +266,12 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/hKJyd4-PO3UtxjSAMQYfAqVVeeVv2YJuaVzgwadI0w4=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/hjLhwX6F4gJsx3uyhMXIzTcfJrVHnqWCb6HhknNpuwI=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/test.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/test.pdb.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/TtCjSOT2IAHhH4fkZP2B4ULfi6AL8crRBX8zDo3o5fM=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/DgiC2gX4nl72GXB1i8E0yCmz_GpfyZ374yKKbzwga8A=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/blazormaterialise.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/blazormaterialise.pdb.gz"
     },
@@ -296,7 +296,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/FrgTmoCoz6dViNiu_JogVoBUbXEW54VLE14lWMBuajk=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/M1CBpna9-0IcWboKHWchH2R9unKPtogh3r-eVZNyn-g=.hash",
       "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Debug\/netstandard2.1\/blazor\/blazor.boot.json",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.gz"
     }

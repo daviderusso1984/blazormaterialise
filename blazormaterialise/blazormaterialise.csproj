@@ -16,10 +16,13 @@
     <Folder Include="Components\Card\" />
     <Folder Include="Components\Footer\" />
     <Folder Include="Components\Slider\" />
+    <Folder Include="Components\Parallax\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Components\Card\Bm_card_content.razor" />
     <Content Remove="Components\Card\BM_card_head.razor" />
     <Content Remove="Components\Card\BM_card_stacked.razor" />
+    <Content Remove="js\Tabs\BM_tab_head.razor" />
+    <Content Remove="Components\Tabs\BM_tab_head.razor" />
   </ItemGroup>
 </Project>

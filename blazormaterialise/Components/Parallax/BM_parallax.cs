@@ -1,10 +1,14 @@
 ﻿using System;
-namespace blazormaterialise.Components.Parallax
+using System.Threading.Tasks;
+using Microsoft.JSInterop;
+
+namespace blazormaterialise
 {
-    public class BM_parallax
+    public static class BM_parallax
     {
-        public BM_parallax()
+        public static async Task inizialize(IJSRuntime Js)
         {
+            await Js.InvokeVoidAsync("parallax_init");
         }
     }
 }

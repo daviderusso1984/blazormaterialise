@@ -1,0 +1,14 @@
+﻿@namespace blazormaterialise
+@inject IJSRuntime JSRuntime;
+@inherits js_base
+
+<div class="parallax-container @Class" id="@Id">
+    <div class="parallax"><img src="@Src"></div>
+</div>
+
+@code{
+    [Parameter]
+    public string Src { get; set; } = "";
+
+   
+}

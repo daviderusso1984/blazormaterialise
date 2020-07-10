@@ -11,4 +11,19 @@
     <BM_dropdown_item Type="enum_type_dropdown_item.link">Three</BM_dropdown_item>
 </BM_dropdown>
 
+<p>Code</p>
+<Code rows="@text1"></Code>
+
+@code{
+    private string[] text1 = new string[]{
+        "<BM_button Data_target=\"drop\" Class=\"@blazormaterialise.Opz.Dropdown_trigger\" >Open</BM_button>",
+        "<BM_dropdown Id=\"drop\">",
+    "<BM_dropdown_item>One</BM_dropdown_item>",
+    "<BM_dropdown_item>Two</BM_dropdown_item>",
+    "<BM_dropdown_item Type=\"enum_type_dropdown_item.divider\"></BM_dropdown_item>",
+    "<BM_dropdown_item Type=\"enum_type_dropdown_item.link\">Three</BM_dropdown_item>",
+"</BM_dropdown>"
+    };
+}
+
 

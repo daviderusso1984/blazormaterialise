@@ -1,0 +1,55 @@
+﻿@page "/Toast"
+@inject IJSRuntime JSRuntime;
+
+<style>
+    .back{
+        background-color: red
+    }
+</style>
+
+
+<h3>Toast</h3>
+<h5>Toast classic</h5>
+
+<BM_button Onclick="click">Click</BM_button>
+
+<Code rows="@text1"></Code>
+
+<h5>Toast rounded</h5>
+
+<BM_button Onclick="click1">Click</BM_button>
+
+<h5>Toast rounded custom</h5>
+
+<BM_button Onclick="click2">Click</BM_button>
+
+
+@code{
+
+    private string[] text1 = new string[]
+    {
+        "<BM_button Onclick=\"click\">Click</BM_button>",
+        "private void click()",
+        "{",
+        "BM_toast.Inizialize(JSRuntime, \"I m a toast\", \"\", false);",
+        "BM_toast.show();",
+        "}"
+    };
+    private void click()
+    {
+        BM_toast.Inizialize(JSRuntime, "I m a toast", "", false);
+        BM_toast.show();
+    }
+
+    private void click1()
+    {
+        BM_toast.Inizialize(JSRuntime, "I m a toast rounded", "", true);
+        BM_toast.show();
+    }
+
+    private void click2()
+    {
+        BM_toast.Inizialize(JSRuntime, "<p>I m a toast rounded</p><p>Custom</p>", "background-color: red", true);
+        BM_toast.show();
+    }
+}

@@ -1,0 +1,65 @@
+@namespace blazormaterialise
+@inherits css_base
+
+@inject IJSRuntime JSRuntime;
+
+@if (Container)
+{
+    <div class="row @Class" >
+        <div class="col s12">
+            <ul class="tabs" id="@Id">
+                @Head
+            </ul>
+        </div>
+        @Body
+    </div>
+}
+else
+{
+    @if (Fixed_width)
+    {
+        <ul class="tabs @Class" id="@Id">
+            @Head
+        </ul>
+        @Body
+    }
+    else
+    {
+        <ul class="tabs tabs-fixed-width z-depth-1 @Class" id="@Id">
+            @Head
+        </ul>
+        @Body
+    }
+
+}
+
+
+
+
+
+
+@code{
+    [Parameter]
+    public RenderFragment Head { get; set; }
+    [Parameter]
+    public RenderFragment Body { get; set; }
+
+    [Parameter]
+    public bool Container { get; set; } = true;
+    [Parameter]
+    public bool Fixed_width { get; set; } = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("tabs_init",Id);
+        }
+    }
+
+
+
+
+
+}

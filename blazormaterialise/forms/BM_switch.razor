@@ -1,0 +1,33 @@
+@namespace blazormaterialise
+
+
+<div class="switch">
+    <label>
+        @Text_off
+        <input type="checkbox" value="@Value" @oninput="Change">
+        <span class="lever"></span>
+        @Text_on
+    </label>
+</div>
+
+
+@code{
+    [Parameter]
+    public string Text_off { get; set; } = "";
+    [Parameter]
+    public string Text_on { get; set; } = "";
+    [Parameter]
+    public bool Value { get; set; } = false;
+    [Parameter]
+    public EventCallback<bool> ValueChanged { get; set; }
+
+
+    protected Task Change(ChangeEventArgs e)
+    {
+        Value = (bool)e.Value;
+        return ValueChanged.InvokeAsync((bool)e.Value);
+    }
+
+
+
+}

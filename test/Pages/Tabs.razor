@@ -1,0 +1,106 @@
+﻿@page "/Tabs"
+
+
+<style>
+    .bg {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        
+    }
+</style>
+
+<h3>Tabs</h3>
+
+<h5>Tabs Container ON</h5>
+
+<BM_tab Container="true">
+    <Head>
+        <li class="tab col s3"><a href="#test1">Test 1</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+    </Head>
+    <Body>
+        <div id="test1" class="col s12">Test 1</div>
+        <div id="test2" class="col s12">Test 2</div>
+        <div id="test3" class="col s12">Test 3</div>
+        <div id="test4" class="col s12">Test 4</div>
+    </Body>
+</BM_tab>
+
+<Code rows="text1"></Code>
+
+
+<h5>Tabs Container OFF</h5>
+
+<BM_tab Container="false">
+    <Head>
+        <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
+        <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
+        <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
+    </Head>
+    <Body>
+        <div id="test-swipe-1" class="col s12 blue bg">Test 1</div>
+        <div id="test-swipe-2" class="col s12 red bg" >Test 2</div>
+        <div id="test-swipe-3" class="col s12 green bg">Test 3</div>
+    </Body>
+</BM_tab>
+
+<Code rows="text2"></Code>
+
+<h5>Tabs Fixed Width</h5>
+
+<BM_tab Container="false" Fixed_width="true">
+    <Head>
+        <li class="tab"><a href="#test11">Test 1</a></li>
+        <li class="tab"><a class="active" href="#test12">Test 2</a></li>
+        <li class="tab disabled"><a href="#test13">Disabled Tab</a></li>
+        <li class="tab"><a href="#test14">Test 4</a></li>
+        <li class="tab"><a href="#test15">Test 5</a></li>
+    </Head>
+    <Body>
+        <div id="test11" class="col s12"><p>Test 1</p></div>
+        <div id="test12" class="col s12"><p>Test 2</p></div>
+        <div id="test13" class="col s12"><p>Test 3</p></div>
+        <div id="test14" class="col s12"><p>Test 4</p></div>
+        <div id="test15" class="col s12"><p>Test 5</p></div>
+    </Body>
+</BM_tab>
+
+@code{
+
+    private string[] text1 = new string[]
+    {
+
+"<BM_tab Container=\"true\">",
+    "<Head>",
+        "<li class=\"tab col s3\"><a href=\"#test1\">Test 1</a></li>",
+        "<li class=\"tab col s3\"><a class=\"active\" href=\"#test2\">Test 2</a></li>",
+        "<li class=\"tab col s3 disabled\"><a href=\"#test3\">Disabled Tab</a></li>",
+        "<li class=\"tab col s3\"><a href=\"#test4\">Test 4</a></li>",
+    "</Head>",
+    "<Body>",
+        "<div id=\"test1\" class=\"col s12\">Test 1</div>",
+        "<div id=\"test2\" class=\"col s12\">Test 2</div>",
+        "<div id=\"test3\" class=\"col s12\">Test 3</div>",
+        "<div id=\"test4\" class=\"col s12\">Test 4</div>",
+    "</Body>",
+"</BM_tab>"
+        };
+    private string[] text2 = new string[]
+    {
+"<BM_tab Container=\"false\">",
+    "<Head>",
+        "<li class=\"tab col s3\"><a href=\"#test-swipe-1\">Test 1</a></li>",
+        "<li class=\"tab col s3\"><a class=\"active\" href=\"#test-swipe-2\">Test 2</a></li>",
+        "<li class=\"tab col s3\"><a href=\"#test-swipe-3\">Test 3</a></li>",
+    "</Head>",
+    "<Body>",
+        "<div id=\"test-swipe-1\" class=\"col s12 blue\">Test 1</div>",
+        "<div id=\"test-swipe-2\" class=\"col s12 red\">Test 2</div>",
+        "<div id=\"test-swipe-3\" class=\"col s12 green\">Test 3</div>",
+    "</Body>",
+"</BM_tab>"
+    };
+}

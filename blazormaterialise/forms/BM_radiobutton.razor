@@ -1,30 +1,41 @@
 @namespace blazormaterialise
+@typeparam TValue
 
 
 
-
-    <label>
-        @if(Checked){
-            @if(Disabled){
-                 <input name="group1" @onchange="Change" type="radio" checked disabled />
-            }else{
-                 <input name="group1" @onchange="Change" type="radio" checked />
-            }
-           
-        }else{
-            @if(Disabled){
-                <input name="group1" @onchange="Change" type="radio" disabled />
-            }else{
-                <input name="group1" @onchange="Change" type="radio" />
-            }
-            
+<label>
+    @if (Checked)
+    {
+        @if (Disabled)
+        {
+            <input class="@dim" name="group1" @onchange="((e) => OnChangeHandler(e))" type="radio" checked disabled value="@(Convert.ToString(Value))"/>
         }
-        
-        <span>@Text</span>
-    </label>
+        else
+        {
+            <input class="@dim" name="group1" @onchange="((e) => OnChangeHandler(e))" type="radio" checked value="@(Convert.ToString(Value))" />
+        }
+
+    }
+    else
+    {
+        @if (Disabled)
+        {
+            <input class="@dim" name="group1" @onchange="((e) => OnChangeHandler(e))" type="radio" disabled value="@(Convert.ToString(Value))" />
+        }
+        else
+        {
+            <input class="@dim" name="group1" @onchange="((e) => OnChangeHandler(e))" type="radio" value="@(Convert.ToString(Value))" />
+        }
+
+    }
+
+    <span>@Text</span>
+</label>
 
 
 @code{
+    [Parameter]
+    public TValue Value { get; set; }
 
     [Parameter]
     public string Text { get; set; } = "";
@@ -33,11 +44,29 @@
     [Parameter]
     public bool Disabled { get; set; } = false;
     [Parameter]
-    public EventCallback<bool> Onchange { get; set; }
+    public bool With_gap{get;set;}=false;
+    [Parameter]
+    public EventCallback<string> Onchecked { get; set; }
 
-    protected void Change (ChangeEventArgs e) {
-        Onchange.InvokeAsync ((bool) e.Value);
+    private string dim = "";    
+
+    protected override void OnInitialized()
+    {
+        if (Checked)
+        {
+            Onchecked.InvokeAsync(Value.ToString());
+        }
+        dim = "";
+        if(With_gap){
+            dim += "with-gap ";
+        }
     }
 
-    
+
+    private void OnChangeHandler(ChangeEventArgs e)
+    {        
+        Onchecked.InvokeAsync(e.Value.ToString());
+    }
+
+
 }

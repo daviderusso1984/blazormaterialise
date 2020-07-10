@@ -2,28 +2,40 @@
 @inject IJSRuntime JSRuntime;
 @inherits css_base
 
+@if (string.IsNullOrWhiteSpace(Href))
+{
+    <a class="@valor @dim @Class" id="@Id" @attributes="@Attributes" data-target="@Data_target" @onclick="click">
+        @ChildContent
+    </a>
+}
+else
+{
+    <a class="@valor @dim @Class" id="@Id" href="@Href" @attributes="@Attributes" data-target="@Data_target" @onclick="click">
+        @ChildContent
+    </a>
+}
 
-<a class="@valor @dim @Class" id="@Id" href="@Href"  data-target="@Data_target" @onclick="click">
-    @ChildContent
-</a>
 
 @code{
 
     [Parameter]
-    public RenderFragment ChildContent{get;set;}
+    public RenderFragment ChildContent { get; set; }
     [Parameter]
-    public bool Waves_effect{get;set;} = true;
+    public bool Waves_effect { get; set; } = true;
     [Parameter]
-    public bool Disabled{get;set;} = false;
+    public bool Disabled { get; set; } = false;
     [Parameter]
     public string Href { get; set; } = "";
     [Parameter]
-    public enum_button Type_button{get;set;}= enum_button.Flat;
+    public enum_button Type_button { get; set; } = enum_button.Flat;
     [Parameter]
-    public EventCallback<MouseEventArgs> Onclick{get;set;}
+    public EventCallback<MouseEventArgs> Onclick { get; set; }
+    [Parameter]
+    public Dictionary<string, object> Attributes { get; set; }
 
 
-    protected async void click(MouseEventArgs ev){
+    protected async void click(MouseEventArgs ev)
+    {
         await Onclick.InvokeAsync(ev);
     }
 
@@ -33,18 +45,25 @@
 
     private string dim = "";
 
-    protected override void OnInitialized(){
+    protected override void OnInitialized()
+    {
 
-        if(Type_button == enum_button.Flat){
-            if(Waves_effect){
+        if (Type_button == enum_button.Flat)
+        {
+            if (Waves_effect)
+            {
                 valor += "waves-effect waves-teal ";
             }
-        }else{
-            if(Waves_effect){
+        }
+        else
+        {
+            if (Waves_effect)
+            {
                 valor += "waves-effect waves-light ";
             }
         }
-        if(Disabled){
+        if (Disabled)
+        {
             valor += "disabled ";
         }
         var btn = new button();

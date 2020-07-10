@@ -1,5 +1,64 @@
-﻿<h3>Component1</h3>
+﻿@page "/Forms"
 
-@code {
+<h3>Forms</h3>
+<h5>Switches</h5>
 
+<BM_switch Text_on="On" Text_off="Off" @bind-Value="@_switch"></BM_switch>
+<p>@_switch</p>
+
+<p>Code</p>
+<Code rows="text1"></Code>
+
+<h5>Checkbox</h5>
+<BM_checkbox @bind-Value="@_checkbox" Title="Check"></BM_checkbox>
+<p>@_checkbox</p>
+
+<p>Code</p>
+<Code rows="text2"></Code>
+
+<p>Filled_in</p>
+<BM_checkbox  Title="Check" Filled_in="true"></BM_checkbox>
+
+<p>Set</p>
+<p>Filled_in=true</p>
+
+<h5>Radiobutton</h5>
+<form action="#">
+    <BM_radiobutton Onchecked="chec" Text="check 1" Value="@(10)" With_gap="true"  ></BM_radiobutton>
+    <BM_radiobutton Onchecked="chec" Text="check 2" Value="@(20)" Checked="true"></BM_radiobutton>
+    <BM_radiobutton Onchecked="chec" Text="check 3" Value="@(30)"></BM_radiobutton>
+</form>
+
+<p>Check : @_check1</p>
+
+<h5>Range</h5>
+
+<BM_range Min=0 Max=100 @bind-Value="@mio" Step=0.1f></BM_range>
+
+
+<p>@mio</p>
+
+
+
+@code{
+    private bool _switch = false;
+    private bool _checkbox = false;
+    private Int32 _check1 = 0;
+
+    private float mio = 10;
+
+    private void chec(string ok)
+    {        
+        _check1 = Convert.ToInt32(ok);
+
+    }
+    private string[] text1 = new string[]
+{
+        "<BM_switch Text_on=\"On\" Text_off=\"Off\" @bind-Value=\"@_switch\"></BM_switch>"
+};
+
+    private string[] text2 = new string[]
+{
+        "<BM_checkbox @bind-Value=\"@_checkbox\" Title=\"Check\"></BM_checkbox>"
+        };
 }

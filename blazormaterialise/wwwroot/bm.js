@@ -122,7 +122,7 @@ function featurediscovery_show(id) {
 function featurediscovery_close(id) {
     var elems = document.getElementById(id);
     var instance = M.TapTarget.getInstance(elems);
-    instance.destroy();
+    instance.close();
 }
 
 
@@ -133,8 +133,58 @@ function modal_init() {
     var elems = document.querySelectorAll('.modal');
     var options = {};
     var instances = M.Modal.init(elems, options);
-} 
+}
 
+function modal_open(id) {
+    var elems = document.getElementById(id);
+    var instance = M.Modal.getInstance(elems);
+    instance.open();
+}
+
+function modal_close(id) {
+    var elems = document.getElementById(id);
+    var instance = M.Modal.getInstance(elems);
+    instance.close();
+}
+
+//tabs
+
+function tabs_init(id) {
+    var elems = document.getElementById(id);
+    var options = {};
+    var instance = M.Tabs.init(elems, options);
+}
+
+//tooltip
+
+function tooltip_init() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var options = {};
+    var instances = M.Tooltip.init(elems, options);
+}
+
+//scrollspy
+
+function scrollspy_init() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var options = {};
+    var instances = M.ScrollSpy.init(elems, options);
+}
+
+//parallax
+
+function parallax_init() {
+    var elems = document.querySelectorAll('.parallax');
+    var options = {};
+    var instances = M.Parallax.init(elems, options);
+}
+
+//range
+
+function range_init(){
+    var array_of_dom_elements = document.querySelectorAll("input[type=range]");
+    M.Range.init(array_of_dom_elements);
+}
 
 
 

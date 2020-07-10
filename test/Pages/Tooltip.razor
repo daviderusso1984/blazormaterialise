@@ -1,0 +1,55 @@
+﻿@page "/Tooltip"
+@inject IJSRuntime JSRuntime;
+
+<BM_button Class="tooltipped" Attributes="@Attribute">Click</BM_button>
+
+<Code rows="text1">
+
+</Code>
+
+
+@code{
+
+        private string[] text1 = new string[]
+        {
+        "<BM_button Class=\"tooltipped\" Attributes=\"@Attribute\">Click</BM_button>",
+        "protected override void OnParametersSet()",
+        "{",
+        "Attribute = new Dictionary<string, object>()",
+        "{",
+        "{ \"data-position\" , \"bottom\" },",
+        "{ \"data-tooltip\", \"I am a tooltip\" }",
+        "};",
+        "}",
+        "OnAfterRenderAsync",
+        "await blazormaterialise.BM_tooltip.inizialize(JSRuntime);"
+
+    };
+    public Dictionary<string, object> Attribute;
+
+    protected override void OnParametersSet()
+    {
+        Attribute = new Dictionary<string, object>()
+    {
+        { "data-position" , "bottom" },
+        { "data-tooltip", "I am a tooltip" }
+    };
+
+    }
+
+
+
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await blazormaterialise.BM_tooltip.inizialize(JSRuntime);
+
+
+        }
+
+    }
+}

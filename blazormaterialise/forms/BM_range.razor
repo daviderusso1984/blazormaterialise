@@ -1,6 +1,8 @@
 @namespace blazormaterialise
+@inject IJSRuntime JSRuntime;
+
 <p class="range-field">
-<input type="range" id="test5" min="@Min" max="@Max" value="@Value" />
+<input type="range" id="test5" step="@Step" min="@Min" max="@Max" @oninput="Change" value="@Value" />
 </p>
 
 @code{
@@ -9,5 +11,26 @@
     [Parameter]
     public float Max{get;set;}=0;
     [Parameter]
+    public float Step{get;set;}=0;
+    [Parameter]
     public float Value{get;set;}=0;
+    [Parameter]
+    public EventCallback<float> ValueChanged { get; set; }
+
+         protected Task Change(ChangeEventArgs e)
+        {
+            Value = Convert.ToSingle(e.Value);
+            return ValueChanged.InvokeAsync(Convert.ToSingle(e.Value));
+        }
+
+     protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("range_init");
+        }
+
+
+    }
 }
