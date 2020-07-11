@@ -1,9 +1,19 @@
 ﻿using System;
 namespace blazormaterialise
 {
+
+    public enum enum_type_option{
+        String, Icon
+    }
+
+    
     public enum enum_button
     {
         Raised, Floating, Flat, Large, Small
+    }
+
+    public enum enum_style_wave{
+        light , red ,yellow,orange ,purple , green ,teal
     }
 
     public enum enum_icon_size

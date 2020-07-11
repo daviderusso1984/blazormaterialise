@@ -33,10 +33,22 @@
 
 <h5>Range</h5>
 
-<BM_range Min=0 Max=100 @bind-Value="@mio" Step=0.1f></BM_range>
+<BM_range Min=0 Max=10 @bind-Value="@_range" Step=2></BM_range>
 
 
-<p>@mio</p>
+<p>@_range</p>
+
+<h5>Select</h5>
+
+<BM_select @bind-Value="@_select" Label="Select item">
+    <BM_option Type="enum_type_option.String" Value="@("one")" Text="One"></BM_option>
+    <BM_option Type="enum_type_option.String" Value="@("two")" Text="Two"></BM_option>
+    <BM_option Type="enum_type_option.String" Value="@("three")" Text="Three"></BM_option>
+</BM_select>
+
+<p>@_select</p>
+
+
 
 
 
@@ -45,7 +57,9 @@
     private bool _checkbox = false;
     private Int32 _check1 = 0;
 
-    private float mio = 10;
+    private float _range = 1;
+
+    private string _select = "stai";
 
     private void chec(string ok)
     {        

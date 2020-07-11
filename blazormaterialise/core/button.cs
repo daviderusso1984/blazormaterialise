@@ -1,7 +1,7 @@
 namespace blazormaterialise{
-    internal class button{
+    internal static class button{
 
-        internal string get_button(enum_button but){
+        internal static string get_button(enum_button but){
             switch (but)
             {
                 case enum_button.Raised:
@@ -18,6 +18,30 @@ namespace blazormaterialise{
                 return "";
             }
         }
+
+        internal static string get_wave(enum_style_wave sty){
+            switch (sty)
+            {
+                case enum_style_wave.light:
+                return "waves-light";
+                case enum_style_wave.green:
+                return "waves-green";
+                case enum_style_wave.orange:
+                return "waves-orange";
+                case enum_style_wave.purple:
+                return "waves-purple";
+                case enum_style_wave.red:
+                return "waves-red";
+                case enum_style_wave.teal:
+                return "waves-teal";
+                case enum_style_wave.yellow:
+                return "waves-yellow";
+                default:
+                return "";
+            }
+        }
+
+       
     }
 
    

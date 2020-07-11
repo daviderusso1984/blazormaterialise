@@ -16,7 +16,7 @@
                 @if(Active_text_limit){
                     <input value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate " data-length="@Text_limit">
                 }else{
-                    <input value="@Value" id="@Id" type="@Type" @onchange="Change" class="validate ">
+                    <input value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate ">
                 }                
             }          
           <label for="@Id">@Label</label>

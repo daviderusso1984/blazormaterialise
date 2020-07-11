@@ -5,9 +5,9 @@
 
 @if (Container)
 {
-    <div class="row @Class" >
-        <div class="col s12">
-            <ul class="tabs" id="@Id">
+    <div class="row  " >
+        <div class="col s12 ">
+            <ul class="tabs @dim @Class" id="@Id">
                 @Head
             </ul>
         </div>
@@ -18,14 +18,14 @@ else
 {
     @if (Fixed_width)
     {
-        <ul class="tabs @Class" id="@Id">
+        <ul class="tabs @dim @Class" id="@Id">
             @Head
         </ul>
         @Body
     }
     else
     {
-        <ul class="tabs tabs-fixed-width z-depth-1 @Class" id="@Id">
+        <ul class="tabs tabs-fixed-width z-depth-1 @dim @Class" id="@Id">
             @Head
         </ul>
         @Body
@@ -49,6 +49,16 @@ else
     [Parameter]
     public bool Fixed_width { get; set; } = false;
 
+     private string dim="";
+
+    protected override void OnInitialized(){       
+       
+        dim = "";
+         dim += blazormaterialise.show.get_show(Visibility) + " ";
+       dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await base.OnAfterRenderAsync(firstRender);
@@ -56,6 +66,8 @@ else
         {
             await JSRuntime.InvokeVoidAsync("tabs_init",Id);
         }
+
+
     }
 
 

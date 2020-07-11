@@ -1,0 +1,35 @@
+@namespace blazormaterialise
+@typeparam TValue
+
+
+@if(Type == enum_type_option.String){
+ @if(Value.ToString() == Ing_value.ToString()){
+      <option value="@Value" selected>@Text</option>
+ }else{
+      <option value="@Value" >@Text</option>
+ }
+}
+@if(Type == enum_type_option.Icon){
+@if(Value.ToString() == Ing_value.ToString()){
+     <option value="@Value" data-icon="@Icon" selected>@Text</option>
+}else{
+    <option value="@Value" data-icon="@Icon">@Text</option>
+}
+}
+
+
+
+
+
+@code{
+    [CascadingParameter] 
+    TValue Ing_value { get; set; }
+    [Parameter]
+    public enum_type_option Type{get;set;}=enum_type_option.String;   
+    [Parameter]
+    public TValue Value{get;set;}
+    [Parameter]
+    public string Text{get;set;} = "";
+    [Parameter]
+    public string Icon{get;set;} = "";
+}

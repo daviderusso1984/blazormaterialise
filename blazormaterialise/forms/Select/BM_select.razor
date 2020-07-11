@@ -1,0 +1,43 @@
+@namespace blazormaterialise
+@inject IJSRuntime JSRuntime;
+@typeparam TValue
+
+
+ <div class="input-field col s12">
+    <select @onchange="OnChangeHandler">
+        <CascadingValue Value="@Value">
+             @ChildContent
+        </CascadingValue>       
+    </select>
+    <label>@Label</label>
+  </div>
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent{get;set;}
+    [Parameter]
+    public structure_select[] Items { get; set; }
+
+    [Parameter]
+    public string Label { get; set; } = "";
+    [Parameter]
+    public TValue Value { get; set; }
+    [Parameter]
+    public EventCallback<TValue> ValueChanged { get; set; }
+
+    protected override async Task OnAfterRenderAsync (bool firstRender) {
+        await base.OnAfterRenderAsync (firstRender);
+
+        await JSRuntime.InvokeVoidAsync ("select_init");
+
+    }
+
+    private void OnChangeHandler(ChangeEventArgs e)
+    {       
+        Value = (TValue)e.Value; 
+        ValueChanged.InvokeAsync((TValue)e.Value);
+    }
+
+    
+}

@@ -7,9 +7,9 @@
     case enum_type_preloader.Linear:
       <div class="progress">
          @if(Indeterminate){
-             <div class="indeterminate @Class" id="@Id" ></div>
+             <div class="indeterminate @Class @dim" id="@Id" ></div>
          }else{
-             <div class="determinate @Class" style="width: @(_value + "%")" id="@Id" ></div>
+             <div class="determinate @Class @dim" style="width: @(_value + "%")" id="@Id" ></div>
          }
         
       </div>
@@ -102,6 +102,8 @@
 
     private string _size = "";
     private string _color = "";
+
+    private string dim = "";
     protected override void OnInitialized()
     {
         //base.OnInitialized();
@@ -112,6 +114,10 @@
         var pre = new preloader();
         _color = pre.get_enum_color_circle(Color_Circle);
         _size = pre.get_enum_size_circle(Size_Circle);
+        dim = "";
+        dim += blazormaterialise.show.get_show(Visibility) + " ";
+         dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
     }
 
    

@@ -410,8 +410,8 @@
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/Razor/Pages/Parallax.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Forms.razor.g.cs
 /Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/Razor/Pages/Forms.razor.g.cs
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/4eChw_XI6l79tVoA1tCT5hVIGxLmgSjKgE4G4D0KUf0=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/oABFKuidArN-l9ub4qJpcYiEWAFFXRpHGowhuLpk96o=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/hjLhwX6F4gJsx3uyhMXIzTcfJrVHnqWCb6HhknNpuwI=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/DgiC2gX4nl72GXB1i8E0yCmz_GpfyZ374yKKbzwga8A=.hash
-/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/M1CBpna9-0IcWboKHWchH2R9unKPtogh3r-eVZNyn-g=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/MEEmNonTpOSvBPIc0gpboqZfJQsBV4cvgw7p1zEmTR0=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/gjNjjRBBQdTQEChcm40e2amygtaH0REave1k-lc9I20=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/RLyRO0i2kb0y-LVaKWqkKpmRkJJO1XgYHsnpYyj8qLU=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/jTvLsh2M1iIsF5pLiIKw9UeJTxy-0--SGHvurMSWW1A=.hash
+/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/Debug/netstandard2.1/integrity/nnse1GjQ-d3t8gWhC-6OzCbTuT1leQGnY3L7H4YDQck=.hash

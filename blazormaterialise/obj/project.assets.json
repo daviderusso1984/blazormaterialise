@@ -994,10 +994,10 @@
     "/Users/daviderusso1984/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.1.0",
     "restore": {
       "projectUniqueName": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/blazormaterialise.csproj",
-      "projectName": "blazormaterialise",
+      "projectName": "BlazorMaterialize",
       "projectPath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/blazormaterialise.csproj",
       "packagesPath": "/Users/daviderusso1984/.nuget/packages/",
       "outputPath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/",

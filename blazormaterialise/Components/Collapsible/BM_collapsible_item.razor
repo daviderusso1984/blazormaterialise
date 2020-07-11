@@ -50,12 +50,8 @@
         if(Visibility != enum_show.show){
             dim += blazormaterialise.show.get_show(Visibility) + " ";
         }
-        if(Backcolor != enum_color.not){
-            dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
-        }
-        if(Textcolor != enum_color.not){
-            dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
-        }       
+       dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
         //StateHasChanged();
     }
 

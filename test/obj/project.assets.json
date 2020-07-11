@@ -450,7 +450,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "blazormaterialise/1.0.0": {
+      "BlazorMaterialize/0.1.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -459,10 +459,10 @@
           "Microsoft.AspNetCore.Components.Web": "3.1.5"
         },
         "compile": {
-          "bin/placeholder/blazormaterialise.dll": {}
+          "bin/placeholder/BlazorMaterialize.dll": {}
         },
         "runtime": {
-          "bin/placeholder/blazormaterialise.dll": {}
+          "bin/placeholder/BlazorMaterialize.dll": {}
         }
       }
     }
@@ -1504,7 +1504,7 @@
         "version.txt"
       ]
     },
-    "blazormaterialise/1.0.0": {
+    "BlazorMaterialize/0.1.0": {
       "type": "project",
       "path": "../blazormaterialise/blazormaterialise.csproj",
       "msbuildProject": "../blazormaterialise/blazormaterialise.csproj"
@@ -1512,11 +1512,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "BlazorMaterialize >= 0.1.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.0",
-      "System.Net.Http.Json >= 3.2.0",
-      "blazormaterialise >= 1.0.0"
+      "System.Net.Http.Json >= 3.2.0"
     ]
   },
   "packageFolders": {

@@ -3,25 +3,16 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="blazormaterialise/forms/BM_radiobutton.razor">
     <Files>
       <File FileName="blazormaterialise/forms/BM_checkbox.razor" Line="54" Column="10" />
-      <File FileName="blazormaterialise/forms/BM_switch.razor" Line="7" Column="64" />
-      <File FileName="test/Pages/Index.razor" Line="8" Column="12" />
-      <File FileName="test/Pages/Forms.razor" Line="46" Column="26" />
+      <File FileName="blazormaterialise/forms/BM_switch.razor" />
+      <File FileName="test/Pages/Index.razor" />
+      <File FileName="test/Pages/Forms.razor" />
       <File FileName="blazormaterialise/forms/BM_radiobutton.razor" Line="30" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="blazormaterialise" expanded="True">
-            <Node name="blazormaterialise" expanded="True">
-              <Node name="base" expanded="True" />
-              <Node name="Components" expanded="True">
-                <Node name="Dropdown" expanded="True" />
-                <Node name="Tabs" expanded="True" />
-              </Node>
-              <Node name="forms" expanded="True">
-                <Node name="BM_radiobutton.razor" selected="True" />
-              </Node>
-            </Node>
+            <Node name="blazormaterialise" selected="True" />
             <Node name="test" expanded="True">
               <Node name="Pages" expanded="True" />
               <Node name="Shared" expanded="True" />

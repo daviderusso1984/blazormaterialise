@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BlazorMaterialize</id>
+    <version>0.1.0</version>
+    <authors>Davide Russo</authors>
+    <owners>Davide Russo</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/daviderusso1984/blazormaterialise</projectUrl>
+    <description>Materialize in blazor world</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="BlazorInputFile" version="0.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components" version="3.1.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="3.1.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/bin/Debug/netstandard2.0/blazormaterialise.dll" target="lib/netstandard2.0/blazormaterialise.dll" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/staticwebassets/msbuild.BlazorMaterialize.Microsoft.AspNetCore.StaticWebAssets.props" target="build/Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/staticwebassets/msbuild.build.BlazorMaterialize.props" target="build/BlazorMaterialize.props" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/staticwebassets/msbuild.buildMultiTargeting.BlazorMaterialize.props" target="buildMultiTargeting/BlazorMaterialize.props" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/obj/Debug/netstandard2.0/staticwebassets/msbuild.buildTransitive.BlazorMaterialize.props" target="buildTransitive/BlazorMaterialize.props" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/background.png" target="staticwebassets/background.png" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/bm.js" target="staticwebassets/bm.js" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/exampleJsInterop.js" target="staticwebassets/exampleJsInterop.js" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/.npmignore" target="staticwebassets/materialise_css/.npmignore" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/date_picker/_default.date.scss" target="staticwebassets/materialise_css/components/date_picker/_default.date.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/date_picker/_default.scss" target="staticwebassets/materialise_css/components/date_picker/_default.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/date_picker/_default.time.scss" target="staticwebassets/materialise_css/components/date_picker/_default.time.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/forms/_checkboxes.scss" target="staticwebassets/materialise_css/components/forms/_checkboxes.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/forms/_file-input.scss" target="staticwebassets/materialise_css/components/forms/_file-input.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/forms/_forms.scss" target="staticwebassets/materialise_css/components/forms/_forms.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/forms/_input-fields.scss" target="staticwebassets/materialise_css/components/forms/_input-fields.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/forms/_radio-buttons.scss" target="staticwebassets/materialise_css/components/forms/_radio-buttons.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/forms/_range.scss" target="staticwebassets/materialise_css/components/forms/_range.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/forms/_select.scss" target="staticwebassets/materialise_css/components/forms/_select.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/forms/_switches.scss" target="staticwebassets/materialise_css/components/forms/_switches.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_badges.scss" target="staticwebassets/materialise_css/components/_badges.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_buttons.scss" target="staticwebassets/materialise_css/components/_buttons.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_cards.scss" target="staticwebassets/materialise_css/components/_cards.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_carousel.scss" target="staticwebassets/materialise_css/components/_carousel.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_chips.scss" target="staticwebassets/materialise_css/components/_chips.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_collapsible.scss" target="staticwebassets/materialise_css/components/_collapsible.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_color.scss" target="staticwebassets/materialise_css/components/_color.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_dropdown.scss" target="staticwebassets/materialise_css/components/_dropdown.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_global.scss" target="staticwebassets/materialise_css/components/_global.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_grid.scss" target="staticwebassets/materialise_css/components/_grid.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_icons-material-design.scss" target="staticwebassets/materialise_css/components/_icons-material-design.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_materialbox.scss" target="staticwebassets/materialise_css/components/_materialbox.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_modal.scss" target="staticwebassets/materialise_css/components/_modal.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_navbar.scss" target="staticwebassets/materialise_css/components/_navbar.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_normalize.scss" target="staticwebassets/materialise_css/components/_normalize.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_preloader.scss" target="staticwebassets/materialise_css/components/_preloader.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_pulse.scss" target="staticwebassets/materialise_css/components/_pulse.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_roboto.scss" target="staticwebassets/materialise_css/components/_roboto.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_sideNav.scss" target="staticwebassets/materialise_css/components/_sideNav.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_slider.scss" target="staticwebassets/materialise_css/components/_slider.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_table_of_contents.scss" target="staticwebassets/materialise_css/components/_table_of_contents.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_tabs.scss" target="staticwebassets/materialise_css/components/_tabs.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_tapTarget.scss" target="staticwebassets/materialise_css/components/_tapTarget.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_toast.scss" target="staticwebassets/materialise_css/components/_toast.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_tooltip.scss" target="staticwebassets/materialise_css/components/_tooltip.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_transitions.scss" target="staticwebassets/materialise_css/components/_transitions.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_typography.scss" target="staticwebassets/materialise_css/components/_typography.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_variables.scss" target="staticwebassets/materialise_css/components/_variables.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/components/_waves.scss" target="staticwebassets/materialise_css/components/_waves.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/ghpages-materialize.css" target="staticwebassets/materialise_css/ghpages-materialize.css" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/ghpages-materialize.css.map" target="staticwebassets/materialise_css/ghpages-materialize.css.map" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/ghpages-materialize.scss" target="staticwebassets/materialise_css/ghpages-materialize.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/materialize.css" target="staticwebassets/materialise_css/materialize.css" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/materialize.css.map" target="staticwebassets/materialise_css/materialize.css.map" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/materialize.scss" target="staticwebassets/materialise_css/materialize.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialise_css/_style.scss" target="staticwebassets/materialise_css/_style.scss" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialize.css" target="staticwebassets/materialize.css" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/materialize.js" target="staticwebassets/materialize.js" />
+    <file src="/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/wwwroot/styles.css" target="staticwebassets/styles.css" />
+  </files>
+</package>

@@ -4,21 +4,21 @@
 
     @if(Fixed){
         <div class="navbar-fixed " >
-            <nav class="@dim @Class " id="@Id" >
-                <div class="nav-wrapper">
+            <nav class=" @Class " id="@Id" >
+                <div class="nav-wrapper @dim">
                     @Wrapper
                 </div>
-                <div class="nav-content">
+                <div class="nav-content @dim">
                     @Content
                 </div>
             </nav>
         </div>
     }else{
-        <nav class="@dim @Class " id="@Id" >
-             <div class="nav-wrapper">
+        <nav class=" @Class " id="@Id" >
+             <div class="nav-wrapper @dim">
                     @Wrapper
                 </div>
-                <div class="nav-content">
+                <div class="nav-content @dim">
                     @Content
                 </div>
         </nav>
@@ -42,7 +42,7 @@
     protected override void OnInitialized(){
         dim = "";
         dim += blazormaterialise.show.get_show(Visibility) + " ";
-        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+       dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
         dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
        
     }

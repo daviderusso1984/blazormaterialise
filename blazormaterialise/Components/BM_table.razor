@@ -4,7 +4,7 @@
   @inject IJSRuntime JSRuntime;
 
 
-    <table class=" @Class">
+    <table class="@Class @dim" id="@Id" >
         <thead>
           <tr>
               @TableHeader                       
@@ -77,6 +77,9 @@
         if(Responsive_table){
             dim += "responsive-table ";
         }
+         dim += blazormaterialise.show.get_show(Visibility) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
         if(Pagination_show){
             total_page  = Items.Count() / Pagination_divider;
             var div = Items.Count() % Pagination_divider;
