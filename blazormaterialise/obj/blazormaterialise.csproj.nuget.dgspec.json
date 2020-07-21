@@ -5,7 +5,7 @@
   },
   "projects": {
     "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/blazormaterialise.csproj": {
-      "version": "0.1.0",
+      "version": "0.3.0",
       "restore": {
         "projectUniqueName": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/blazormaterialise/blazormaterialise.csproj",
         "projectName": "BlazorMaterialize",

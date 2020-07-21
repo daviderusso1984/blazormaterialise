@@ -1,24 +1,53 @@
 ﻿<Properties StartupConfiguration="{1E230A53-CE76-496B-BEEA-5D47B27D8F9A}|BlazorApp1.Server">
-  <MonoDevelop.Ide.ItemProperties.test PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="blazormaterialise/forms/BM_radiobutton.razor">
+  <MonoDevelop.Ide.ItemProperties.test PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/Button.razor">
     <Files>
       <File FileName="blazormaterialise/forms/BM_checkbox.razor" Line="54" Column="10" />
-      <File FileName="blazormaterialise/forms/BM_switch.razor" />
+      <File FileName="blazormaterialise/forms/BM_switch.razor" Line="1" Column="1" />
       <File FileName="test/Pages/Index.razor" />
-      <File FileName="test/Pages/Forms.razor" />
-      <File FileName="blazormaterialise/forms/BM_radiobutton.razor" Line="30" Column="6" />
+      <File FileName="test/Pages/Forms.razor" Line="43" Column="1" />
+      <File FileName="blazormaterialise/forms/BM_radiobutton.razor" />
+      <File FileName="blazormaterialise/_Imports.razor" />
+      <File FileName="blazormaterialise/structure/structure_breadcrumbs.cs" />
+      <File FileName="blazormaterialise/forms/BM_file.razor" Line="15" Column="11" />
+      <File FileName="blazormaterialise/Components/Navbar/BM_navbar.razor" Line="45" Column="60" />
+      <File FileName="test/Shared/MainLayout.razor" Line="12" Column="19" />
+      <File FileName="blazormaterialise/css/BM_col.razor" Line="1" Column="1" />
+      <File FileName="blazormaterialise/css/BM_container.razor" Line="1" Column="1" />
+      <File FileName="test/Program.cs" Line="1" Column="1" />
+      <File FileName="test/Properties/launchSettings.json" Line="26" Column="48" />
+      <File FileName="test/wwwroot/index.html" Line="18" Column="1" />
+      <File FileName="test/wwwroot/css/app.css" Line="22" Column="19" />
+      <File FileName="test/Shared/NavMenu.razor" Line="1" Column="1" />
+      <File FileName="test/Pages/Card.razor" Line="105" Column="23" />
+      <File FileName="blazormaterialise/forms/Select/BM_option.razor" Line="1" Column="1" />
+      <File FileName="blazormaterialise/forms/Select/BM_select.razor" Line="11" Column="14" />
+      <File FileName="test/Pages/Button.razor" Line="35" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="blazormaterialise" expanded="True">
-            <Node name="blazormaterialise" selected="True" />
+            <Node name="blazormaterialise" expanded="True">
+              <Node name="Components" expanded="True">
+                <Node name="Navbar" expanded="True" />
+              </Node>
+              <Node name="css" expanded="True" />
+              <Node name="forms" expanded="True">
+                <Node name="Picker" expanded="True" />
+                <Node name="Select" expanded="True" />
+              </Node>
+              <Node name="structure" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
             <Node name="test" expanded="True">
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Button.razor" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
-                <Node name="img" expanded="True" />
               </Node>
             </Node>
           </Node>

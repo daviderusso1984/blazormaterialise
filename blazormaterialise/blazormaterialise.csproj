@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
     <PackageId>BlazorMaterialize</PackageId>
-    <PackageVersion>0.1</PackageVersion>
+    <PackageVersion>0.3</PackageVersion>
     <Authors>Davide Russo</Authors>
     <Owners>Davide Russo</Owners>
     <PackageProjectUrl>https://github.com/daviderusso1984/blazormaterialise</PackageProjectUrl>
@@ -19,17 +19,5 @@
     <PackageReference Include="BlazorInputFile" Version="0.2.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Components\Card\" />
-    <Folder Include="Components\Footer\" />
-    <Folder Include="Components\Slider\" />
-    <Folder Include="Components\Parallax\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Remove="Components\Card\Bm_card_content.razor" />
-    <Content Remove="Components\Card\BM_card_head.razor" />
-    <Content Remove="Components\Card\BM_card_stacked.razor" />
-    <Content Remove="js\Tabs\BM_tab_head.razor" />
-    <Content Remove="Components\Tabs\BM_tab_head.razor" />
-  </ItemGroup>
+
 </Project>
