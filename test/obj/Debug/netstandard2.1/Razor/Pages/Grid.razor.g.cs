@@ -496,7 +496,7 @@ namespace __Blazor.test.Pages.Grid
     #line hidden
     internal static class TypeInference
     {
-        public static void CreateBM_table_0<TableItem>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Collections.Generic.IReadOnlyList<TableItem> __arg0, int __seq1, global::Microsoft.AspNetCore.Components.RenderFragment __arg1, int __seq2, global::Microsoft.AspNetCore.Components.RenderFragment<TableItem> __arg2)
+        public static void CreateBM_table_0<TableItem>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Collections.Generic.IEnumerable<TableItem> __arg0, int __seq1, global::Microsoft.AspNetCore.Components.RenderFragment __arg1, int __seq2, global::Microsoft.AspNetCore.Components.RenderFragment<TableItem> __arg2)
         {
         __builder.OpenComponent<global::blazormaterialise.BM_table<TableItem>>(seq);
         __builder.AddAttribute(__seq0, "Items", __arg0);

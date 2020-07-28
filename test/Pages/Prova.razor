@@ -1,5 +1,110 @@
-﻿<h3>Component1</h3>
+﻿@page "/prova"
+@inject HttpClient http
 
-@code {
+<BM_select @bind-Value="@anno" Label="Select item">
+    @foreach (var item in LISTA_ANNI_SUPERENALOTTO)
+    {
+        <BM_option Type="enum_type_option.String" Value="@item.ToString()" Text="@item.ToString()"></BM_option>
+    }
+</BM_select>
+<BM_button Type_button="enum_button.Raised" Onclick="carica">Carica</BM_button>
+<BM_row>
+    <BM_col XL=12 Class="@blazormaterialise.Helpers.text_align_horizontal_center">
+        <h2>Archivio SuperEnalotto</h2>
+        <BM_table Items="archivio">
+            <TableHeader>
+                <th>Data</th>
+                <th>Num 1</th>
+                <th>Num 2</th>
+                <th>Num 3</th>
+                <th>Num 4</th>
+                <th>Num 5</th>
+                <th>Num 6</th>
+                <th>Jolly</th>
+                <th>Star</th>
+            </TableHeader>
+            <RowTemplate>
+                <td>@context.estrazione</td>
+                <td>@context.numero1</td>
+                <td>@context.numero2</td>
+                <td>@context.numero3</td>
+                <td>@context.numero4</td>
+                <td>@context.numero5</td>
+                <td>@context.numero6</td>
+                <td>@context.jolly</td>
+                <td>@context.star</td>
+            </RowTemplate>
+        </BM_table>
+    </BM_col>
+</BM_row>
 
+
+@code{
+
+    public static readonly int[] LISTA_ANNI_SUPERENALOTTO = new int[] { 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009 };
+
+
+    string anno = LISTA_ANNI_SUPERENALOTTO[0].ToString();
+
+    private async Task carica()
+    {
+        await Caricamento();
+    }
+
+    public struttura_archivio_superenalotto[] archivio = new struttura_archivio_superenalotto[0];
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Caricamento();
+
+    }
+
+    private async Task Caricamento()
+    {
+
+        //archivio = new espiko.Models.struttura_archivio_superenalotto[0];
+        archivio = await Leggi_archivio_superenalotto(anno);
+        //StateHasChanged();
+        Console.WriteLine(archivio.Length);
+    }
+    public static readonly string PATH_BASE = "https://localhost:5001/api/";
+
+    public static readonly string PATH_ARCHIVIO_SUPERENALOTTO = PATH_BASE + "Leggi/leggi_archivio_superenalotto";
+
+    public async Task<struttura_archivio_superenalotto[]> Leggi_archivio_superenalotto(string anno)
+    {
+        var cont = await http.GetAsync(PATH_ARCHIVIO_SUPERENALOTTO + "/" + anno);
+        if (cont.IsSuccessStatusCode)
+        {
+            return await cont.Content.ReadFromJsonAsync<struttura_archivio_superenalotto[]>();
+        }
+        return new struttura_archivio_superenalotto[0];
+    }
+
+    public class struttura_archivio_superenalotto
+    {
+        public string estrazione { get; set; }
+        public string percorso { get; set; }
+        public string numero1 { get; set; }
+        public string numero2 { get; set; }
+        public string numero3 { get; set; }
+        public string numero4 { get; set; }
+        public string numero5 { get; set; }
+        public string numero6 { get; set; }
+        public string jolly { get; set; }
+        public string star { get; set; }
+        public string valori { get; set; }
+        public string v6 { get; set; }
+        public string v51 { get; set; }
+        public string v5 { get; set; }
+        public string v4 { get; set; }
+        public string v3 { get; set; }
+        public string v2 { get; set; }
+        public string s5 { get; set; }
+        public string s4 { get; set; }
+        public string s3 { get; set; }
+        public string s2 { get; set; }
+        public string s1 { get; set; }
+        public string s0 { get; set; }
+    }
 }

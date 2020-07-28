@@ -28,26 +28,31 @@
 
     private string dim = "";
 
-    protected override void OnInitialized(){
-        
-        if(S != 0 && S > 0 && S <= 12){
+    protected override void OnParametersSet()
+    {
+        dim = "";
+        if (S != 0 && S > 0 && S <= 12)
+        {
             dim += "s" + S.ToString() + " ";
         }
-        if(M != 0 && M > 0 && M <= 12){
+        if (M != 0 && M > 0 && M <= 12)
+        {
             dim += "m" + M.ToString() + " ";
-        }  
-        if(L != 0 && L > 0 && L <= 12){
+        }
+        if (L != 0 && L > 0 && L <= 12)
+        {
             dim += "l" + L.ToString() + " ";
-        }    
-        if(XL != 0 && XL > 0 && XL <= 12){
+        }
+        if (XL != 0 && XL > 0 && XL <= 12)
+        {
             dim += "xl" + XL.ToString() + " ";
-        }  
-        dim += color.get_backcolor(color.get_color(Backcolor)) + " "; 
+        }
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
         dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
-
-
     }
 
-  
+   
+
+
 
 }

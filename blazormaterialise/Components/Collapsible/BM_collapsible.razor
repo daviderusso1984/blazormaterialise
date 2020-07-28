@@ -13,10 +13,13 @@
 
     private string dim = "";
 
-    protected override void OnInitialized(){
+  
+
+    protected override void OnParametersSet()
+    {
         dim = "";
         dim += blazormaterialise.show.get_show(Visibility) + " ";
-       dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
         dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
     }
 

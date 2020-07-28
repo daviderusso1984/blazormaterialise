@@ -6,10 +6,10 @@
 @switch (Type_item)
 {
     case enum_collection.Basic:
-    <li class="collection-item @dim @Class" id="@Id" >@ChildContent</li>
+    <li class="collection-item @dim @Class" id="@Id" @onclick="click">@ChildContent</li>
     break;
     case enum_collection.Links:
-    <a href="@Href" class="collection-item @valor @dim @Class" id="@Id" >@ChildContent</a>
+    <a href="@Href" class="collection-item @valor @dim @Class" id="@Id" @onclick="click">@ChildContent</a>
     break;
     default:
     break;
@@ -18,6 +18,8 @@
 @code{
     [Parameter]
     public RenderFragment ChildContent{get;set;}
+    [Parameter]
+    public EventCallback<MouseEventArgs> Onclick { get; set; }
 
     [Parameter]
     public enum_collection Type_item {get;set;} = enum_collection.Links;
@@ -30,10 +32,15 @@
 
     private string dim="";
 
+    protected async void click(MouseEventArgs ev)
+    {
+        await Onclick.InvokeAsync(ev);
+    }
+
     protected override void OnInitialized(){
         dim = "";
         dim += blazormaterialise.show.get_show(Visibility) + " ";
-      dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
         dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
         if(Active){
             valor += "active ";

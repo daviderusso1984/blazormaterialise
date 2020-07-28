@@ -104,9 +104,10 @@
     private string _color = "";
 
     private string dim = "";
-    protected override void OnInitialized()
+   
+
+    protected override void OnParametersSet()
     {
-        //base.OnInitialized();
         if (Max_value != 0 && Value != 0 && Max_value >= Value)
         {
             _value = (Max_value / 100) * Value;
@@ -116,11 +117,11 @@
         _size = pre.get_enum_size_circle(Size_Circle);
         dim = "";
         dim += blazormaterialise.show.get_show(Visibility) + " ";
-         dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
         dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
     }
 
-   
+
 
 
 }

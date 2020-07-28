@@ -13,51 +13,62 @@
     
 </li>
 
+
+
+
 @code{
     [Parameter]
     public RenderFragment Header{get;set;}
     [Parameter]
-    public RenderFragment Body{get;set;}   
-   
+    public RenderFragment Body{get;set;}
+
     [Parameter]
     public Boolean Active{get;set;}= false;
 
+   
+
     private string dim="";
     private string _active = "";
+
+   
 
     private string get_active(bool ok)
     {
         if (ok)
         {
-            
+
             return "active";
         }
         else
         {
-            
+
             return "a";
         }
     }
 
     protected override void OnParametersSet(){
-        _active = "";
-        if(Active){
-            _active ="active";
-        }else{
-            this.InvokeStateHasChanged();
-        }       
-        dim = "";
-        if(Visibility != enum_show.show){
-            dim += blazormaterialise.show.get_show(Visibility) + " ";
-        }
-       dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
-        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
+
         //StateHasChanged();
     }
 
     protected override void OnInitialized(){
+        _active = "";
+        if (Active)
+        {
+            _active = "active";
+        }
+        else
+        {
+            this.InvokeStateHasChanged();
+        }
+        dim = "";
+        if (Visibility != enum_show.show)
+        {
+            dim += blazormaterialise.show.get_show(Visibility) + " ";
+        }
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
+        dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
 
-        
     }
 
 

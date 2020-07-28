@@ -12,13 +12,14 @@
     [Parameter]
     public RenderFragment ChildContent { get; set; }
 
-     private string dim = "";
+    private string dim = "";
 
-     protected override void OnInitialized(){
-         dim += color.get_backcolor(color.get_color(Backcolor)) + " "; 
+   
+
+    protected override void OnParametersSet()
+    {
+        dim += color.get_backcolor(color.get_color(Backcolor)) + " ";
         dim += color.get_Textcolor(color.get_color(Textcolor)) + " ";
-
-
     }
 
 
