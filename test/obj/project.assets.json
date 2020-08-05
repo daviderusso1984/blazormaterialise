@@ -450,7 +450,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "BlazorMaterialize/0.8.0": {
+      "BlazorMaterialize/0.9.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -1504,7 +1504,7 @@
         "version.txt"
       ]
     },
-    "BlazorMaterialize/0.8.0": {
+    "BlazorMaterialize/0.9.0": {
       "type": "project",
       "path": "../blazormaterialise/blazormaterialise.csproj",
       "msbuildProject": "../blazormaterialise/blazormaterialise.csproj"
@@ -1512,7 +1512,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "BlazorMaterialize >= 0.8.0",
+      "BlazorMaterialize >= 0.9.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.0",
@@ -1532,7 +1532,7 @@
       "outputPath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/daviderusso1984/.nuget/NuGet/NuGet.Config"
+        "/Users/daviderusso1984/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"

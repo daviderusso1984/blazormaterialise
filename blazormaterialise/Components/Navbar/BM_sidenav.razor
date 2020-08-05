@@ -3,7 +3,7 @@
 @inherits js_base
 
 
-  <ul id="slide-out" class="sidenav">
+  <ul id="@Id" class="sidenav">
       @ChildContent
   </ul>
 
@@ -15,7 +15,17 @@
       protected override async Task  OnAfterRenderAsync(bool firstRender){
           await base.OnAfterRenderAsync(firstRender);
           if(firstRender){
-             await JSRuntime.InvokeVoidAsync("bm_sidebar",Id);
+              await JSRuntime.InvokeVoidAsync("bm_sidebar",Id);
           }
+      }
+
+      public async void close()
+      {
+          await JSRuntime.InvokeVoidAsync("sidebar_close", Id);
+      }
+
+      public async void open()
+      {
+          await JSRuntime.InvokeVoidAsync("sidebar_open", Id);
       }
   }

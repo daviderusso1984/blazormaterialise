@@ -99,10 +99,24 @@ function select_init() {
     var instances = M.FormSelect.init(elems, options);
 }
 
+//sidebar
+
 function bm_sidebar(id) {
     var elems = document.getElementById(id);
     var options = {};
     var instances = M.Sidenav.init(elems, options);
+}
+
+function sidebar_open(id) {
+    var elems = document.getElementById(id);
+    var instance = M.Sidenav.getInstance(elems);
+    instance.open();
+}
+
+function sidebar_close(id) {
+    var elems = document.getElementById(id);
+    var instance = M.Sidenav.getInstance(elems);
+    instance.close();
 }
 
 //featurediscovery

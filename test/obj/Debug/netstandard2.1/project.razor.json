@@ -9,14 +9,14 @@
     "TagHelpers": [
       {
         "Kind": "Components.Component",
-        "Name": "test.App",
+        "Name": "test.Pages.Forms",
         "AssemblyName": "test",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App",
+            "TagName": "Forms",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -28,19 +28,19 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "test.App"
+          "Common.TypeName": "test.Pages.Forms"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "test.App",
+        "Name": "test.Pages.Forms",
         "AssemblyName": "test",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "test.App",
+            "TagName": "test.Pages.Forms",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -52,7 +52,7 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "test.App",
+          "Common.TypeName": "test.Pages.Forms",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -1362,14 +1362,14 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "test.Pages.Forms",
+        "Name": "test.App",
         "AssemblyName": "test",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Forms",
+            "TagName": "App",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -1381,19 +1381,19 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "test.Pages.Forms"
+          "Common.TypeName": "test.App"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "test.Pages.Forms",
+        "Name": "test.App",
         "AssemblyName": "test",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "test.Pages.Forms",
+            "TagName": "test.App",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -1405,7 +1405,7 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "test.Pages.Forms",
+          "Common.TypeName": "test.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lIjbocJKu+QgDIqJ/HwzztCG307XgB+r07SLPkCD4rH8ihMnNEnmwiBs5E2LGw/RkdlO1iEkqAd9Lnr9LHAQkg==",
+  "dgSpecHash": "CKnDIE3yv7C5wXFxr1bjAkCrqoi7zpXwhHhep+x+covuDNWlhQhJPlvBrDFw+y+LQwkQe5uctqSSR3N1YNg1zg==",
   "success": true,
   "projectFilePath": "/Users/daviderusso1984/Desktop/progetti_nuget/BlazorMaterialize/test/test.csproj",
   "expectedPackageFiles": [
@@ -41,7 +41,8 @@
     "/Users/daviderusso1984/.nuget/packages/system.runtime.compilerservices.unsafe/4.7.1/system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
     "/Users/daviderusso1984/.nuget/packages/system.text.encodings.web/4.7.1/system.text.encodings.web.4.7.1.nupkg.sha512",
     "/Users/daviderusso1984/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
-    "/Users/daviderusso1984/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "/Users/daviderusso1984/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "/Users/daviderusso1984/.nuget/packages/blazormaterialize/0.9.0/blazormaterialize.0.9.0.nupkg.sha512"
   ],
   "logs": []
 }
