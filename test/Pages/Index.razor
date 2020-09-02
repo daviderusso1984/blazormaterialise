@@ -2,14 +2,14 @@
 @inject IJSRuntime JSRuntime;
 
 
-<BM_text_input @bind-Value="@text"></BM_text_input>
+<BM_text_input @bind-Value="@text" Label="Ciao stronzi"></BM_text_input>
 <p>@text</p>
 <BM_checkbox @bind-Value="@mio" Title="Mio"></BM_checkbox>
 <p>@mio</p>
 
 
 @code{
-    private string text="";
+    private string text="dddd";
 
     private bool mio = false;
 }

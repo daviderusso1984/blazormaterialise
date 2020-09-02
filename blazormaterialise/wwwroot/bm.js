@@ -201,6 +201,11 @@ function range_init(){
 }
 
 
+//input
+function input_init() {
+    M.updateTextFields();
+}
+
 
 
 

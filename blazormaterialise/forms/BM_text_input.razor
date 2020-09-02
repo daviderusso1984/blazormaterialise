@@ -1,27 +1,38 @@
 @namespace blazormaterialise
 @inherits forms_base
+@inject IJSRuntime JSRuntime;
 
 
-        <div class="input-field col s12">
-            @if(!string.IsNullOrEmpty(Icon)){
-                <i class="material-icons prefix">@Icon</i>
-            }
-            @if(Disabled){
-                @if(Active_text_limit){
-                    <input disabled value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate " data-length="@Text_limit">
-                }else{
-                    <input disabled value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate " >
-                }                
-            }else{
-                @if(Active_text_limit){
-                    <input value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate " data-length="@Text_limit">
-                }else{
-                    <input value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate ">
-                }                
-            }          
-          <label for="@Id">@Label</label>
-          <span class="helper-text" data-error="wrong" data-success="right">@Helper_text</span>
-        </div>
+<div class="input-field col s12">
+    @if (!string.IsNullOrEmpty(Icon))
+    {
+        <i class="material-icons prefix">@Icon</i>
+    }
+    @if (Disabled)
+    {
+        @if (Active_text_limit)
+        {
+            <input disabled value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate " data-length="@Text_limit">
+        }
+        else
+        {
+            <input disabled value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate ">
+        }
+    }
+    else
+    {
+        @if (Active_text_limit)
+        {
+            <input value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate " data-length="@Text_limit">
+        }
+        else
+        {
+            <input value="@Value" id="@Id" type="@Type" @oninput="Change" class="validate ">
+        }
+    }
+    <label for="@Id">@Label</label>
+    <span class="helper-text" data-error="wrong" data-success="right">@Helper_text</span>
+</div>
 
 
 
@@ -31,9 +42,9 @@
     [Parameter]
     public string Value { get; set; } = "";
     [Parameter]
-    public bool Active_text_limit{get;set;}= false;
+    public bool Active_text_limit { get; set; } = false;
     [Parameter]
-    public int Text_limit{get;set;}=0;
+    public int Text_limit { get; set; } = 0;
     [Parameter]
     public string Icon { get; set; } = "";
     [Parameter]
@@ -47,18 +58,25 @@
     [Parameter]
     public EventCallback<string> ValueChanged { get; set; }
 
-    protected override void OnInitialized(){
-        
-    }    
+    protected override void OnInitialized()
+    {
 
-     protected override async Task OnAfterRenderAsync (bool firstRender) {
-        await base.OnAfterRenderAsync (firstRender);
-        
-        
-    }   
+    }
 
-    protected Task Change (ChangeEventArgs e) {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("input_init");
+        }
+
+
+    }
+
+    protected Task Change(ChangeEventArgs e)
+    {
         Value = (string)e.Value;
-        return  ValueChanged.InvokeAsync ((string) e.Value);
+        return ValueChanged.InvokeAsync((string)e.Value);
     }
 }
