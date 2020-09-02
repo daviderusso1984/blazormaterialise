@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
     <PackageId>BlazorMaterialize</PackageId>
-    <PackageVersion>0.14</PackageVersion>
+    <PackageVersion>0.16</PackageVersion>
     <Authors>Davide Russo</Authors>
     <Owners>Davide Russo</Owners>
     <PackageProjectUrl>https://github.com/daviderusso1984/blazormaterialise</PackageProjectUrl>

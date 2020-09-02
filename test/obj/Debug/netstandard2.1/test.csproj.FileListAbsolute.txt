@@ -709,9 +709,7 @@ C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\net
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\zNP4aHLW-rhi6gW72YV8xGy1rLa_RQZtwvWEpiwBSrs=.hash
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\Z_NeMeePelfkeb7RMqMLU8KIFQrmV0168zqwpLqbQcc=.hash
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\dwm_rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs=.hash
-C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\P0NyE9pc4hhVM4XmurJOzLBib4nNC4fa53XZ5R6srBI=.hash
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\C0KrMmLQQE68cd1_FNwIOW89nNGbOH48hRxQAoSBaaA=.hash
-C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\LUx_U4BWdhbSunseSU2QVQuTCaDiVEj2RzxEl_3tW2k=.hash
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
@@ -843,6 +841,8 @@ C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\net
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\staticwebassets\test.StaticWebAssets.xml
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\test.dll
 C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\test.pdb
-C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\to5aqPBEvHbhuCwf71ql1fOmW1pOndXHQMv58U92Xk0=.hash
-C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\oeEUSgZ1C9NGOFJ8oQ5SD_r6cBSt4HYq_GkoG4i_KbA=.hash
-C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\M32ACqAm2pZxkK4FjS9KwPdJfhc1zDej5sOrzR8AcnE=.hash
+C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\h7j5tgqeU4RLh151Gszbs3wa5xfJDmDo2AkbDp5LOA8=.hash
+C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\ehm3gG_xNpVQTAAIuiuVCX2CTeoLzEDOy6OmTy7ymEM=.hash
+C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\ta3fzU4H1TKswWODxZaPZdmFdVvFtbjw2yLzq7DXXrc=.hash
+C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\SenBa-3lqLQP1M1nw7HPQnwRQKp3mZ1ERGwB50DtEDw=.hash
+C:\Users\david\Source\Repos\daviderusso1984\blazormaterialise\test\obj\Debug\netstandard2.1\integrity\y97-9f3r8Nm8LzZr3eV9H79-FX0E1ucxPXD99ixF5Xo=.hash

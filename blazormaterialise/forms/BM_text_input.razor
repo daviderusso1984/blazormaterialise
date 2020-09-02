@@ -40,7 +40,7 @@
 
 @code{
     [Parameter]
-    public string Value { get; set; } = "";
+    public object Value { get; set; } = "";
     [Parameter]
     public bool Active_text_limit { get; set; } = false;
     [Parameter]
@@ -56,7 +56,7 @@
     [Parameter]
     public string Helper_text { get; set; } = "";
     [Parameter]
-    public EventCallback<string> ValueChanged { get; set; }
+    public EventCallback<object> ValueChanged { get; set; }
 
     protected override void OnInitialized()
     {
@@ -76,7 +76,7 @@
 
     protected Task Change(ChangeEventArgs e)
     {
-        Value = (string)e.Value;
-        return ValueChanged.InvokeAsync((string)e.Value);
+        Value = e.Value;
+        return ValueChanged.InvokeAsync(e.Value);
     }
 }

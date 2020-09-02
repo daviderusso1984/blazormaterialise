@@ -1,164 +1,169 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/OyzV4SJvjnB8K_TDUgVYeuSHL0bzmkJGryMrL498MJ8=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/BlazorInputFile.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/BlazorInputFile.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\OyzV4SJvjnB8K_TDUgVYeuSHL0bzmkJGryMrL498MJ8=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\BlazorInputFile.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorInputFile.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/oq6aS7i70lxs8DLYlfb91M6D6MePN4-wAUMO6fM2ldc=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/blazormaterialise.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/blazormaterialise.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\V2hZEPNg_sIncw1-vrQUc6AeTmFBtrSaS7lYjVfpGfA=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\blazormaterialise.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/blazormaterialise.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/ZsxU1yoyOfPPqozSDgJ56BqTknyTP0CvCay3wB2FpVY=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Components.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\ilqDTKMHQEc0lazTPjSiSog_t-waLye6oIY9nJ3pkbQ=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/jOlOf2AataWTZ4gXBcskBFzhAtXfqP-N-ttCqPzEbXU=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Components.Web.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\dw_f5E0LdiHc09CZUB0wz44opC5SMcbZZSiYewZ5gvE=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Web.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/ml84flPUMaolfqBTTX_VoWjOTFO5QV-n1MV4iGSqzWU=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Components.WebAssembly.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\mDH-Xo6vrFW1-YqIZ1xbE8516ldBgiAHIjucZf2yo0A=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/jzHgXWAvWMkKIGFjZoT84tbe72E_H7CvTr-Dryh4QPs=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Bcl.AsyncInterfaces.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\jzHgXWAvWMkKIGFjZoT84tbe72E_H7CvTr-Dryh4QPs=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Bcl.AsyncInterfaces.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/N-hORJLIEH1h-1BhjJ-kG6YxT8iiefyoRdA4ic1q5FI=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Configuration.Abstractions.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.Abstractions.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\KNR1E01uMbqmEhTbEC6Hnlxt5SWiKhfOq6PKUQV2kro=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/LH8TymXD8X0lAk-0mRDjxddvy4SLnne7WmRp3saJfxw=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Configuration.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\7_3zm6VR6RXiS3iTMEVfGOtXPHz9ZnG7lqqkS-lDWps=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/6M_xqp4MiySZZASAjz3KrZM66GY3oWDSQJWc5Cm0vlI=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Configuration.Json.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.Json.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Cpa2ZBDZMvHUQBDRnuC2quwaHBtQrceCqzz3gBkVVVc=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Json.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/8KPb75LiKEMEjDaw9uOveX8kL54zQybdH6skrPLAi0I=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\FJzumMxkwAtJkSQiA0HmvpWZS39fwb0etmZhe6o5p-g=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/bI3ba0BXM3op3DhBPc9GGGVScdtHK-tarW5rRcZNUko=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.DependencyInjection.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\I0cKidCRQQA2mI48QyzIyLpmc-V8Vkry_nKdXaw8k3o=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/BLAtbbYDsJyYZ2yJfnMsqaYsVr4PCLjmh2NGnjdAHwM=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Logging.Abstractions.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\YlvJM76HByI8ouQe16jTA2VwNGw6rJRdjyJYIfxFT9s=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/I8bYZZLh61vJEDaEl3NpGcmTIlTrYetWyynSO54YwVc=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Logging.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\cSe5bkRgs-e9a2UBGju-Wy3nB0AX1jU5OQwWoN9Xlds=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/1cRb1bVzq0fxerFu8c-fFdNML9EyMmaYqqraHEnQ0Iw=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Options.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\hdx8ixX_pHPKN8qkZWJb76ra1S_9dtsqaWGf4H9niNw=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Options.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/1wNpkDzYzy_w1kCZvtDQrWMOKOgkTs2pBs78gSa7fE4=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Primitives.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Primitives.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\7VsqulobZQ4e58Mlt3RLqTA-S7v_pzMxx2emmIP5eWY=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Primitives.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/b4FmbWcy7NQSoN8T4qe9gevNOI92pxBvyWnMRWG2hLA=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.JSInterop.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\b4FmbWcy7NQSoN8T4qe9gevNOI92pxBvyWnMRWG2hLA=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.JSInterop.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/2OJZ6K7UfUTwtE_rT35jvxB3qBOjdz0vGa89_gxzFE4=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.JSInterop.WebAssembly.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\2OJZ6K7UfUTwtE_rT35jvxB3qBOjdz0vGa89_gxzFE4=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.JSInterop.WebAssembly.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/lgyHXSdxqvUe6YgXnAK548mf1VO7M8_8spSBh3umFPY=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/mscorlib.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/mscorlib.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\F3_M_HRUlxsyPOjhfH_Ggb81HYAX8Hs0-fvBCb0rn3I=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\mscorlib.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/SWfSSRVaF20FHi632pIh435TuKIVWyFFjQB9X1sEYFo=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Core.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Core.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\FeeWJjq_FXmOmhpbcixN8rb3w4LcVeKO7l_8lT_MWGs=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Core.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Core.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/zYhR6Jl7f8_XzQJATiRSNSb6-puzlXXWT96P6EN7ve0=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\7cdnTHtD9OpY2aGkbXB92WrAJS6_sAp3GimSuNNZ86g=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/VN3wavZJng3ODOuvFoGlAdXQiChB8JsD0-n9PwtX9OE=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Net.Http.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Net.Http.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\gg8sMhrabtJJDZ_83rD71ZXTIZZZ6q8IioKrXiATrxs=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/uYqBsXIFh0OOOp3EmcytY8ycjs5job9999DG3T8aloM=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Net.Http.WebAssemblyHttpHandler.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Net.Http.WebAssemblyHttpHandler.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Dohvg067CAU050y31RsoAVB0lsIr5McXTYDXUJgul2g=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.Json.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/CwTyW76WzIxV8hX7zotCldwzzYVZx0dHoGbTkTTUNr4=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Runtime.CompilerServices.Unsafe.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\j2TrNRB0Ql5zBAIUJJmUSbu0QRFgdJi_Wc0W1Hb128k=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.WebAssemblyHttpHandler.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.WebAssemblyHttpHandler.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/AV53J1zGq_HlSwHZ8tgd_UXT4f6scZlsDIzybxKzX4s=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Text.Encodings.Web.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\PsmSlMe-3EYXVJa6pUJH07hFMwVHK3AlKkrak_T52z4=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Runtime.CompilerServices.Unsafe.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/0QKJ-YrI5oODR4VW2y80HTHpP4ckOVoMcH4DR1xxRFw=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Text.Json.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Text.Json.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\mO1js-UVCsKrG3N7wlzhaGNG_e_MT4dqOqWhoqmb7Y0=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Encodings.Web.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/N9k9nofIBMQ2W-5sq2ZzYlyrRtMCnUEvBoIVJ1GUvo4=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/test.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/test.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\ksd7KQWbLdp_ZsgudPlGRyqTgyAgpV2xYnFr6YUeI04=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/Zgq_AeEYgHsE-zAfuQRBOd4jZNjLXeAfj9l1chDbm2E=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/linker\/WebAssembly.Bindings.dll",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/WebAssembly.Bindings.dll.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\5eswAIvCTwtIKYthKHrKt1dCiTKD3A2w-aeE8uz2zzw=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\test.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/test.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash",
-      "Source": "\/Users\/daviderusso1984\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.runtime\/3.2.0\/tools\/dotnetwasm\/wasm\/dotnet.3.2.0.js",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/wasm\/dotnet.3.2.0.js.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\2r_2HSPuTS6NJx2dMntMuBX9zo188ti9gOSuvHEXs_o=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\linker\\WebAssembly.Bindings.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/WebAssembly.Bindings.dll.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash",
-      "Source": "\/Users\/daviderusso1984\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.runtime\/3.2.0\/tools\/dotnetwasm\/wasm\/dotnet.timezones.dat",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/wasm\/dotnet.timezones.dat.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash",
+      "Source": "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0\\tools\\dotnetwasm\\wasm\\dotnet.3.2.0.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.3.2.0.js.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash",
-      "Source": "\/Users\/daviderusso1984\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.runtime\/3.2.0\/tools\/dotnetwasm\/wasm\/dotnet.wasm",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/wasm\/dotnet.wasm.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash",
+      "Source": "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0\\tools\\dotnetwasm\\wasm\\dotnet.timezones.dat",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.timezones.dat.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/oU0moF6IIkna1pMoSD6Ze63s6aHfjCtUflz7xDmENPg=.hash",
-      "Source": "\/Users\/daviderusso1984\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.build\/3.2.0\/tools\/blazor\/blazor.webassembly.js",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash",
+      "Source": "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0\\tools\\dotnetwasm\\wasm\\dotnet.wasm",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.wasm.gz"
     },
     {
-      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/cFAL4TGhj4eRcANJU7GOYVLU35GoXv8hI6555I2peGA=.hash",
-      "Source": "\/Users\/daviderusso1984\/Desktop\/progetti_nuget\/BlazorMaterialize\/test\/obj\/Release\/netstandard2.1\/blazor\/blazor.boot.json",
-      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.gz"
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\oU0moF6IIkna1pMoSD6Ze63s6aHfjCtUflz7xDmENPg=.hash",
+      "Source": "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.build\\3.2.0\\tools\\blazor\\blazor.webassembly.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\1c_bBfwP_YoTwPKjUG2J6l40rw7eNpdMn89pwqGby9w=.hash",
+      "Source": "C:\\Users\\david\\Source\\Repos\\daviderusso1984\\blazormaterialise\\test\\obj\\Release\\netstandard2.1\\blazor\\blazor.boot.json",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }
   ]
 }

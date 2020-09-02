@@ -2,14 +2,21 @@
 @inject IJSRuntime JSRuntime;
 
 
-<BM_text_input @bind-Value="@text" Label="Ciao stronzi"></BM_text_input>
+<BM_text_input ValueChanged="change" Value="text" Type="number" Label="Ciao stronzi"></BM_text_input>
 <p>@text</p>
-<BM_checkbox @bind-Value="@mio" Title="Mio"></BM_checkbox>
+<BM_checkbox Title="Mio"></BM_checkbox>
 <p>@mio</p>
 
 
 @code{
-    private string text="dddd";
+    private decimal text=0;
 
     private bool mio = false;
+
+    private void change(object dd){
+
+        Console.WriteLine(dd);
+       text = Convert.ToDecimal(dd);
+    }
+
 }
